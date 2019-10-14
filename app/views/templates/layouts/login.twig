@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    {% include "../includes/head.twig" %}
+</head>
+<body {% if class %}class="{{ class }}"{% endif %}>
+
+<!-- MAIN -->
+<main>
+    {% block content %}
+    {% endblock %}
+</main>
+
+<!-- SCRIPTS -->
+{% include "../includes/scripts.twig" %}
+</body>
+</html>
