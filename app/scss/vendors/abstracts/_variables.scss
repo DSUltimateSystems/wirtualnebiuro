@@ -4,19 +4,16 @@
 
 
 /// Copy text color
-$text-color: rgba(0, 0, 0, 0.8) !default;
+$text-color: rgb(0, 0, 0) !default;
 
 /// Copy light text color
-$color-white: rgba(255, 255, 255, 1) !default;
+$text-white: rgb(255, 255, 255) !default;
 
-/// Copy gray text color
-$color-gray: rgba(0, 0, 0, 0.5) !default;
+/// Color white
+$color-white: rgb(255, 255, 255) !default;
 
 /// Color primary
-$color-primary: rgba(63, 174, 73, 1) !default;
-
-/// Color accent
-$color-accent: rgba(30, 48, 102, 1) !default;
+$color-primary: rgb(231, 198, 18) !default;
 
 /// Transition base
 $transition-base: 0.3s ease-in-out !default;
