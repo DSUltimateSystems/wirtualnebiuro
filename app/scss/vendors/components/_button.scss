@@ -13,12 +13,18 @@ button{
   border: 3px solid $color-primary;
   box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, .5);
   padding: 9px 10px;
-  min-width: 188px;
+  min-width: 100%;
   cursor: pointer;
   border-radius: 2px;
   transition: $transition-base;
   display: block;
   text-align: center;
+  @include respond-to('small') {
+    min-width: 188px;
+  }
+  @include respond-to('large') {
+    padding: 14px 10px;
+  }
   @include on-event() {
     background-color: $color-white;
     color: $text-color;

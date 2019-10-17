@@ -17,6 +17,34 @@
     color: $text-color;
     width: 100%;
     padding: 14px 10px;
+    @include respond-to('large') {
+      padding: 18px 12px;
+      font-size: 20px;
+    }
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      font-size: 16px;
+      @include respond-to('large') {
+        font-size: 20px;
+      }
+    }
+    &::-moz-placeholder { /* Firefox 19+ */
+      font-size: 16px;
+      @include respond-to('large') {
+        font-size: 20px;
+      }
+    }
+    &:-ms-input-placeholder { /* IE 10+ */
+      font-size: 16px;
+      @include respond-to('large') {
+        font-size: 20px;
+      }
+    }
+    &:-moz-placeholder { /* Firefox 18- */
+      font-size: 16px;
+      @include respond-to('large') {
+        font-size: 20px;
+      }
+    }
   }
   &__actions {
     display: flex;

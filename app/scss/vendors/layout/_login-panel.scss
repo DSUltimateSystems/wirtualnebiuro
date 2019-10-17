@@ -4,28 +4,28 @@
   background-repeat: no-repeat;
   height: 100%;
   min-height: 100vh;
-  max-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  &__title {
-    h1 {
-      color: $text-white;
-    }
+  &__content {
+    max-width: 1050px;
+    margin: 0 auto;
   }
-  &__head {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  &__wrapper {
+    max-width: 480px;
+    margin: 20px auto;
+  }
+  &__logo {
+   max-width: 680px;
+   margin: 10px auto;
   }
   &__form {
     padding: 20px;
     margin: 20px 0 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     background: rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.5);
+  }
+  h1 {
+    text-align: center;
   }
 }
