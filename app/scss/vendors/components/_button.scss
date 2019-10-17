@@ -3,9 +3,24 @@
 // -----------------------------------------------------------------------------
 
 button{
-  
+  background: none;
+  padding: 0;
+  border: 0;
 }
-
 .btn {
-  
+  color: $color-white;
+  background-color: $color-primary;
+  border: 3px solid $color-primary;
+  box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, .5);
+  padding: 9px 10px;
+  min-width: 188px;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: $transition-base;
+  display: block;
+  text-align: center;
+  @include on-event() {
+    background-color: $color-white;
+    color: $text-color;
+  }
 }

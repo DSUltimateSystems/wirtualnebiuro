@@ -46,7 +46,6 @@ a {
   color: $text-color;
   text-decoration: none;
   transition: $transition-base;
-
   @include on-event {
     color: $color-primary;
     text-decoration: none;
