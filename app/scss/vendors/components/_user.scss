@@ -1,0 +1,42 @@
+.user {
+  @include respond-to('medium') {
+    flex: 1;
+  }
+  &__content {
+    @include respond-to('medium') {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+  }
+  h3 {
+    text-align: center;
+    font-weight: 600;
+    margin-top: 10px;
+    @include respond-to('medium') {
+      margin-top: 0;
+      margin-right: 10px;
+    }
+    span {
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 400;
+      display: inline-block;
+    }
+  }
+  &__photo {
+    max-width: 80px;
+    width: 100%;
+    height: 80px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(215, 215, 215);
+    margin: 0 auto;
+    @include respond-to('medium') {
+      margin: 0;
+      order: 1;
+    }
+  }
+}

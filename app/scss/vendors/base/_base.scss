@@ -26,6 +26,11 @@ html, body {
 
 body {
   background-color: $color-white;
+  background-image: url("/assets/images/geometric.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
 }
 
 /**

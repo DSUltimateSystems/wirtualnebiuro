@@ -3,5 +3,24 @@
 // -----------------------------------------------------------------------------
 
 .header {
-  
+  border-bottom: 15px solid rgb(153, 134, 117);
+  @include respond-to('medium') {
+    border-bottom: 30px solid rgb(153, 134, 117);
+  }
+  &__content {
+    margin-top: 10px;
+    @include respond-to('medium') {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-bottom: 10px
+    }
+  }
+  &__logo {
+    max-width: 230px;
+    margin: 0 auto;
+    @include respond-to('medium') {
+      margin: 0;
+    }
+  }
 }
