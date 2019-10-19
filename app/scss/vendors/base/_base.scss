@@ -48,11 +48,11 @@ img {
  * Basic styles for links
  */
 a {
-  color: $text-color;
+  color: $text-white;
   text-decoration: none;
   transition: $transition-base;
   @include on-event {
-    color: $color-primary;
+    color: $text-color;
     text-decoration: none;
   }
 }
