@@ -1,0 +1,33 @@
+.sub-nav {
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    @include respond-to('small') {
+      align-items: stretch;
+    }
+  }
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-primary;
+    width: 100%;
+    min-height: 20px;
+    padding: 3px 2px;
+    transition: $transition-base;
+    margin-top: 4px;
+    @include respond-to('small') {
+      width: calc(100% / 3);
+    }
+    @include respond-to('large') {
+      width: calc(100% / 6);
+    }
+    &:hover, &.active {
+      background-color: rgb(215, 215, 215);
+    }
+  }
+  .active {
+    color: $text-color;
+  }
+}
