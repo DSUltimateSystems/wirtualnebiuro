@@ -1,4 +1,11 @@
 {% extends "layouts/default.twig" %}
 {% block content %}
-    główna zawartość
+    <div class="column-wrapper">
+        <div class="container">
+            <div class="column-wrapper__content">
+                <!-- SEARCH-FORM -->
+                {% include "./sections/search-form.twig" %}
+            </div>
+        </div>
+    </div>
 {% endblock %}

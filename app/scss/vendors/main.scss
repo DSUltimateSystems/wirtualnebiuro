@@ -24,6 +24,7 @@
   'layout/header',
   'layout/login-panel',
   'layout/form',
+  'layout/search-form',
   'layout/footer';
 
 // 5. Components
@@ -31,7 +32,9 @@
   'components/nav',
   'components/sub-nav',
   'components/button',
-  'components/user';
+  'components/user',
+  'components/column-wrapper';
+
 
 
 // 6. Page-specific styles
