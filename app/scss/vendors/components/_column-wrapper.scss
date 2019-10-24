@@ -1,3 +1,6 @@
 .column-wrapper {
   margin: 72px 0;
+  &__content {
+    display: flex;
+  }
 }
