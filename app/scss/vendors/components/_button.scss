@@ -29,4 +29,12 @@ button{
     background-color: $color-white;
     color: $text-color;
   }
+  &--delete {
+    color: red;
+    transition: $transition-base;
+    cursor: pointer;
+    &:hover {
+      opacity: .7;
+    }
+  }
 }

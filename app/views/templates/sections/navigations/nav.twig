@@ -1,29 +1,11 @@
 <nav class="nav">
     <div class="nav__items">
-        <a href="users.html" class="nav__item active">
-            <span class="icon-test"></span>
-            użytkownicy i firmy
-        </a>
-        <a href="users.html" class="nav__item">
-            <span class="icon-test"></span>
-            korespondencja
-        </a>
-        <a href="users.html" class="nav__item">
-            <span class="icon-test"></span>
-            faktury
-        </a>
-        <a href="users.html" class="nav__item">
-            <span class="icon-test"></span>
-            umowy
-        </a>
-        <a href="users.html" class="nav__item">
-            <span class="icon-test"></span>
-            raporty
-        </a>
-        <a href="users.html" class="nav__item">
-            <span class="icon-test"></span>
-            serwis
-        </a>
+        {% for item in menu %}
+            <a href="{{ item.link }}" class="nav__item {% if item.active %}active{% endif %}">
+                <i class="{{ item.icon }}"></i>
+                {{ item.name }}
+            </a>
+        {% endfor %}
     </div>
 </nav>
 

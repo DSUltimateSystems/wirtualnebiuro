@@ -1,0 +1,80 @@
+{
+  "title":"Wirtualne biuro",
+  "class": "users-page",
+  "menu": [
+    {
+      "name": "użytkownicy i firmy",
+      "link": "/lista-firm.html",
+      "icon": "far fa-user",
+      "active": true
+    },
+    {
+      "name": "korespondencja",
+      "link": "/lista-firm.html",
+      "icon": "far fa-envelope",
+      "active": false
+    },
+    {
+      "name": "faktury",
+      "link": "/lista-firm.html",
+      "icon": "fas fa-file-signature",
+      "active": false
+    },
+    {
+      "name": "umowy",
+      "link": "/lista-firm.html",
+      "icon": "far fa-file-alt",
+      "active": false
+    },
+    {
+      "name": "raporty",
+      "link": "/lista-firm.html",
+      "icon": "fas fa-chart-line",
+      "active": false
+    },
+    {
+      "name": "serwis",
+      "link": "/lista-firm.html",
+      "icon": "fas fa-chart-pie",
+      "active": false
+    }
+  ],
+  "subMenu": [
+    {
+      "name": "lista firm",
+      "link": "/lista-firm.html",
+      "active": true
+    },
+    {
+      "name": "lista firm n/a",
+      "link": "/lista-firm.html",
+      "active": false
+    },
+    {
+      "name": "lista użytkowników",
+      "link": "/lista-firm.html",
+      "active": false
+    },
+    {
+      "name": "lista użytkowników n/a",
+      "link": "/lista-firm.html",
+      "active": false
+    },
+    {
+      "name": "dodaj nowego użytkownika z firmą",
+      "link": "/lista-firm.html",
+      "active": false
+    },
+    {
+      "name": "dodaj użytkownika",
+      "link": "/lista-firm.html",
+      "active": false
+    },
+    {
+      "name": "dodaj nową firmę",
+      "link": "/lista-firm.html",
+      "active": false
+    }
+  ],
+  "tableTitle": "Użytkownicy i firmy - lista firm"
+}

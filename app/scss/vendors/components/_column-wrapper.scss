@@ -1,6 +1,10 @@
 .column-wrapper {
   margin: 72px 0;
   &__content {
-    display: flex;
+    @include respond-to('large') {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
   }
 }

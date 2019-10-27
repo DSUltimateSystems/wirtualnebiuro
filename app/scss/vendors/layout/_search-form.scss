@@ -1,22 +1,27 @@
 .search-form {
-  margin: 20px 0;
-  @include respond-to('small') {
+  width: 100%;
+  margin-bottom: 50px;
+  @include respond-to('medium') {
+    max-width: 400px;
+  }
+  @include respond-to('large') {
     max-width: 185px;
+    margin-right: 70px;
   }
   &__filter {
     display: none;
-    @include respond-to('small') {
+    @include respond-to('large') {
       display: block;
     }
   }
   .btn {
     &--expand-filters {
-      @include respond-to('small') {
+      @include respond-to('large') {
         display: none;
       }
     }
     &--reset {
-      @include respond-to('small') {
+      @include respond-to('large') {
         min-width: 120px;
         padding: 7px 10px;
       }
@@ -24,19 +29,27 @@
   }
   h4 {
     position: relative;
+    cursor: pointer;
+    &.active {
+      i {
+        transform: rotate(180deg);
+      }
+    }
     i {
       position: absolute;
       top: 0;
       right: 0;
       transition: $transition-base;
-      cursor: pointer;
-      &:hover {
-        color: rgb(215, 215, 215);
-      }
     }
+  }
+  .collapse-wrapper {
+    display: none;
   }
   &__item {
     margin: 20px 0;
+    &:first-child {
+      margin-top: 30px;
+    }
   }
   &__group {
     display: flex;
@@ -89,7 +102,7 @@
     }
   }
   &__actions {
-    @include respond-to('small') {
+    @include respond-to('large') {
       display: flex;
       justify-content: flex-end;
     }

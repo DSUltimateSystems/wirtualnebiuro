@@ -30,7 +30,19 @@ const App = (() => {
 
   // Listeners
   const initListeners = () => {
+      $('.btn--expand-filters').on('click', () => {
+          $('.search-form__filter').slideToggle(300);
+      });
 
+      $('.collapse-group').on('click', function () {
+          $(this).toggleClass('active');
+          $(this).closest('.search-form__item').find('.collapse-wrapper').slideToggle(300);
+      })
+
+      $('.btn--reset').on('click', function (e) {
+          e.preventDefault();
+          $('.search-form__filter')[0].reset();
+      })
   };
 
   return {
@@ -48,37 +60,3 @@ const App = (() => {
 
 // Init
 App.init();
-
-/* List.js is required to make this table work. */
-
-var options = {
-  valueNames: [ { data: ['timestamp'] }, { data: ['status'] }, 'jSortNumber', 'jSortName', 'jSortTotal' ],
-  page: 6,
-  pagination: {
-    innerWindow: 1,
-    left: 0,
-    right: 0,
-    paginationClass: "pagination",
-  }
-};
-
-var tableList = new List('table', options);
-
-$('.jPaginateNext').on('click', function(){
-  var list = $('.pagination').find('li');
-  $.each(list, function(position, element){
-    if($(element).is('.active')){
-      $(list[position+1]).trigger('click');
-    }
-  })
-});
-
-
-$('.jPaginateBack').on('click', function(){
-  var list = $('.pagination').find('li');
-  $.each(list, function(position, element){
-    if($(element).is('.active')){
-      $(list[position-1]).trigger('click');
-    }
-  })
-});

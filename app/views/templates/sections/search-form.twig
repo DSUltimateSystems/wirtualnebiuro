@@ -1,38 +1,42 @@
 <div class="search-form">
-    <button class="btn btn--expand-filters">rozwiń filtry</button>
+    <button class="btn btn--expand-filters">przełącz filtry</button>
     <form class="search-form__filter">
         <div class="search-form__item">
-            <h4>dane firmy
+            <h4 class="collapse-group">dane firmy
                 <i class="fas fa-chevron-down"></i>
             </h4>
-            <div class="search-form__group">
-                <label for="username">nazwisko</label>
-                <input type="text" id="username">
-            </div>
-            <div class="search-form__group">
-                <label for="company">nazwa firmy</label>
-                <input type="text" id="company">
-            </div>
-            <div class="search-form__group">
-                <label for="nip">nip</label>
-                <input type="text" id="nip">
-            </div>
-            <div class="search-form__group">
-                <label for="box-number">nr skrytki</label>
-                <input type="text" id="box-number">
+            <div class="collapse-wrapper">
+                <div class="search-form__group">
+                    <label for="username">nazwisko</label>
+                    <input type="text" id="username">
+                </div>
+                <div class="search-form__group">
+                    <label for="company">nazwa firmy</label>
+                    <input type="text" id="company">
+                </div>
+                <div class="search-form__group">
+                    <label for="nip">nip</label>
+                    <input type="text" id="nip">
+                </div>
+                <div class="search-form__group">
+                    <label for="box-number">nr skrytki</label>
+                    <input type="text" id="box-number">
+                </div>
             </div>
         </div>
         <div class="search-form__item">
-            <h4>data ostatniej wiadomości
+            <h4 class="collapse-group">data ostatniej wiadomości
                 <i class="fas fa-chevron-down"></i>
             </h4>
-            <div class="search-form__group-date">
-                <span>od <i class="far fa-calendar-alt"></i></span>
-                <input type="date">
-            </div>
-            <div class="search-form__group-date">
-                <span>do <i class="far fa-calendar-alt"></i></span>
-                <input type="date">
+            <div class="collapse-wrapper">
+                <div class="search-form__group-date">
+                    <span>od <i class="far fa-calendar-alt"></i></span>
+                    <input type="date">
+                </div>
+                <div class="search-form__group-date">
+                    <span>do <i class="far fa-calendar-alt"></i></span>
+                    <input type="date">
+                </div>
             </div>
         </div>
         <div class="search-form__actions">
