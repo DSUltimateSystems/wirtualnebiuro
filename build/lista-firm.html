@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="./assets/images/favicon.ico"/>
+
+<!-- Primary Meta Tags -->
+<title>Wirtualne biuro</title>
+<meta name="title" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+<meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+<meta name="keywords" content="Lorem, ipsum, dolor, sit, amet, consectetur, adipiscing, elit">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://test.ovh/">
+<meta property="og:title" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+<meta property="og:description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+<meta property="og:image" content="http://konferensbokning.bluepaprica.ovh/assets/images/slider/home-slider-1.jpg">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="http://test.ovh/">
+<meta property="twitter:title" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+<meta property="twitter:description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+<meta property="twitter:image" content="http://test.ovh/assets/images/slider/home-slider-1.jpg">
+
+<link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet">
+<!-- main.css -->
+<link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+<body class="users-page">
+<!-- HEADER -->
+<header class="header">
+   <div class="container">
+      <div class="header__content">
+         <div class="header__logo">
+            <img src="./assets/images/wirtualnebiuro.png" alt="Wirtualne Biuro">
+         </div>
+         <div class="user">
+            <div class="user__content">
+               <div class="user__photo" style="background-image: url('./assets/images/avatar.png')"></div>
+               <h3>
+                  <span>zalogowany jako</span>
+                  Garfield Bloomish
+               </h3>
+            </div>
+         </div>
+      </div>
+   </div>
+</header>
+
+
+<!-- NAV -->
+<nav class="nav">
+    <div class="nav__items">
+        
+            <a href="/lista-firm.html" class="nav__item active">
+                <i class="far fa-user"></i>
+                użytkownicy i firmy
+            </a>
+        
+            <a href="/lista-firm.html" class="nav__item ">
+                <i class="far fa-envelope"></i>
+                korespondencja
+            </a>
+        
+            <a href="/lista-firm.html" class="nav__item ">
+                <i class="fas fa-file-signature"></i>
+                faktury
+            </a>
+        
+            <a href="/lista-firm.html" class="nav__item ">
+                <i class="far fa-file-alt"></i>
+                umowy
+            </a>
+        
+            <a href="/lista-firm.html" class="nav__item ">
+                <i class="fas fa-chart-line"></i>
+                raporty
+            </a>
+        
+            <a href="/lista-firm.html" class="nav__item ">
+                <i class="fas fa-chart-pie"></i>
+                serwis
+            </a>
+        
+    </div>
+</nav>
+
+
+
+<!-- SUB-NAV -->
+<nav class="sub-nav">
+    <div class="sub-nav__items">
+        
+            <a href="/lista-firm.html" class="sub-nav__item active">
+                lista firm
+            </a>
+        
+            <a href="/lista-firm.html" class="sub-nav__item ">
+                lista firm n/a
+            </a>
+        
+            <a href="/lista-firm.html" class="sub-nav__item ">
+                lista użytkowników
+            </a>
+        
+            <a href="/lista-firm.html" class="sub-nav__item ">
+                lista użytkowników n/a
+            </a>
+        
+            <a href="/lista-firm.html" class="sub-nav__item ">
+                dodaj nowego użytkownika z firmą
+            </a>
+        
+            <a href="/lista-firm.html" class="sub-nav__item ">
+                dodaj użytkownika
+            </a>
+        
+            <a href="/lista-firm.html" class="sub-nav__item ">
+                dodaj nową firmę
+            </a>
+        
+    </div>
+</nav>
+
+<!-- MAIN -->
+<main>
+    
+    <div class="column-wrapper">
+        <div class="container">
+            <div class="column-wrapper__content">
+                <!-- SEARCH-FORM -->
+                <div class="search-form">
+    <button class="btn btn--expand-filters">przełącz filtry</button>
+    <form class="search-form__filter">
+        <div class="search-form__item">
+            <h4 class="collapse-group">dane firmy
+                <i class="fas fa-chevron-down"></i>
+            </h4>
+            <div class="collapse-wrapper">
+                <div class="search-form__group">
+                    <label for="username">nazwisko</label>
+                    <input type="text" id="username">
+                </div>
+                <div class="search-form__group">
+                    <label for="company">nazwa firmy</label>
+                    <input type="text" id="company">
+                </div>
+                <div class="search-form__group">
+                    <label for="nip">nip</label>
+                    <input type="text" id="nip">
+                </div>
+                <div class="search-form__group">
+                    <label for="box-number">nr skrytki</label>
+                    <input type="text" id="box-number">
+                </div>
+            </div>
+        </div>
+        <div class="search-form__item">
+            <h4 class="collapse-group">data ostatniej wiadomości
+                <i class="fas fa-chevron-down"></i>
+            </h4>
+            <div class="collapse-wrapper">
+                <div class="search-form__group-date">
+                    <span>od <i class="far fa-calendar-alt"></i></span>
+                    <input type="date">
+                </div>
+                <div class="search-form__group-date">
+                    <span>do <i class="far fa-calendar-alt"></i></span>
+                    <input type="date">
+                </div>
+            </div>
+        </div>
+        <div class="search-form__actions">
+            <button class="btn btn--reset">resetuj wyniki</button>
+        </div>
+    </form>
+</div>
+
+                <div class="table">
+    <h2>Użytkownicy i firmy - lista firm</h2>
+    <table class="rwd-table">
+        <tbody>
+        <tr>
+            <th>ID</th>
+            <th>Nazwa firmy</th>
+            <th>Właściciel</th>
+            <th>Potwierdzony NIP</th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <td data-th="ID: ">
+                61578
+            </td>
+            <td data-th="Nazwa firmy: ">
+                SONAR
+            </td>
+            <td data-th="Właściciel: ">
+                Wójtyńska Małgorzata
+            </td>
+            <td data-th="Potwierdzony NIP: ">
+                tak
+            </td>
+            <td>
+                <a href="#">edytuj firmę</a>
+            </td>
+            <td>
+                <button class="btn--delete">usuń</button>
+            </td>
+        </tr>
+        <tr>
+            <td data-th="ID: ">
+                61578
+            </td>
+            <td data-th="Nazwa firmy: ">
+                SONAR
+            </td>
+            <td data-th="Właściciel: ">
+                Wójtyńska Małgorzata
+            </td>
+            <td data-th="Potwierdzony NIP: ">
+                tak
+            </td>
+            <td>
+                <a href="#">edytuj firmę</a>
+            </td>
+            <td>
+                <button class="btn--delete">usuń</button>
+            </td>
+        </tr>
+        <tr>
+            <td data-th="ID: ">
+                61578
+            </td>
+            <td data-th="Nazwa firmy: ">
+                SONAR
+            </td>
+            <td data-th="Właściciel: ">
+                Wójtyńska Małgorzata
+            </td>
+            <td data-th="Potwierdzony NIP: ">
+                tak
+            </td>
+            <td>
+                <a href="#">edytuj firmę</a>
+            </td>
+            <td>
+                <button class="btn--delete">usuń</button>
+            </td>
+        </tr>
+        <tr>
+            <td data-th="ID: ">
+                61578
+            </td>
+            <td data-th="Nazwa firmy: ">
+                SONAR
+            </td>
+            <td data-th="Właściciel: ">
+                Wójtyńska Małgorzata
+            </td>
+            <td data-th="Potwierdzony NIP: ">
+                tak
+            </td>
+            <td>
+                <a href="#">edytuj firmę</a>
+            </td>
+            <td>
+                <button class="btn--delete">usuń</button>
+            </td>
+        </tr>
+        <tr>
+            <td data-th="ID: ">
+                61578
+            </td>
+            <td data-th="Nazwa firmy: ">
+                SONAR
+            </td>
+            <td data-th="Właściciel: ">
+                Wójtyńska Małgorzata
+            </td>
+            <td data-th="Potwierdzony NIP: ">
+                tak
+            </td>
+            <td>
+                <a href="#">edytuj firmę</a>
+            </td>
+            <td>
+                <button class="btn--delete">usuń</button>
+            </td>
+        </tr>
+        <tr class="row--warning">
+            <td data-th="ID: ">
+                61578
+            </td>
+            <td data-th="Nazwa firmy: ">
+                SONAR
+            </td>
+            <td data-th="Właściciel: ">
+                Wójtyńska Małgorzata
+            </td>
+            <td data-th="Potwierdzony NIP: ">
+                tak
+            </td>
+            <td>
+                <a href="#">edytuj firmę</a>
+            </td>
+            <td>
+                <button class="btn--delete">usuń</button>
+            </td>
+        </tr>
+        <tr class="row--danger">
+            <td data-th="ID: ">
+                61578
+            </td>
+            <td data-th="Nazwa firmy: ">
+                SONAR
+            </td>
+            <td data-th="Właściciel: ">
+                Wójtyńska Małgorzata
+            </td>
+            <td data-th="Potwierdzony NIP: ">
+                tak
+            </td>
+            <td>
+                <a href="#">edytuj firmę</a>
+            </td>
+            <td>
+                <button class="btn--delete">usuń</button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <div class="pagination">
+        <a href="#">nowsze</a>
+        <a href="#">1</a>
+        <a href="#" class="active">2</a>
+        <a href="#">3</a>
+        <a href="#">starsze</a>
+    </div>
+</div>
+
+
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__content">
+            <div class="footer__logo">
+                <img src="./assets/images/logo.png" alt="Archeion Wirtualne Biuro">
+            </div>
+            <p>Copyright: Archeion 2016<br>ARCHEION  Ul. Św. Filipa 23/1, <span>31-150 Kraków</span></p>
+        </div>
+    </div>
+</footer>
+
+
+
+<!-- SCRIPTS -->
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+<script src="assets/js/script.min.js"></script>
+</body>
+</html>
