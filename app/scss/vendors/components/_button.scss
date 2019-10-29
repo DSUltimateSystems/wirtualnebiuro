@@ -27,14 +27,18 @@ button{
   }
   @include on-event() {
     background-color: $color-white;
-    color: $text-color;
+    color: $color-primary;
   }
   &--delete {
-    color: red;
+    color: $color-red;
     transition: $transition-base;
     cursor: pointer;
     &:hover {
       opacity: .7;
     }
+  }
+  &--secondary {
+    min-width: 120px;
+    padding: 7px 10px;
   }
 }

@@ -1,0 +1,28 @@
+.dropdown {
+  position: relative;
+  display: inline-block;
+  button {
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+  }
+  ul {
+    list-style-type: none;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 250px;
+    padding: 20px;
+    background-color: $color-white;
+    box-shadow: $box-shadow;
+    visibility: hidden;
+    pointer-events: none;
+    opacity: 0;
+    transition: $transition-base;
+    &.active {
+      visibility: visible;
+      pointer-events: all;
+      opacity: 1;
+    }
+  }
+}

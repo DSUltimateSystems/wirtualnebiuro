@@ -1,0 +1,64 @@
+.form-add {
+  background-color: $color-white;
+  padding: 20px;
+  box-shadow: $box-shadow;
+  flex: 1;
+  h4 {
+    margin-bottom: 8px;
+  }
+  &__group {
+    margin: 10px 0;
+    &--full-width {
+      input, textarea {
+        width: 100%;
+      }
+    }
+  }
+  input, select, textarea {
+    border: 1px solid $color-light-gray;
+    padding: 10px 15px;
+  }
+  input {
+    &[type="checkbox"] {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  textarea {
+    resize: none;
+  }
+  &__details {
+    @include respond-to('small') {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+    .form-add__group {
+      @include respond-to('small') {
+        width: 50%;
+      }
+      @include respond-to('medium') {
+        width: 33.3%;
+      }
+    }
+  }
+  &__actions {
+    margin-top: 40px;
+    .btn {
+      &--secondary {
+        & + .btn--secondary {
+          margin-top: 10px;
+          @include respond-to('small') {
+            margin-top: 0;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+    @include respond-to('small') {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}

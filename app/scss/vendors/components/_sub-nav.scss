@@ -24,7 +24,7 @@
       width: calc(100% / 6);
     }
     &:hover, &.active {
-      background-color: rgb(215, 215, 215);
+      background-color: $color-light-gray;
     }
   }
   .active {

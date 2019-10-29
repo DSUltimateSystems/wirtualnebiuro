@@ -37,12 +37,16 @@ const App = (() => {
       $('.collapse-group').on('click', function () {
           $(this).toggleClass('active');
           $(this).closest('.search-form__item').find('.collapse-wrapper').slideToggle(300);
-      })
+      });
 
       $('.btn--reset').on('click', function (e) {
           e.preventDefault();
           $('.search-form__filter')[0].reset();
-      })
+      });
+      $('.dropdown button').on('click', () => {
+          $('.dropdown ul').toggleClass('active');
+      });
+
   };
 
   return {

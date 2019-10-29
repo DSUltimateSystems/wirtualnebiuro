@@ -1,5 +1,5 @@
 {
-  "title":"Lista firm",
+  "title":"Lista użytkowników",
   "class": "users-page",
   "menu": [
     {
@@ -76,5 +76,5 @@
       "active": false
     }
   ],
-  "tableTitle": "Użytkownicy i firmy - lista firm"
+  "tableTitle": "Użytkownicy i firmy - lista użytkowników"
 }

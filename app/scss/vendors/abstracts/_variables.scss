@@ -17,6 +17,13 @@ $color-primary: rgb(231, 198, 18) !default;
 
 $color-red: rgb(224, 66, 11) !default;
 
+$color-light-gray: rgb(215, 215, 215) !default;
+
+$color-gray: rgb(172, 172, 172) !default;
+
+// Box-shadow
+$box-shadow: 2px 2px 30px 0 rgba(0, 0, 0, 0.3);
+
 /// Transition base
 $transition-base: 0.3s ease-in-out !default;
 

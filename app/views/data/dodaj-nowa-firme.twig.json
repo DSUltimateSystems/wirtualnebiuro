@@ -1,0 +1,80 @@
+{
+    "title":"Dodaj nową firmę",
+    "class": "users-page",
+    "menu": [
+        {
+            "name": "użytkownicy i firmy",
+            "link": "/lista-firm.html",
+            "icon": "far fa-user",
+            "active": true
+        },
+        {
+            "name": "korespondencja",
+            "link": "/lista-firm.html",
+            "icon": "far fa-envelope",
+            "active": false
+        },
+        {
+            "name": "faktury",
+            "link": "/lista-firm.html",
+            "icon": "fas fa-file-signature",
+            "active": false
+        },
+        {
+            "name": "umowy",
+            "link": "/lista-firm.html",
+            "icon": "far fa-file-alt",
+            "active": false
+        },
+        {
+            "name": "raporty",
+            "link": "/lista-firm.html",
+            "icon": "fas fa-chart-line",
+            "active": false
+        },
+        {
+            "name": "serwis",
+            "link": "/lista-firm.html",
+            "icon": "fas fa-chart-pie",
+            "active": false
+        }
+    ],
+    "subMenu": [
+        {
+            "name": "lista firm",
+            "link": "/lista-firm.html",
+            "active": true
+        },
+        {
+            "name": "lista firm n/a",
+            "link": "/lista-firm-n-a.html",
+            "active": false
+        },
+        {
+            "name": "lista użytkowników",
+            "link": "/lista-uzytkownikow.html",
+            "active": false
+        },
+        {
+            "name": "lista użytkowników n/a",
+            "link": "/lista-uzytkownikow-n-a.html",
+            "active": false
+        },
+        {
+            "name": "dodaj nowego użytkownika z firmą",
+            "link": "/dodaj-nowego-uzytkownika-z-firma.html",
+            "active": false
+        },
+        {
+            "name": "dodaj użytkownika",
+            "link": "/dodaj-uzytkownika.html",
+            "active": false
+        },
+        {
+            "name": "dodaj nową firmę",
+            "link": "/dodaj-nowa-firme.html",
+            "active": false
+        }
+    ],
+    "tableTitle": "Użytkownicy i firmy - Dodaj firmę"
+}
