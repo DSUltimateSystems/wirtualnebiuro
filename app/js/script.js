@@ -43,8 +43,9 @@ const App = (() => {
           e.preventDefault();
           $('.search-form__filter')[0].reset();
       });
-      $('.dropdown button').on('click', () => {
-          $('.dropdown ul').toggleClass('active');
+
+      $('.dropdown button').on('click', function () {
+          $(this).closest('.dropdown').toggleClass('active');
       });
 
   };
