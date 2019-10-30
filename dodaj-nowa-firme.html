@@ -47,6 +47,9 @@
                <h3>
                   <span>zalogowany jako</span>
                   Garfield Bloomish
+                  <a href="/">
+                     <i class="fas fa-sign-out-alt"></i>
+                  </a>
                </h3>
             </div>
          </div>
@@ -185,98 +188,112 @@
 
                 <form class="form-add">
     <h2>Użytkownicy i firmy - Dodaj firmę</h2>
-    <div class="form-add__group form-add__group--full-width">
+    <div class="form__group form__group--full-width">
         <h4>Nazwa firmy</h4>
         <input type="text" placeholder="POLE OBOWIĄZKOWE">
     </div>
-    <div class="form-add__group form-add__group--full-width">
+    <div class="form__group form__group--full-width">
         <h4>Adres do umowy</h4>
         <input type="text" placeholder="POLE OBOWIĄZKOWE">
     </div>
-    <div class="form-add__details">
-        <div class="form-add__group">
-            <h4>Kod pocztowy do umowy</h4>
-            <input type="text" placeholder="xx-xxx">
+    <div class="columns">
+        <div class="columns__item">
+            <div class="form__group">
+                <h4>Kod pocztowy do umowy</h4>
+                <input type="text" placeholder="xx-xxx">
+            </div>
+            <div class="form__group">
+                <h4>NIP do umowy</h4>
+                <input type="number">
+            </div>
+            <div class="form__group">
+                <h4>REGON</h4>
+                <input type="text">
+            </div>
+            <div class="form__group">
+                <h4>Pełnomocnictwo</h4>
+                <select>
+                    <option value="pełne">Pełne</option>
+                    <option value="ograniczone">Ograniczone</option>
+                    <option value="brak">Brak</option>
+                </select>
+            </div>
         </div>
-        <div class="form-add__group">
-            <h4>Miejscowośc do umowy</h4>
-            <input type="text">
+        <div class="columns__item">
+            <div class="form__group">
+                <h4>Miejscowośc do umowy</h4>
+                <input type="text">
+            </div>
+
+            <div class="form__group">
+                <h4>KRS</h4>
+                <input type="number">
+            </div>
+
+            <div class="form__group">
+                <h4>Skrytka pocztowa</h4>
+                <input type="text">
+            </div>
+            <div class="form__group">
+                <h4>Firma potwierdziła dokumenty NIP / REGON</h4>
+                <div class="checkbox">
+                    <input id="check-yes" type="checkbox">
+                    <label for="check-yes">tak</label>
+                </div>
+                <div class="checkbox">
+                    <input id="check-no" type="checkbox">
+                    <label for="check-no">nie</label>
+                </div>
+            </div>
         </div>
-        <div class="form-add__group">
-            <h4>NIP do umowy</h4>
-            <input type="number">
-        </div>
-        <div class="form-add__group">
-            <h4>KRS</h4>
-            <input type="number">
-        </div>
-        <div class="form-add__group">
-            <h4>REGON</h4>
-            <input type="text">
-        </div>
-        <div class="form-add__group">
-            <h4>Skrytka pocztowa</h4>
-            <input type="text">
-        </div>
-        <div class="form-add__group">
-            <h4>Firma potwierdziła dokumenty NIP / REGON</h4>
-            <p>
-                <input type="checkbox">
-                tak
-            </p>
-            <p>
-                <input type="checkbox">
-                nie
-            </p>
-        </div>
-        <div class="form-add__group">
-            <h4>Kluczyk do skrytki</h4>
-            <p>
-                <input type="checkbox">
-                w biurze
-            </p>
-            <p>
-                <input type="checkbox">
-                w posiadaniu klienta
-            </p>
-        </div>
-        <div class="form-add__group">
-            <h4>Pełnomocnictwo</h4>
-            <select>
-                <option value="pełne">Pełne</option>
-                <option value="ograniczone">Ograniczone</option>
-                <option value="brak">Brak</option>
-            </select>
+        <div class="columns__item">
+            <div class="form__group">
+                <h4>Kluczyk do skrytki</h4>
+                <div class="checkbox">
+                    <input id="choice-1" type="checkbox">
+                    <label for="choice-1">w biurze</label>
+                </div>
+                <div class="checkbox">
+                    <input id="choice-2" type="checkbox">
+                    <label for="choice-2">w posiadaniu klienta</label>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="form-add__group form-add__group--full-width">
+    <div class="form__group form__group--full-width">
         <h4>Adres do korespondencji</h4>
         <textarea cols="30" rows="10"></textarea>
     </div>
-    <div class="form-add__group form-add__group--full-width">
+    <div class="form__group form__group--full-width">
         <h4>Adres email do wysyłki faktur</h4>
         <input type="email">
     </div>
-    <div class="form-add__group form-add__group--full-width">
+    <div class="form__group form__group--full-width">
         <h4>Adres do faktury</h4>
         <input type="text">
     </div>
-   <div class="form-add__details">
-       <div class="form-add__group">
-           <h4>Kod pocztowy do faktury</h4>
-           <input type="text">
+   <div class="columns">
+       <div class="columns__item">
+           <div class="form__group">
+               <h4>Kod pocztowy do faktury</h4>
+               <input type="text">
+           </div>
        </div>
-       <div class="form-add__group">
-           <h4>Miejscowość do faktury</h4>
-           <input type="text">
+       <div class="columns__item">
+           <div class="form__group">
+               <h4>Miejscowość do faktury</h4>
+               <input type="text">
+           </div>
        </div>
-       <div class="form-add__group">
-           <h4>NIP do faktury</h4>
-           <input type="number">
+       <div class="columns__item">
+           <div class="form__group">
+               <h4>NIP do faktury</h4>
+               <input type="number">
+           </div>
        </div>
    </div>
     <div class="form-add__actions">
-        <a href="#" class="btn btn--secondary">dodaj firmę</a>
+        <button type="submit" class="btn btn--secondary">dodaj firmę</button>
         <a href="/lista-firm.html" class="btn btn--secondary">powrót</a>
     </div>
 </form>
