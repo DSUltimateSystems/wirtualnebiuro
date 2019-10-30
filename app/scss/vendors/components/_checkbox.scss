@@ -1,0 +1,39 @@
+.checkbox {
+  input {
+    &[type=checkbox] {
+      display: none;
+     & + label {
+        display: block;
+        margin: 4px 0;
+        cursor: pointer;
+        padding: 4px 0;
+      }
+
+      & + label:before {
+        content: "\2714";
+        border: 1px solid $color-light-gray;
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        margin-right: 10px;
+        color: transparent;
+        background-color: $color-white;
+        transition: $transition-base;
+        text-align: center;
+      }
+      & + label:active:before {
+        transform: scale(0);
+      }
+      &:checked + label:before {
+        color: $text-color;
+      }
+      &:disabled + label:before {
+        transform: scale(1);
+      }
+      &:checked:disabled + label:before {
+        transform: scale(1);
+      }
+    }
+  }
+}

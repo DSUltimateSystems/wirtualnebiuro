@@ -17,11 +17,23 @@
       margin-top: 0;
       margin-right: 10px;
     }
+    i {
+      cursor: pointer;
+      transition: $transition-base;
+      color: $text-color;
+      font-size: 22px;
+      &:hover {
+        color: $color-red;
+      }
+    }
     span {
       font-size: 14px;
       line-height: 24px;
       font-weight: 400;
-      display: inline-block;
+      display: block;
+      @include respond-to('small') {
+        display: inline-block;
+      }
     }
   }
   &__photo {
