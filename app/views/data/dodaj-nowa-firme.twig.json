@@ -43,7 +43,7 @@
         {
             "name": "lista firm",
             "link": "/lista-firm.html",
-            "active": true
+            "active": false
         },
         {
             "name": "lista firm n/a",
@@ -73,7 +73,7 @@
         {
             "name": "dodaj nową firmę",
             "link": "/dodaj-nowa-firme.html",
-            "active": false
+            "active": true
         }
     ],
     "tableTitle": "Użytkownicy i firmy - Dodaj firmę"

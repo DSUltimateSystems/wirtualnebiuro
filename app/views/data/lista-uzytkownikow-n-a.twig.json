@@ -43,7 +43,7 @@
     {
       "name": "lista firm",
       "link": "/lista-firm.html",
-      "active": true
+      "active": false
     },
     {
       "name": "lista firm n/a",
@@ -58,7 +58,7 @@
     {
       "name": "lista użytkowników n/a",
       "link": "/lista-uzytkownikow-n-a.html",
-      "active": false
+      "active": true
     },
     {
       "name": "dodaj nowego użytkownika z firmą",
