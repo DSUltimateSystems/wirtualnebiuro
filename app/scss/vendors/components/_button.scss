@@ -38,7 +38,9 @@ button{
     }
   }
   &--secondary {
-    min-width: 120px;
+    @include respond-to('small') {
+      min-width: 120px;
+    }
     padding: 7px 10px;
   }
 }

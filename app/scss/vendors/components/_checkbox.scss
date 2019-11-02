@@ -1,6 +1,6 @@
 .checkbox {
   input {
-    &[type=checkbox] {
+    &[type=radio] {
       display: none;
      & + label {
         display: block;

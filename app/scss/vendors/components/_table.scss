@@ -1,3 +1,4 @@
+// RWD TABLE
 .rwd-table {
   margin: auto;
   min-width: 100%;
@@ -88,10 +89,11 @@
   }
   .rwd-table th,
   .rwd-table td {
-    padding: 1em !important;
+    padding: 10px !important;
   }
 }
 
+// STYLES TABLE
 .table {
   background-color: $color-white;
   padding: 20px 0;
@@ -115,18 +117,17 @@
       background-color: $color-primary;
     }
   }
-  th {
-    button {
-      display: none;
-      font-size: 10px;
-      cursor: pointer;
-      transition: $transition-base;
-      @include respond-to('medium') {
-        display: inline-block;
-      }
-      &:hover {
-        opacity: 0.8;
-      }
+  .sort {
+    display: none;
+    font-size: 10px;
+    cursor: pointer;
+    transition: $transition-base;
+    @include respond-to('medium') {
+      display: inline-block;
+      min-width: 25px;
+    }
+    &:hover {
+      opacity: 0.8;
     }
   }
   h2 {

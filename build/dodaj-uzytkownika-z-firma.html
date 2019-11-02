@@ -8,7 +8,7 @@
 <link rel="shortcut icon" href="./assets/images/favicon.ico"/>
 
 <!-- Primary Meta Tags -->
-<title>Lista użytkowników</title>
+<title>Dodaj nowego użytkownika z firmą</title>
 <meta name="title" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
 <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
 <meta name="keywords" content="Lorem, ipsum, dolor, sit, amet, consectetur, adipiscing, elit">
@@ -113,16 +113,16 @@
                 lista użytkowników
             </a>
         
-            <a href="/lista-uzytkownikow-n-a.html" class="sub-nav__item active">
+            <a href="/lista-uzytkownikow-n-a.html" class="sub-nav__item ">
                 lista użytkowników n/a
             </a>
         
-            <a href="/dodaj-nowego-uzytkownika-z-firma.html" class="sub-nav__item ">
+            <a href="/dodaj-nowego-uzytkownika-z-firma.html" class="sub-nav__item active">
                 dodaj nowego użytkownika z firmą
             </a>
         
-            <a href="/dodaj-nowego-uzytkownika.html" class="sub-nav__item ">
-                dodaj nowego użytkownika
+            <a href="/dodaj-uzytkownika.html" class="sub-nav__item ">
+                dodaj użytkownika
             </a>
         
             <a href="/dodaj-nowa-firme.html" class="sub-nav__item ">
@@ -186,113 +186,117 @@
     </form>
 </div>
 
-                <div class="table">
-    <h2>Użytkownicy i firmy - lista użytkowników n/a</h2>
-    <table class="rwd-table">
-        <tbody>
-        <tr class="table__heading">
-            <th>ID
-                <div class="sort">
-                    <button class="fas fa-chevron-up sort-id-asc"></button>
-                    <button class="fas fa-chevron-down sort-id-desc"></button>
-                </div>
-            </th>
-            <th>Nazwisko
-                <div class="sort">
-                    <button class="fas fa-chevron-up sort-name-asc"></button>
-                    <button class="fas fa-chevron-down sort-name-desc"></button>
-                </div>
-            </th>
-            <th>E-mail</th>
-            <th>Dł.przeterminowany</th>
-            <th>Akcja</th>
-            <th>
-                Zaległości (suma / liczba)<br>
-                Zapłacone (suma / liczba)
-            </th>
-        </tr>
-        <tr>
-            <td data-th="ID: ">
-                61578
-            </td>
-            <td data-th="Nazwiwsko:">
-                <a href="#">Wojtyńska</a>
-            </td>
-            <td data-th="E-mail:">wojtynska@poczta.onet.pl</td>
-            <td data-th="Dł.przeterminowany: ">
-                tak
-            </td>
-            <td data-th="Akcja: ">
-                <div class="dropdown">
-                    <button class="fas fa-chevron-down"></button>
-                    <ul>
-                        <li>
-                            <a href="#">karta klienta</a>
-                        </li>
-                        <li>
-                            <a href="#">ustaw klienta w filtrach</a>
-                        </li>
-                        <li>
-                            <a href="#">edytuj konto</a>
-                        </li>
-                        <li>
-                            <a href="#">usuń konto</a>
-                        </li>
-                        <li>
-                            <a href="#">dodaj notatkę</a>
-                        </li>
-                    </ul>
-                </div>
-            </td>
-            <td data-th="Zaległości (suma / liczba)
-            Zapłacone (suma / liczba):">121,77 (1) / 2800,71 (23)</td>
-        </tr>
-        <tr>
-            <td data-th="ID: ">
-                61578
-            </td>
-            <td data-th="Nazwiwsko:">
-                <a href="#">Wojtyńska</a>
-            </td>
-            <td data-th="E-mail:">wojtynska@poczta.onet.pl</td>
-            <td data-th="Dł.przeterminowany: ">
-                tak
-            </td>
-            <td data-th="Akcja: ">
-                <div class="dropdown">
-                    <button class="fas fa-chevron-down"></button>
-                    <ul>
-                        <li>
-                            <a href="#">karta klienta</a>
-                        </li>
-                        <li>
-                            <a href="#">ustaw klienta w filtrach</a>
-                        </li>
-                        <li>
-                            <a href="#">edytuj konto</a>
-                        </li>
-                        <li>
-                            <a href="#">usuń konto</a>
-                        </li>
-                        <li>
-                            <a href="#">dodaj notatkę</a>
-                        </li>
-                    </ul>
-                </div>
-            </td>
-            <td data-th="Zaległości (suma / liczba)
-            Zapłacone (suma / liczba):">121,77 (1) / 2800,71 (23)</td>
-        </tr>
-        </tbody>
-    </table>
-    <div class="pagination">
-        <a href="#">nowsze</a>
-        <a href="#">1</a>
-        <a href="#" class="active">2</a>
-        <a href="#">3</a>
-        <a href="#">starsze</a>
+                <form class="form-add">
+    <h2>Użytkownicy i firmy - Dodaj nowego użytkownika z firmą</h2>
+    <div class="form-group form-group--full-width">
+        <label for="name" class="form-add__heading">Nazwa firmy</label>
+        <input type="text" id="name" placeholder="POLE OBOWIĄZKOWE">
     </div>
-</div>
+    <div class="form-group form-group--full-width">
+        <label for="address-contract" class="form-add__heading">Adres do umowy</label>
+        <input type="text" id="address-contract" placeholder="POLE OBOWIĄZKOWE">
+    </div>
+    <div class="columns">
+        <div class="columns__item">
+            <div class="form-group">
+                <label for="post" class="form-add__heading">Kod pocztowy do umowy</label>
+                <input type="text" id="post" placeholder="xx-xxx">
+            </div>
+            <div class="form-group">
+                <label for="nip-contract" class="form-add__heading">NIP do umowy</label>
+                <input type="number" id="nip-contract">
+            </div>
+            <div class="form-group">
+                <label for="regon" class="form-add__heading">REGON</label>
+                <input type="text" id="regon">
+            </div>
+            <div class="form-group">
+                <label for="authorisation" class="form-add__heading">Pełnomocnictwo</label>
+                <select id="authorisation">
+                    <option value="pełne">Pełne</option>
+                    <option value="ograniczone">Ograniczone</option>
+                    <option value="brak">Brak</option>
+                </select>
+            </div>
+        </div>
+        <div class="columns__item">
+            <div class="form-group">
+                <label for="city-contract" class="form-add__heading">Miejscowość do umowy</label>
+                <input type="text" id="city-contract">
+            </div>
+
+            <div class="form-group">
+                <label for="krs" class="form-add__heading">KRS</label>
+                <input type="number" id="krs">
+            </div>
+
+            <div class="form-group">
+                <label for="post-box" class="form-add__heading">Skrytka pocztowa</label>
+                <input type="text" id="post-box">
+            </div>
+            <div class="form-group">
+                <label class="form-add__heading">Firma potwierdziła dokumenty NIP / REGON</label>
+                <div class="checkbox">
+                    <input id="check-yes" name="radio" type="radio">
+                    <label for="check-yes">tak</label>
+                </div>
+                <div class="checkbox">
+                    <input id="check-no" name="radio" type="radio">
+                    <label for="check-no">nie</label>
+                </div>
+            </div>
+        </div>
+        <div class="columns__item">
+            <div class="form-group">
+                <label class="form-add__heading">Kluczyk do skrytki</label>
+                <div class="checkbox">
+                    <input id="choice-1" name="radio" type="radio">
+                    <label for="choice-1">w biurze</label>
+                </div>
+                <div class="checkbox">
+                    <input id="choice-2" name="radio" type="radio">
+                    <label for="choice-2">w posiadaniu klienta</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group form-group--full-width">
+        <label for="address" class="form-add__heading">Adres do korespondencji</label>
+        <textarea id="address" cols="30" rows="10"></textarea>
+    </div>
+    <div class="form-group form-group--full-width">
+        <label for="address-email" class="form-add__heading">Adres email do wysyłki faktur</label>
+        <input type="email" id="address-email">
+    </div>
+    <div class="form-group form-group--full-width">
+        <label for="address-texture" class="form-add__heading">Adres do faktury</label>
+        <input type="text" id="address-texture">
+    </div>
+    <div class="columns">
+        <div class="columns__item">
+            <div class="form-group">
+                <label for="address-post" class="form-add__heading">Kod pocztowy do faktury</label>
+                <input type="text" id="address-post">
+            </div>
+        </div>
+        <div class="columns__item">
+            <div class="form-group">
+                <label for="address-city" class="form-add__heading">Miejscowość do faktury</label>
+                <input type="text" id="address-city">
+            </div>
+        </div>
+        <div class="columns__item">
+            <div class="form-group">
+                <label for="nip-texture" class="form-add__heading">NIP do faktury</label>
+                <input type="number" id="nip-texture">
+            </div>
+        </div>
+    </div>
+    <div class="form-add__actions">
+        <button type="submit" class="btn btn--secondary">dodaj firmę</button>
+        <a href="/lista-firm.html" class="btn btn--secondary">powrót</a>
+    </div>
+</form>
             </div>
         </div>
     </div>

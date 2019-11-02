@@ -1,5 +1,5 @@
 {
-  "title":"Lista użytkowników",
+  "title":"Dodaj nowego użytkownika z firmą",
   "class": "users-page",
   "menu": [
     {
@@ -53,7 +53,7 @@
     {
       "name": "lista użytkowników",
       "link": "/lista-uzytkownikow.html",
-      "active": true
+      "active": false
     },
     {
       "name": "lista użytkowników n/a",
@@ -63,7 +63,7 @@
     {
       "name": "dodaj nowego użytkownika z firmą",
       "link": "/dodaj-nowego-uzytkownika-z-firma.html",
-      "active": false
+      "active": true
     },
     {
       "name": "dodaj nowego użytkownika",
@@ -76,5 +76,5 @@
       "active": false
     }
   ],
-  "tableTitle": "Użytkownicy i firmy - lista użytkowników"
+  "tableTitle": "Użytkownicy i firmy - Dodaj nowego użytkownika z firmą"
 }

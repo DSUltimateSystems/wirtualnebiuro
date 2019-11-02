@@ -44,7 +44,7 @@ const App = (() => {
           $('.search-form__filter')[0].reset();
       });
 
-      $('.dropdown button').on('click', function () {
+      $('.dropdown').on('click', function () {
           $(this).closest('.dropdown').toggleClass('active');
       });
 

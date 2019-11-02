@@ -4,12 +4,16 @@
         <tbody>
         <tr class="table__heading">
             <th>ID
-                <button class="fas fa-chevron-up sort-id-asc"></button>
-                <button class="fas fa-chevron-down sort-id-desc"></button>
+                <div class="sort">
+                    <button class="fas fa-chevron-up sort-id-asc"></button>
+                    <button class="fas fa-chevron-down sort-id-desc"></button>
+                </div>
             </th>
             <th>Nazwisko
-                <button class="fas fa-chevron-up sort-name-asc"></button>
-                <button class="fas fa-chevron-down sort-name-desc"></button>
+                <div class="sort">
+                    <button class="fas fa-chevron-up sort-name-asc"></button>
+                    <button class="fas fa-chevron-down sort-name-desc"></button>
+                </div>
             </th>
             <th>E-mail</th>
             <th>Dł.przeterminowany</th>
@@ -18,6 +22,42 @@
                 Zaległości (suma / liczba)<br>
                 Zapłacone (suma / liczba)
             </th>
+        </tr>
+        <tr>
+            <td data-th="ID: ">
+                61578
+            </td>
+            <td data-th="Nazwiwsko:">
+                <a href="#">Wojtyńska</a>
+            </td>
+            <td data-th="E-mail:">wojtynska@poczta.onet.pl</td>
+            <td data-th="Dł.przeterminowany: ">
+                tak
+            </td>
+            <td data-th="Akcja: ">
+                <div class="dropdown">
+                    <button class="fas fa-chevron-down"></button>
+                    <ul>
+                        <li>
+                            <a href="#">karta klienta</a>
+                        </li>
+                        <li>
+                            <a href="#">ustaw klienta w filtrach</a>
+                        </li>
+                        <li>
+                            <a href="#">edytuj konto</a>
+                        </li>
+                        <li>
+                            <a href="#">usuń konto</a>
+                        </li>
+                        <li>
+                            <a href="#">dodaj notatkę</a>
+                        </li>
+                    </ul>
+                </div>
+            </td>
+            <td data-th="Zaległości (suma / liczba)
+            Zapłacone (suma / liczba):">121,77 (1) / 2800,71 (23)</td>
         </tr>
         <tr>
             <td data-th="ID: ">

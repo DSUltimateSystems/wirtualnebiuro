@@ -6,7 +6,7 @@
     width: 100%;
   }
   &__item {
-    input, select {
+    input, select, textarea {
       width: 100%;
       @include respond-to('large') {
           width: 325px;

@@ -66,8 +66,8 @@
             "active": false
         },
         {
-            "name": "dodaj użytkownika",
-            "link": "/dodaj-uzytkownika.html",
+            "name": "dodaj nowego użytkownika",
+            "link": "/dodaj-nowego-uzytkownika.html",
             "active": false
         },
         {
