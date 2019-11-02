@@ -47,6 +47,15 @@ const App = (() => {
       $('.dropdown').on('click', function () {
           $(this).closest('.dropdown').toggleClass('active');
       });
+      // Select all or unselect checkbox
+      $('#select-all').click(function () {
+          $('.selected-id').prop('checked', this.checked);
+      });
+
+      $('.selected-id').change(function () {
+          var check = ($('.selected-id').filter(":checked").length == $('.selected-id').length);
+          $('#select-all').prop("checked", check);
+      });
 
   };
 

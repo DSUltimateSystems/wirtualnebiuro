@@ -1,6 +1,6 @@
 .checkbox {
   input {
-    &[type=radio] {
+    &[type=radio], &[type=checkbox] {
       display: none;
      & + label {
         display: block;
@@ -12,7 +12,9 @@
       & + label:before {
         content: "\2714";
         border: 1px solid $color-light-gray;
-        display: inline-block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 30px;
         height: 30px;
         padding: 5px;

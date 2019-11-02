@@ -1,0 +1,10 @@
+.texture-page {
+  .rwd-table {
+    @include respond-to('medium') {
+      font-size: 11px;
+    }
+    th, td {
+      padding: 5px !important;
+    }
+  }
+}

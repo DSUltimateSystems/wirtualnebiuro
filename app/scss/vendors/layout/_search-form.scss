@@ -5,6 +5,7 @@
     max-width: 400px;
   }
   @include respond-to('large') {
+    min-width: 185px;
     max-width: 185px;
     margin-right: 30px;
   }
