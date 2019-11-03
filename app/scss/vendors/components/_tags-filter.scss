@@ -1,0 +1,8 @@
+.tags-filter {
+  display: flex;
+  justify-content: center;
+  @include respond-to('small') {
+    justify-content: flex-start;
+  }
+}
+

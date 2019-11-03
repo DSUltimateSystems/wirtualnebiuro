@@ -56,7 +56,6 @@ const App = (() => {
           var check = ($('.selected-id').filter(":checked").length == $('.selected-id').length);
           $('#select-all').prop("checked", check);
       });
-
   };
 
   return {
@@ -74,3 +73,12 @@ const App = (() => {
 
 // Init
 App.init();
+
+/*Select2 Initlization*/
+
+$('.js-example-basic-single').select2();
+$('b[role="presentation"]').hide();
+$('.select2-selection__arrow').append('<i class="fas fa-chevron-down"></i>');
+// $('.select2-selection__arrow i').on('click', function () {
+//     $(this).toggleClass('active');
+// });
