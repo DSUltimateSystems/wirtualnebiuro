@@ -1,10 +1,41 @@
 <div class="table">
     <h2>{{ tableTitle }}</h2>
+    <div class="table-actions">
+        <span class="table-actions__show">
+            <i class="fas fa-times-circle"></i>
+        </span>
+        <div class="table-actions__content">
+            <div class="table-actions__item">
+                <div class="checkbox">
+                    <input id="select-all" name="checkbox" type="checkbox">
+                    <label for="select-all" class="change-mark">zaznacz wszystko</label>
+                </div>
+            </div>
+            <div class="table-actions__item">
+                <a href="#">eksport do FAKTu</a>
+            </div>
+            <div class="table-actions__item">
+                <a href="#">eksport do optimy</a>
+            </div>
+            <div class="table-actions__item">
+                <a href="#">eksport do pdf</a>
+            </div>
+            <div class="table-actions__item">
+                <a href="#">eksport listy do pdf</a>
+            </div>
+            <div class="table-actions__item">
+                <a href="#" class="btn btn--secondary">wyślij do firmy</a>
+            </div>
+            <div class="table-actions__item">
+                <a href="#" class="btn btn--secondary">dodaj fakturę</a>
+            </div>
+        </div>
+    </div>
     <table class="rwd-table">
         <tbody>
         <tr class="table__heading">
             <th class="checkbox">
-                    <input id="select-all" name="radio" type="checkbox">
+                    <input id="select-all" name="checkbox" type="checkbox">
                     <label for="select-all"></label>
             </th>
             <th>ID

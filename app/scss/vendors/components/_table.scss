@@ -156,6 +156,86 @@
       }
     }
   }
+  &-actions {
+    &__show {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 20px 10px;
+      @include respond-to('medium') {
+        display: none;
+      }
+      i {
+        font-size: 35px;
+        color: $color-gray;
+        transition: $transition-base;
+        transform: rotate(45deg);
+        cursor: pointer;
+        &:hover {
+          color: $color-primary;
+        }
+        &.active {
+          transform: rotate(90deg);
+        }
+      }
+    }
+    &__content {
+      background-color: $color-gray;
+      padding: 10px;
+      @include respond-to('medium') {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+      }
+      text-align: center;
+      display: none;
+      &.active {
+        display: block;
+      }
+    }
+    &__item {
+      flex: 1;
+      margin: 10px 0;
+      @include respond-to('medium') {
+        font-size: 12px;
+      }
+      @include respond-to('large') {
+        margin: 5px 10px;
+        font-size: 16px;
+      }
+      &:first-child {
+        @include respond-to('medium') {
+          display: none;
+        }
+      }
+      .checkbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $text-white;
+        input[type=checkbox] + label {
+          display: inherit;
+        }
+        label {
+          transition: $transition-base;
+          &:hover {
+            color: $color-primary;
+          }
+        }
+      }
+      a {
+        color: $text-white;
+      }
+      .btn--secondary {
+        margin: 0 auto;
+        @include respond-to('medium') {
+          margin: 0 5px;
+        }
+      }
+    }
+  }
   .rwd-table {
     tbody {
       .row {

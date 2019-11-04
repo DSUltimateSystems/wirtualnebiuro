@@ -56,6 +56,16 @@ const App = (() => {
           var check = ($('.selected-id').filter(":checked").length == $('.selected-id').length);
           $('#select-all').prop("checked", check);
       });
+
+      $('.table-actions__show i').on('click', function () {
+          $(this).toggleClass('active');
+          $('.table-actions__content').slideToggle(300);
+      });
+      $('.change-mark').on('click', function () {
+          $(this).text(function(i, v){
+              return v === 'zaznacz wszystko' ? 'odznacz wszystko' : 'zaznacz wszystko'
+          });
+      });
   };
 
   return {
