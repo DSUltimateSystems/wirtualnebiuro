@@ -1569,6 +1569,21 @@ p {
   height: 25px;
 }
 
+.form .checkbox {
+  display: inherit;
+}
+
+.form .checkbox input[type=checkbox] + label {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .form .forgot {
   color: white;
   text-decoration: underline;
@@ -2469,7 +2484,7 @@ button {
 
 .table-actions__content {
   background-color: #acacac;
-  padding: 10px;
+  padding: 10px 0;
   text-align: center;
   display: none;
 }
@@ -2488,12 +2503,61 @@ button {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: left;
   }
 }
 
 .table-actions__content.active {
   display: block;
+}
+
+.table-actions__box {
+  padding: 5px;
+}
+
+.table-actions__box:first-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+@media (min-width: 576px) {
+  .table-actions__box {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 990px) {
+  .table-actions__box {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.table-actions__box .tags-filter {
+  min-width: 120px;
+  width: 100%;
+}
+
+@media (min-width: 990px) {
+  .table-actions__box .tags-filter + .tags-filter {
+    border-left: 1px solid rgba(0, 0, 0, 0.4);
+  }
 }
 
 .table-actions__item {
@@ -2524,6 +2588,11 @@ button {
 }
 
 .table-actions__item .checkbox {
+  display: inherit;
+  color: white;
+}
+
+.table-actions__item .checkbox input[type=checkbox] + label {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2536,11 +2605,6 @@ button {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  color: white;
-}
-
-.table-actions__item .checkbox input[type=checkbox] + label {
-  display: inherit;
 }
 
 .table-actions__item .checkbox label {
