@@ -177,29 +177,88 @@
             <i class="fas fa-times-circle"></i>
         </span>
         <div class="table-actions__content">
-            <div class="table-actions__item">
-                <div class="checkbox">
-                    <input id="select-all" name="checkbox" type="checkbox">
-                    <label for="select-all" class="change-mark">zaznacz wszystko</label>
+            <div class="table-actions__box">
+                <div class="tags-filter">
+                    <select class="select2-icon tags-filter__content" name="icon">
+                        <option value="fa-unlock-alt" data-icon="fa-unlock-alt">Wszystkie</option>
+                        <option value="Zamknięte">Zamknięte</option>
+                        <option value="Otwarte">Otwarte</option>
+                    </select>
+                </div>
+                <div class="tags-filter">
+                    <select class="select2-icon tags-filter__content" name="icon">
+                        <option selected disabled value="fa-hand-holding-usd" data-icon="fa-hand-holding-usd">Status opłaty</option>
+                        <option value="Wszystkie">Wszystkie</option>
+                        <option value="Zapłacone">Zapłacone</option>
+                        <option value="Niezapłacone">Niezapłacone</option>
+                    </select>
+                </div>
+                <div class="tags-filter">
+                    <select class="select2-icon tags-filter__content" name="icon">
+                        <option selected disabled value="fa-edit" data-icon="fa-edit">Z umową</option>
+                        <option value="Wszystkie">Wszystkie</option>
+                        <option value="Z umową">Z umową</option>
+                        <option value="Bez umowy">Bez umowy</option>
+                    </select>
+                </div>
+                <div class="tags-filter">
+                    <select class="select2-icon tags-filter__content" name="icon">
+                        <option selected disabled value="fa-envelope" data-icon="fa-envelope">Status wysłania</option>
+                        <option value="Wszystkie">Wszystkie</option>
+                        <option value="Wysłane">Wysłane</option>
+                        <option value="Niewysłane">Niewysłane</option>
+                    </select>
+                </div>
+                <div class="tags-filter">
+                    <select class="select2-icon tags-filter__content" name="icon">
+                        <option selected disabled value="fa-file-signature" data-icon="fa-file-signature">Typ faktury</option>
+                        <option value="Wszystkie">Wszystkie</option>
+                        <option value="Zwykła">Zwykła</option>
+                        <option value="Proforma">Proforma</option>
+                        <option value="Detaliczne">Detaliczne</option>
+                    </select>
+                </div>
+                <div class="tags-filter">
+                    <select class="select2-icon tags-filter__content" name="icon">
+                        <option selected disabled value="fa-money-bill-wave-alt" data-icon="fa-money-bill-wave-alt">Forma płatności</option>
+                        <option value="Wszystkie">Wszystkie</option>
+                        <option value="Gotówka">Gotówka</option>
+                        <option value="Przelew">Przelew</option>
+                    </select>
+                </div>
+                <div class="tags-filter">
+                    <select class="select2-icon tags-filter__content" name="icon">
+                        <option selected disabled value="fa-user" data-icon="fa-user">Nabywca</option>
+                        <option value="Wszystkie">Wszyscy</option>
+                        <option value="Aleksander Kulesza-Milewski">Aleksander Kulesza-Milewski ul. Świętego Filipa 23/2</option>
+                    </select>
                 </div>
             </div>
-            <div class="table-actions__item">
-                <a href="#">eksport do FAKTu</a>
-            </div>
-            <div class="table-actions__item">
-                <a href="#">eksport do optimy</a>
-            </div>
-            <div class="table-actions__item">
-                <a href="#">eksport do pdf</a>
-            </div>
-            <div class="table-actions__item">
-                <a href="#">eksport listy do pdf</a>
-            </div>
-            <div class="table-actions__item">
-                <a href="#" class="btn btn--secondary">wyślij do firmy</a>
-            </div>
-            <div class="table-actions__item">
-                <a href="#" class="btn btn--secondary">dodaj fakturę</a>
+            <div class="table-actions__box">
+                <div class="table-actions__item">
+                    <div class="checkbox">
+                        <input id="select-all" name="checkbox" type="checkbox">
+                        <label for="select-all" class="change-mark">zaznacz wszystko</label>
+                    </div>
+                </div>
+                <div class="table-actions__item">
+                    <a href="#">eksport do FAKTu</a>
+                </div>
+                <div class="table-actions__item">
+                    <a href="#">eksport do optimy</a>
+                </div>
+                <div class="table-actions__item">
+                    <a href="#">eksport do pdf</a>
+                </div>
+                <div class="table-actions__item">
+                    <a href="#">eksport listy do pdf</a>
+                </div>
+                <div class="table-actions__item">
+                    <a href="#" class="btn btn--secondary">wyślij do firmy</a>
+                </div>
+                <div class="table-actions__item">
+                    <a href="#" class="btn btn--secondary">dodaj fakturę</a>
+                </div>
             </div>
         </div>
     </div>
@@ -207,8 +266,8 @@
         <tbody>
         <tr class="table__heading">
             <th class="checkbox">
-                    <input id="select-all" name="checkbox" type="checkbox">
-                    <label for="select-all"></label>
+                    <input id="select-all2" name="checkbox" type="checkbox">
+                    <label for="select-all2"></label>
             </th>
             <th>ID
                 <div class="sort">

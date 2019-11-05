@@ -182,17 +182,43 @@
     }
     &__content {
       background-color: $color-gray;
-      padding: 10px;
+      padding: 10px 0;
+      text-align: center;
+      display: none;
       @include respond-to('medium') {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        flex-direction: column;
         text-align: left;
       }
-      text-align: center;
-      display: none;
       &.active {
         display: block;
+      }
+    }
+    &__box {
+      padding: 5px;
+      &:first-child {
+        border-bottom: 1px solid rgba(0,0,0, 0.4);
+      }
+      @include respond-to('small') {
+        width: 50%;
+        margin: 0 auto;
+      }
+      @include respond-to('medium') {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .tags-filter {
+        min-width: 120px;
+        width: 100%;
+        @include respond-to('medium') {
+          & + .tags-filter {
+            border-left: 1px solid rgba(0,0,0, 0.4);
+          }
+        }
       }
     }
     &__item {
@@ -211,12 +237,12 @@
         }
       }
       .checkbox {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: inherit;
         color: $text-white;
         input[type=checkbox] + label {
-          display: inherit;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
         label {
           transition: $transition-base;

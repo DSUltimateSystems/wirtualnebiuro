@@ -48,7 +48,7 @@ const App = (() => {
           $(this).closest('.dropdown').toggleClass('active');
       });
       // Select all or unselect checkbox
-      $('#select-all').click(function () {
+      $('#select-all, #select-all2').click(function () {
           $('.selected-id').prop('checked', this.checked);
       });
 
@@ -65,6 +65,19 @@ const App = (() => {
           $(this).text(function(i, v){
               return v === 'zaznacz wszystko' ? 'odznacz wszystko' : 'zaznacz wszystko'
           });
+      });
+      /*Select2 Initlization*/
+      $('.js-example-basic-single').select2();
+      $('b[role="presentation"]').hide();
+      $('.select2-selection__arrow').append('<i class="fas fa-chevron-down"></i>');
+      function formatText (icon) {
+          return $('<span><i class="fas far ' + $(icon.element).data('icon') + '"></i> ' + icon.text + '</span>');
+      };
+
+      $('.select2-icon').select2({
+          width: "50%",
+          templateSelection: formatText,
+          templateResult: formatText
       });
   };
 
@@ -84,11 +97,5 @@ const App = (() => {
 // Init
 App.init();
 
-/*Select2 Initlization*/
 
-$('.js-example-basic-single').select2();
-$('b[role="presentation"]').hide();
-$('.select2-selection__arrow').append('<i class="fas fa-chevron-down"></i>');
-// $('.select2-selection__arrow i').on('click', function () {
-//     $(this).toggleClass('active');
-// });
+

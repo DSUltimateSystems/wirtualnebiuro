@@ -51,6 +51,13 @@
     width: 25px;
     height: 25px;
   }
+  .checkbox {
+    display: inherit;
+    input[type=checkbox] + label {
+      display: flex;
+      align-items: center;
+    }
+  }
   .forgot {
     color: $text-white;
     text-decoration: underline;
