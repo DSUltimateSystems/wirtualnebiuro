@@ -493,8 +493,31 @@
   padding: 4px 12px;
   i {
     transition: $transition-base;
-    &.active {
-      transform: rotate(180deg);
-    }
   }
 }
+.select2-container--open {
+  .fa-chevron-down {
+    transform: rotate(180deg);
+  }
+}
+
+//.table-actions__box {
+//  .select2-selection__rendered {
+//    &:after {
+//      content: "\f078";
+//      font-weight: 900;
+//      font-family: "Font Awesome 5 Free";
+//      -moz-osx-font-smoothing: grayscale;
+//      -webkit-font-smoothing: antialiased;
+//      display: inline-block;
+//      font-style: normal;
+//      font-variant: normal;
+//      text-rendering: auto;
+//      line-height: 1;
+//      position: absolute;
+//      right: 8px;
+//      top: 50%;
+//      transform: translateY(-50%);
+//    }
+//  }
+//}

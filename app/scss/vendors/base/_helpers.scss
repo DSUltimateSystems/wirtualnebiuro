@@ -23,6 +23,20 @@
     max-width: 956px;
   }
   @include respond-to('large') {
-    max-width: 1405px;
+    max-width: 1870px;
   }
  }
+
+.index-list {
+  margin: 20px 0;
+  li{
+    display: block;
+    font-size: 20px;
+  }
+  a{
+    color: $text-color;
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}

@@ -634,7 +634,7 @@
   transition: 0.3s ease-in-out;
 }
 
-.select2-container .select2-selection__arrow i.active {
+.select2-container--open .fa-chevron-down {
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -1285,8 +1285,25 @@ p {
 
 @media (min-width: 1430px) {
   .container {
-    max-width: 1405px;
+    max-width: 1870px;
   }
+}
+
+.index-list {
+  margin: 20px 0;
+}
+
+.index-list li {
+  display: block;
+  font-size: 20px;
+}
+
+.index-list a {
+  color: black;
+}
+
+.index-list a:hover {
+  color: #e7c612;
 }
 
 @-webkit-keyframes bounce {
