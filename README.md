@@ -1,4 +1,4 @@
-# Konferensbokning
+# Wirtualne biuro
 
 Tech documentation
 
@@ -58,16 +58,3 @@ Contains styles broken down into modules
 ### Description js
 * app > js
 Includes scripts and libraries
-
-### Js plugins
-
-Libraries used in the project
-
-| Plugin | Documentation | Usage |
-| ------ | ------ | ------ |
-| choices.js | [https://github.com/jshjohnson/Choices] | Configurable select box/text input plugin |
-| noUiSlider | [https://refreshless.com/nouislider/] | JavaScript Range Slider |
-| masonry | [https://masonry.desandro.com/] | Cascading grid layout library |
-| tiny-slider 2.0 | [https://github.com/ganlanyuan/tiny-slider] | slider |
-| Just-validate | [https://github.com/horprogs/Just-validate] | form validation |
-| lightgallery | [https://sachinchoolur.github.io/lightGallery/] | A customizable, modular, responsive, lightbox gallery plugin |
