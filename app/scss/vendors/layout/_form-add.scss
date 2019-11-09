@@ -13,37 +13,44 @@
     input, select, textarea {
       border: 1px solid $color-light-gray;
       padding: 10px 15px;
+      width: 100%;
     }
     textarea {
       resize: none;
     }
     &__actions {
-      margin-top: 40px;
+      margin-top: 20px;
+      width: 100%;
+      @include respond-to('small') {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-wrap: wrap;
+      }
       .btn {
+        max-width: 100%;
         &--secondary {
+          margin-top: 10px;
           & + .btn--secondary {
-            margin-top: 10px;
             @include respond-to('small') {
-              margin-top: 0;
               margin-left: 10px;
             }
           }
         }
       }
-      @include respond-to('small') {
-        display: flex;
-        justify-content: flex-end;
-      }
     }
   }
   &-group {
-    margin: 10px 0;
-    display: flex;
-    flex-direction: column;
+    @include respond-to('medium') {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 5px;
+      width: 25%;
+    }
     &--full-width {
-      input, textarea {
-        width: 100%;
-      }
+      width: 100%;
     }
   }
 }

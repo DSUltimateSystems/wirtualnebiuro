@@ -1,0 +1,9 @@
+.row {
+  @include respond-to('medium') {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: stretch;
+  }
+}

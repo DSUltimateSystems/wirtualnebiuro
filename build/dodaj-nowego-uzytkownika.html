@@ -45,7 +45,11 @@
             <div class="user__content">
                <div class="user__photo" style="background-image: url('./assets/images/avatar.png')"></div>
                <h3>
-                  <span>zalogowany jako</span>
+                  <span>
+                     <a href="#" class="superadmin">
+                        <i class="fas fa-leaf"></i>
+                     </a>
+                     zalogowany jako</span>
                   Garfield Bloomish
                   <a href="/">
                      <i class="fas fa-sign-out-alt"></i>
@@ -187,123 +191,91 @@
 </div>
 
                 <form class="form-add">
-    <h2>Użytkownicy i firmy - Dodaj nowego użytkownika</h2>
-    <div class="columns">
-        <div class="columns__item">
-            <div class="form-group">
-                <label for="email" class="form-add__heading">Email</label>
-                <input type="email" id="email">
-            </div>
-            <div class="form-group">
-                <label for="phone" class="form-add__heading">Telefon</label>
-                <input type="tel" id="phone">
-            </div>
-            <div class="form-group">
-                <label for="password" class="form-add__heading">Hasło</label>
-                <input type="password" id="phone">
-            </div>
-            <div class="form-group">
-                <label for="repeat-password" class="form-add__heading">Powtórz hasło</label>
-                <input type="password" id="repeat-phone">
-            </div>
-            <div class="form-group">
-                <label for="name" class="form-add__heading">Imię</label>
-                <input type="text" id="name">
-            </div>
-            <div class="form-group">
-                <label for="lastname" class="form-add__heading">Nazwisko</label>
-                <input type="text" id="lastname">
-            </div>
-            <div class="form-group">
-                <label for="pesel" class="form-add__heading">Pesel</label>
-                <input type="text" id="pesel">
-            </div>
-            <div class="form-group">
-                <label for="nr-evidence" class="form-add__heading">Seria i nr dowodu</label>
-                <input type="text" id="nr-evidence">
-            </div>
-            <div class="form-group">
-                <label for="nr-passport" class="form-add__heading">Seria i nr paszportu</label>
-                <input type="text" id="nr-passport">
-            </div>
+    <h2></h2>
+    <div class="row">
+        <div class="form-group">
+            <label for="email" class="form-add__heading">Email</label>
+            <input type="email" id="email">
         </div>
-        <div class="columns__item">
-            <div class="form-group">
-                <label class="form-add__heading">Akceptacja regulaminu</label>
-                <div class="checkbox">
-                    <input id="accept" name="radio" type="radio">
-                    <label for="accept">tak</label>
-                </div>
-                <div class="checkbox">
-                    <input id="no-accept" name="radio" type="radio">
-                    <label for="no-accept">nie</label>
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="form-add__heading">Akceptacja e-faktur</label>
-                <div class="checkbox">
-                    <input id="accept-etexture" name="radio" type="radio">
-                    <label for="accept-etexture">tak</label>
-                </div>
-                <div class="checkbox">
-                    <input id="no-accept-etexture" name="radio" type="radio">
-                    <label for="no-accept-etexture">nie</label>
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="form-add__heading">Użytkownik aktywny?</label>
-                <div class="checkbox">
-                    <input id="active" name="radio" type="radio">
-                    <label for="active">tak</label>
-                </div>
-                <div class="checkbox">
-                    <input id="no-active" name="radio" type="radio">
-                    <label for="no-active">nie</label>
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="type-account" class="form-add__heading">Rodzaj konta</label>
-                <select id="type-account">
-                    <option value="firmowe">Konto firmowe</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="type-user" class="form-add__heading">Typ użytkownika</label>
-                <select id="type-user">
-                    <option value="Dłużnik 1">Dłużnik 1</option>
-                    <option value="Dłużnik 2">Dłużnik 2</option>
-                    <option value="Klient">Klient</option>
-                    <option value="Dobry klinet">Dobry klient</option>
-                    <option value="Super klient">Super klient</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="scan status " class="form-add__heading">Status skanu</label>
-                <select id="scan status ">
-                    <option value="Na żądanie">Na żądanie</option>
-                    <option value="dluznik2">Dłużnik 2</option>
-                    <option value="Do odwołania">Do odwołania</option>
-                    <option value="Zawsze">Zawsze</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="status-comapny" class="form-add__heading">Status użytkownika w firmie</label>
-                <select id="status-comapny">
-                    <option value="Właściciel - pełne prawa">Właściciel - pełne prawa</option>
-                    <option value="Właściciel - ograniczone prawa">Właściciel - ograniczone prawa</option>
-                </select>
-            </div>
+        <div class="form-group">
+            <label for="phone" class="form-add__heading">Telefon</label>
+            <input type="tel" id="phone">
         </div>
-        <div class="columns__item">
-            <div class="form-group">
-                <label for="details-info" class="form-add__heading">Informacje specjalne</label>
-                <textarea id="details-info" cols="30" rows="10"></textarea>
-            </div>
+        <div class="form-group">
+            <label for="password" class="form-add__heading">Hasło</label>
+            <input type="password" id="phone">
         </div>
-    </div>
-    <div class="form-add__actions">
-        <button type="submit" class="btn btn--secondary">dodaj</button>
-        <a href="/lista-firm.html" class="btn btn--secondary">powrót</a>
+        <div class="form-group">
+            <label for="repeat-password" class="form-add__heading">Powtórz hasło</label>
+            <input type="password" id="repeat-phone">
+        </div>
+        <div class="form-group">
+            <label for="name" class="form-add__heading">Imię</label>
+            <input type="text" id="name">
+        </div>
+        <div class="form-group">
+            <label for="lastname" class="form-add__heading">Nazwisko</label>
+            <input type="text" id="lastname">
+        </div>
+        <div class="form-group">
+            <label for="pesel" class="form-add__heading">Pesel</label>
+            <input type="text" id="pesel">
+        </div>
+        <div class="form-group">
+            <label for="nr-evidence" class="form-add__heading">Seria i nr dowodu</label>
+            <input type="text" id="nr-evidence">
+        </div>
+        <div class="form-group">
+            <label for="nr-passport" class="form-add__heading">Seria i nr paszportu</label>
+            <input type="text" id="nr-passport">
+        </div>
+        <div class="form-group">
+            <label for="accept" class="form-add__heading">Akceptacja regulaminu</label>
+            <select id="accept">
+                <option value="Tak">Tak</option>
+                <option value="Nie">Nie</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="accept-etexture" class="form-add__heading">Akceptacja e-faktur</label>
+            <select id="accept-etexture">
+                <option value="Tak">Tak</option>
+                <option value="Nie">Nie</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="active" class="form-add__heading">Użytkownik aktywny?</label>
+            <select id="active">
+                <option value="Tak">Tak</option>
+                <option value="Nie">Nie</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="type-account" class="form-add__heading">Rodzaj konta</label>
+            <select id="type-account">
+                <option value="firmowe">Konto firmowe</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="scan status " class="form-add__heading">Status skanu</label>
+            <select id="scan status ">
+                <option value="Na żądanie">Na żądanie</option>
+                <option value="dluznik2">Dłużnik 2</option>
+                <option value="Do odwołania">Do odwołania</option>
+                <option value="Zawsze">Zawsze</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="status-comapny" class="form-add__heading">Status użytkownika w firmie</label>
+            <select id="status-comapny">
+                <option value="Właściciel - pełne prawa">Właściciel - pełne prawa</option>
+                <option value="Właściciel - ograniczone prawa">Właściciel - ograniczone prawa</option>
+            </select>
+        </div>
+        <div class="form-group form-group--full-width">
+            <label for="info-message" class="form-add__heading">Informacje specjalne</label>
+            <textarea id="info-message"></textarea>
+        </div>
     </div>
 </form>
             </div>

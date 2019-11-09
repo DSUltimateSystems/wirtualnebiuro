@@ -22,7 +22,7 @@
   &__item {
     background-color: $color-primary;
     width: 50%;
-    min-height: 65px;
+    min-height: 60px;
     padding: 10px 5px;
     transition: $transition-base;
     display: flex;
@@ -33,7 +33,7 @@
       width: calc(100% / 3);
     }
     @include respond-to('large') {
-      padding: 25px 0;
+      padding: 12px 0;
       display: flex;
       justify-content: center;
       align-items: center;

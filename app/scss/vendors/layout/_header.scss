@@ -3,17 +3,14 @@
 // -----------------------------------------------------------------------------
 
 .header {
-  border-bottom: 15px solid rgb(153, 134, 117);
-  @include respond-to('medium') {
-    border-bottom: 30px solid rgb(153, 134, 117);
-  }
+  border-bottom: 7px solid rgb(153, 134, 117);
   &__content {
     margin-top: 10px;
     @include respond-to('medium') {
      display: flex;
      justify-content: space-between;
      align-items: center;
-     margin-bottom: 10px
+     margin: 3px 0;
     }
   }
   &__logo {
@@ -21,6 +18,17 @@
     margin: 0 auto;
     @include respond-to('medium') {
       margin: 0;
+      display: inherit;
+    }
+  }
+  .superadmin {
+    transition: $transition-base;
+    i {
+      font-size: 17px;
+      color: rgba(38, 166, 91, 1);
+      &:hover {
+        color: $color-primary;
+      }
     }
   }
 }

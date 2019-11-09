@@ -4,10 +4,21 @@
         <div class="container">
             <div class="column-wrapper__content">
                 <!-- SEARCH-FORM -->
-                {% include "./sections/search-form.twig" %}
+                {% include "sections/search-form/search-form-user.twig" %}
 
-                {% include "sections/form-add-user-company.twig" %}
+                {% include "/sections/form-add-user.twig" %}
             </div>
         </div>
     </div>
+    <div class="column-wrapper">
+        <div class="container">
+            <div class="column-wrapper__content">
+                <!-- SEARCH-FORM -->
+                {% include "sections/search-form/search-form-company.twig" %}
+
+                {% include "sections/form-add-company.twig" %}
+            </div>
+        </div>
+    </div>
+
 {% endblock %}

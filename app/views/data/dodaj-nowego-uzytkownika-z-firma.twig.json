@@ -64,17 +64,8 @@
       "name": "dodaj nowego użytkownika z firmą",
       "link": "/dodaj-nowego-uzytkownika-z-firma.html",
       "active": true
-    },
-    {
-      "name": "dodaj nowego użytkownika",
-      "link": "/dodaj-nowego-uzytkownika.html",
-      "active": false
-    },
-    {
-      "name": "dodaj nową firmę",
-      "link": "/dodaj-nowa-firme.html",
-      "active": false
     }
   ],
-  "tableTitle": "Użytkownicy i firmy - Dodaj nowego użytkownika z firmą"
+  "tableTitle": "Użytkownicy i firmy - Dodaj firmę",
+  "tableTitleUser": "Użytkownicy i firmy - Dodaj użytkownika"
 }
