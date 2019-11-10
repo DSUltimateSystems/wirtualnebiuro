@@ -1861,6 +1861,79 @@ p {
   width: 100%;
 }
 
+.add-texture {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.add-texture__header {
+  background-color: #faf5da;
+  margin: 0 -10px -40px;
+  padding-bottom: 25px;
+}
+
+@media (min-width: 990px) {
+  .add-texture__header {
+    margin: 0 -10px -25px;
+  }
+}
+
+.add-texture__header .rwd-table {
+  border-collapse: unset;
+  font-size: 14px;
+  padding: 20px;
+}
+
+@media (min-width: 990px) {
+  .add-texture__header .rwd-table {
+    font-size: 16px;
+  }
+}
+
+.add-texture__header .rwd-table td, .add-texture__header .rwd-table th {
+  padding: 0 !important;
+}
+
+.add-texture__header .rwd-table tr:hover:not(:first-child) {
+  background-color: transparent;
+}
+
+.add-texture__header .rwd-table th, .add-texture__header .rwd-table td:before {
+  color: #e7c612;
+}
+
+.add-texture__content .form-add {
+  padding: 5px;
+  background-color: white;
+  -webkit-box-shadow: 2px 2px 30px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 2px 30px 0 rgba(0, 0, 0, 0.3);
+}
+
+.add-texture__content .form-add__heading {
+  color: #e7c612;
+}
+
+.add-texture__content .form-add small {
+  display: block;
+  color: #e7c612;
+}
+
+.add-texture__content .form-add input[type="date"] {
+  background: url("https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png");
+  background-position: 93% 50%;
+  background-repeat: no-repeat;
+}
+
+.add-texture__content .form-add input[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+.add-texture__content .form-add input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
 .footer {
   background-color: #998675;
   color: white;
@@ -2790,6 +2863,51 @@ button {
         -ms-flex-align: start;
             align-items: flex-start;
   }
+}
+
+.panel-edit {
+  padding: 10px;
+  background-color: #faf5da;
+}
+
+.panel-edit.active input {
+  border: 1px solid #acacac;
+  padding: 2px 5px;
+}
+
+.panel-edit.active input + input {
+  margin: 5px 0;
+}
+
+.panel-edit.active .btn--save, .panel-edit.active .btn--cancel {
+  display: block;
+}
+
+.panel-edit.active .btn--edit {
+  display: none;
+}
+
+.panel-edit h4 {
+  color: #e7c612;
+  padding-bottom: 10px;
+}
+
+.panel-edit input {
+  background-color: inherit;
+  border: none;
+  padding: 0;
+}
+
+.panel-edit__actions {
+  padding-top: 20px;
+}
+
+.panel-edit .btn + .btn {
+  margin-top: 10px;
+}
+
+.panel-edit .btn--save, .panel-edit .btn--cancel {
+  display: none;
 }
 
 @media (min-width: 990px) {

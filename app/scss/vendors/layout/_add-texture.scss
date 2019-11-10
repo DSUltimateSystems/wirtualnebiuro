@@ -1,0 +1,61 @@
+.add-texture {
+  flex: 1;
+
+  &__header {
+    background-color: $color-light-yellow;
+    margin: 0 -10px -40px;
+    padding-bottom: 25px;
+    @include respond-to('medium') {
+      margin: 0 -10px -25px;
+    }
+    //  Change default styles table
+    .rwd-table {
+      border-collapse: unset;
+      font-size: 14px;
+      padding: 20px;
+      @include respond-to('medium') {
+        font-size: 16px;
+      }
+
+      td, th {
+        padding: 0 !important;
+      }
+
+      tr:hover:not(:first-child) {
+        background-color: transparent;
+      }
+
+      th, td:before {
+        color: $color-primary;
+      }
+    }
+  }
+
+  &__content {
+    .form-add {
+      padding: 5px;
+      background-color: $color-white;
+      box-shadow: $box-shadow;
+      &__heading {
+        color: $color-primary;
+      }
+      small {
+        display: block;
+        color: $color-primary;
+      }
+      input {
+        &[type="date"] {
+          background: url('https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png');
+          background-position: 93% 50%;
+          background-repeat: no-repeat;
+          &::-webkit-inner-spin-button {
+            display: none;
+          }
+          &::-webkit-calendar-picker-indicator {
+            opacity: 0;
+          }
+        }
+      }
+    }
+  }
+}

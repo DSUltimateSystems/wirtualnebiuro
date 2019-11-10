@@ -79,6 +79,34 @@ const App = (() => {
           templateSelection: formatText,
           templateResult: formatText
       });
+
+      // Panel-edit
+      $('.panel-edit .btn').click(function (e) {
+          e.preventDefault();
+          $(this).closest('.panel-edit').find('input').each(function () {
+              $(this).prop('readonly', function(i, v) {
+                  return !v;
+              });
+          });
+          $('.panel-edit').toggleClass('active');
+      });
+
+      $('.panel-edit .btn--cancel').click(function (e) {
+          e.preventDefault();
+          $(this).closest('.panel-edit').find('input').each(function () {
+              var that = $(this);
+              that.val(that.data('value'));
+          });
+      });
+
+      $('.panel-edit .btn--save').click(function (e) {
+          e.preventDefault();
+          $(this).closest('.panel-edit').find('input').each(function () {
+              var that = $(this);
+              that.data('value', that.val());
+          });
+      });
+
   };
 
   return {

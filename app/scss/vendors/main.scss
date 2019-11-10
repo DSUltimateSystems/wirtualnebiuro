@@ -26,6 +26,7 @@
   'layout/form',
   'layout/search-form',
   'layout/form-add',
+  'layout/add-texture',
   'layout/footer';
 
 // 5. Components
@@ -36,10 +37,12 @@
   'components/user',
   'components/dropdown',
   'components/tags-filter',
+  'components/rwd-table',
   'components/table',
   'components/checkbox',
-'components/row',
-  'components/column-wrapper';
+  'components/row',
+  'components/column-wrapper',
+  'components/panel-edit';
 
 // 6. Page-specific styles
 @import 'pages/texture-page';

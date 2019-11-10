@@ -1,0 +1,101 @@
+<div class="add-texture">
+    <div class="add-texture__header">
+        <table class="rwd-table">
+            <tbody>
+            <tr>
+                <th>ID</th>
+                <th>Nazwa firmy</th>
+                <th>Adres firmy</th>
+                <th>NIP</th>
+            </tr>
+            <tr>
+                <td data-th="ID: ">
+                    61578
+                </td>
+                <td data-th="Nazwa firmy:">SONAR</td>
+                <td data-th="Adres firmy:">
+                    <address>
+                        Solna 12<br>
+                        21-111 Kraków
+                    </address>
+                </td>
+                <td data-th="NIP:">919192730</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="add-texture__content">
+        <form class="form-add">
+            <h2>{{ tableTitle }}</h2>
+            <div class="row">
+                <div class="form-group">
+                    <label for="salesmen" class="form-add__heading">Sprzedawca</label>
+                    <select id="salesmen">
+                        <option value="Aleksander Kulesza-Milewski">Aleksander Kulesza-Milewski</option>
+                        <option value="Jan Kowalski">Jan Kowalski</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="type" class="form-add__heading">Typ faktury</label>
+                    <select id="type">
+                        <option value="Detaliczna">Detaliczna</option>
+                        <option value="Zwykła">Zwykła</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="pay" class="form-add__heading">Forma płatności</label>
+                    <select id="pay">
+                        <option value="Przelew">Przelew</option>
+                        <option value="Gotówka">Gotówka</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="contract" class="form-add__heading">Przypisana umowa</label>
+                    <select id="contract">
+                        <option value="Brak umowy">Brak umowy</option>
+                        <option value="Podpisana">Podpisana</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <label for="nr-contract" class="form-add__heading">Numer faktury</label>
+                    <small>proponowany nr faktury 208/04/WB/2009</small>
+                    <input type="text" id="nr-contract">
+                </div>
+                <div class="form-group">
+                    <label for="date-sales" class="form-add__heading">Data sprzedaży</label>
+                    <small>Pozostaw puste, aby skopiować datę wystawienia faktury</small>
+                    <input type="date" id="date-sales">
+                </div>
+                <div class="form-group">
+                    <label for="date-issue" class="form-add__heading">Data wystawienia</label>
+                    <small>Pozostaw puste, aby wstawić dzisiejszą datę</small>
+                    <input type="date" id="date-issue">
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <label for="send" class="form-add__heading">Automatyczna wysyłka z początkiem miesiąca</label>
+                    <small>Przy braku przypisanej umowy i wybraniu pierwszej opcji, zostanie ustawiona wartość NIE</small>
+                    <select id="send">
+                        <option value="pobierz status z przypisanej umowy">pobierz status z przypisanej umowy</option>
+                        <option value="pobierz status z przypisanej umowy">pobierz status z przypisanej umowy</option>
+                    </select>
+                </div>
+                <div class="panel-edit">
+                    <h4>Nabywca</h4>
+                    <input type="text" data-value="Reventio It Dawid Wolański Grzegorz Minior sp.j" value="Reventio It Dawid Wolański Grzegorz Minior sp.j" readonly>
+                    <input type="text" data-value="ul. św. Filipa 23/4" value="ul. św. Filipa 23/4" readonly>
+                    <input type="text" data-value="31-150 Kraków" value="31-150 Kraków" readonly>
+                    <input type="text" data-value="6783168396" value="6783168396" readonly>
+                    <div class="panel-edit__actions">
+                        <button class="btn btn--secondary btn--edit">edytuj dane</button>
+                        <button class="btn btn--secondary btn--save">zapisz dane</button>
+                        <button class="btn btn--secondary btn--cancel">anuluj</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

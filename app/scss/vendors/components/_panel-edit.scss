@@ -1,0 +1,39 @@
+.panel-edit {
+  padding: 10px;
+  &.active {
+    input {
+      border: 1px solid $color-gray;
+      padding: 2px 5px;
+      & + input {
+        margin: 5px 0;
+      }
+    }
+    .btn--save, .btn--cancel {
+      display: block;
+    }
+    .btn--edit {
+      display: none;
+    }
+  }
+  h4 {
+    color: $color-primary;
+    padding-bottom: 10px;
+  }
+  background-color: $color-light-yellow;
+  input {
+    background-color: inherit;
+    border: none;
+    padding: 0;
+  }
+  &__actions {
+    padding-top: 20px;
+  }
+  .btn {
+    & + .btn {
+      margin-top: 10px;
+    }
+  }
+  .btn--save, .btn--cancel {
+    display: none;
+  }
+}
