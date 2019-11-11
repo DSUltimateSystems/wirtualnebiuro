@@ -106,7 +106,6 @@ const App = (() => {
               that.data('value', that.val());
           });
       });
-
   };
 
   return {

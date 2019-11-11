@@ -1,6 +1,5 @@
 .add-texture {
   flex: 1;
-
   &__header {
     background-color: $color-light-yellow;
     margin: 0 -10px -40px;
@@ -16,7 +15,6 @@
       @include respond-to('medium') {
         font-size: 16px;
       }
-
       td, th {
         padding: 0 !important;
       }
@@ -30,10 +28,9 @@
       }
     }
   }
-
   &__content {
     .form-add {
-      padding: 5px;
+      padding: 20px 5px;
       background-color: $color-white;
       box-shadow: $box-shadow;
       &__heading {
@@ -56,6 +53,13 @@
           }
         }
       }
+    }
+  }
+  &__actions {
+    @include respond-to('small') {
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 5px;
     }
   }
 }

@@ -43,4 +43,12 @@ button{
     }
     padding: 7px 10px;
   }
+  &--gray {
+    background-color: $color-gray;
+    border-color: transparent;
+    @include on-event() {
+      background-color: $color-light-gray;
+      color: $text-color;
+    }
+  }
 }

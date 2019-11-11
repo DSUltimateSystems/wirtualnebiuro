@@ -92,3 +92,20 @@
     padding: 10px !important;
   }
 }
+
+.rwd-table {
+  tfoot {
+    td {
+      display: none;
+      @include respond-to('medium') {
+        display: table-cell;
+      }
+      &[data-th] {
+        display: block;
+        @include respond-to('medium') {
+          display: table-cell;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.address {
+  @include respond-to('medium') {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__item {
+    p {
+      font-size: 12px;
+    }
+    @include respond-to('medium') {
+      width: 50%;
+      padding-right: 20px;
+      padding-bottom: 20px;
+    }
+  }
+}

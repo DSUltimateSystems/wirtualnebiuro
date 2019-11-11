@@ -1,0 +1,20 @@
+.columns {
+  @include respond-to('small') {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+  }
+  &__item {
+    @include respond-to('small') {
+      flex: 1;
+      margin: 20px;
+    }
+    & + .columns__item {
+      margin-top: 20px;
+    }
+  }
+  &__title {
+    margin-bottom: 20px;
+  }
+}

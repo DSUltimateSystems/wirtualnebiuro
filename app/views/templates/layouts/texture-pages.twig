@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    {% include "../includes/head.twig" %}
+</head>
+<body {% if class %}class="{{ class }}"{% endif %}>
+<!-- HEADER -->
+{% include "../includes/header.twig" %}
+
+<!-- NAV -->
+{% include "../sections/navigations/nav.twig" %}
+
+<!-- SUB-NAV -->
+{% include "../sections/navigations/sub-nav.twig" %}
+
+<!-- MAIN -->
+<main>
+    {% block content %}
+    {% endblock %}
+</main>
+
+<!-- MODAL -->
+{% include "../sections/modal/modal-position-texture.twig" %}
+
+<!-- FOOTER -->
+{% include "../includes/footer.twig" %}
+
+<!-- SCRIPTS -->
+{% include "../includes/scripts.twig" %}
+</body>
+</html>

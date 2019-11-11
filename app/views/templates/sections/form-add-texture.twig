@@ -74,7 +74,7 @@
                     <input type="date" id="date-issue">
                 </div>
             </div>
-            <div class="row">
+            <div class="row row--extended">
                 <div class="form-group">
                     <label for="send" class="form-add__heading">Automatyczna wysyłka z początkiem miesiąca</label>
                     <small>Przy braku przypisanej umowy i wybraniu pierwszej opcji, zostanie ustawiona wartość NIE</small>
@@ -90,11 +90,55 @@
                     <input type="text" data-value="31-150 Kraków" value="31-150 Kraków" readonly>
                     <input type="text" data-value="6783168396" value="6783168396" readonly>
                     <div class="panel-edit__actions">
-                        <button class="btn btn--secondary btn--edit">edytuj dane</button>
-                        <button class="btn btn--secondary btn--save">zapisz dane</button>
-                        <button class="btn btn--secondary btn--cancel">anuluj</button>
+                        <button class="btn btn--secondary btn--edit btn--gray">edytuj dane</button>
+                        <button class="btn btn--secondary btn--save btn--gray">zapisz dane</button>
+                        <button class="btn btn--secondary btn--cancel btn--gray">anuluj</button>
                     </div>
                 </div>
+            </div>
+            <div class="position-texture">
+                <div class="position-texture__content">
+                    <div class="position-texture__wrapper">
+                        <div class="form-group">
+                            <label for="lp-name" class="form-add__heading">Lp. nazwa</label>
+                            <input type="text" id="lp-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="amount" class="form-add__heading">Ilość</label>
+                            <input type="text" id="amount">
+                        </div>
+                        <div class="form-group">
+                            <label for="netto" class="form-add__heading">Netto</label>
+                            <input type="text" id="netto">
+                        </div>
+                        <div class="form-group">
+                            <label for="rebate" class="form-add__heading">Rabat</label>
+                            <input type="text" id="rebate">
+                        </div>
+                        <div class="form-group">
+                            <label for="netto2" class="form-add__heading">Wrt. netto</label>
+                            <input type="text" id="netto2">
+                        </div>
+                        <div class="form-group">
+                            <label for="vat2" class="form-add__heading">Vat</label>
+                            <input type="text" id="vat">
+                        </div>
+                        <div class="form-group">
+                            <label for="vat2" class="form-add__heading">Wart. vat</label>
+                            <input type="text" id="vat2">
+                        </div>
+                        <div class="form-group">
+                            <label for="brutto" class="form-add__heading">Brutto</label>
+                            <input type="text" id="brutto">
+                        </div>
+                    </div>
+                </div>
+                <div class="position-texture__actions">
+                    <button class="btn btn--secondary btn--gray">nowa pozycja</button>
+                </div>
+            </div>
+            <div class="add-texture__actions">
+                <button class="btn btn--secondary">dodaj fakturę</button>
             </div>
         </form>
     </div>

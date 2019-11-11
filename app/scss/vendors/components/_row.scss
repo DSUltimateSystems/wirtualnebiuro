@@ -6,4 +6,26 @@
     width: 100%;
     align-items: stretch;
   }
+  &--extended {
+    @include respond-to('medium') {
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    .panel-edit {
+      @include respond-to('small') {
+        margin-right: 5px;
+      }
+      @include respond-to('medium') {
+        width: 400px;
+        margin-left: 20px;
+      }
+    }
+    .form-group {
+      @include respond-to('medium') {
+        max-width: 320px;
+        width: 100%;
+      }
+    }
+  }
 }

@@ -1,0 +1,39 @@
+.modal {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.3);
+  &__content  {
+    width: calc(100% - 30px);
+    max-width: 1040px;
+    min-height: 300px;
+    max-height: 95%;
+    overflow-y: auto;
+  }
+  &__border {
+    background-color: $color-white;
+    border: 10px solid rgb(153, 134, 117);
+    padding: 5px;
+  }
+  &__actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .times {
+      display: block;
+      i {
+        transition: $transition-base;
+        cursor: pointer;
+        &:hover {
+          color: $color-red;
+        }
+      }
+    }
+  }
+}

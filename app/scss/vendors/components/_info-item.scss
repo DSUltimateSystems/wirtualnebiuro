@@ -1,0 +1,21 @@
+.info-details {
+  @include respond-to('small') {
+    margin-top: 20px;
+  }
+  @include respond-to('medium') {
+    margin-top: 120px;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(153, 134, 117);
+    padding: 10px;
+    @include respond-to('medium') {
+      justify-content: space-between;
+      flex-direction: row;
+    }
+    & + .info-details__item {
+      margin-top: 5px;
+    }
+  }
+}
