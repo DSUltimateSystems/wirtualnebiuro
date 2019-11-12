@@ -9,19 +9,6 @@
     max-width: 185px;
     margin-right: 30px;
   }
-  &__filter {
-    display: none;
-    @include respond-to('large') {
-      display: block;
-    }
-  }
-  .btn {
-    &--expand-filters {
-      @include respond-to('large') {
-        display: none;
-      }
-    }
-  }
   h4 {
     position: relative;
     cursor: pointer;

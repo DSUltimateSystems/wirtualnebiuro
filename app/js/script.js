@@ -30,10 +30,6 @@ const App = (() => {
 
   // Listeners
   const initListeners = () => {
-      $('.btn--expand-filters').on('click', () => {
-          $('.search-form__filter').slideToggle(300);
-      });
-
       $('.collapse-group').on('click', function () {
           $(this).toggleClass('active');
           $(this).closest('.search-form__item').find('.collapse-wrapper').slideToggle(300);
@@ -105,6 +101,17 @@ const App = (() => {
               var that = $(this);
               that.data('value', that.val());
           });
+      });
+
+        //   Show/Hide modal
+      $('.close-modal').on('click', function(e) {
+          e.preventDefault();
+          $(this).closest('.modal').removeClass('is-visible');
+      });
+
+      $('.show-modal').on('click', function(e) {
+          e.preventDefault();
+          $(this.hash).addClass('is-visible');
       });
   };
 

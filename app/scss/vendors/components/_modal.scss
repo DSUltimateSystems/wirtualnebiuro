@@ -9,6 +9,15 @@
   top: 0;
   z-index: 100;
   background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: $transition-base;
+  &.is-visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+  }
   &__content  {
     width: calc(100% - 30px);
     max-width: 1040px;
