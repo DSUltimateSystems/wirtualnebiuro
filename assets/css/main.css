@@ -1263,7 +1263,7 @@ p {
  * 3. Leave some space on the edges, especially valuable on small screens
  */
 .container {
-  max-width: 320px;
+  max-width: 100%;
   /* 1 */
   margin-left: auto;
   /* 2 */
@@ -1275,24 +1275,6 @@ p {
   /* 3 */
   width: 100%;
   /* 1 */
-}
-
-@media (min-width: 576px) {
-  .container {
-    max-width: 546px;
-  }
-}
-
-@media (min-width: 990px) {
-  .container {
-    max-width: 956px;
-  }
-}
-
-@media (min-width: 1430px) {
-  .container {
-    max-width: 1870px;
-  }
 }
 
 .index-list {
@@ -1645,22 +1627,6 @@ p {
     min-width: 185px;
     max-width: 185px;
     margin-right: 30px;
-  }
-}
-
-.search-form__filter {
-  display: none;
-}
-
-@media (min-width: 1430px) {
-  .search-form__filter {
-    display: block;
-  }
-}
-
-@media (min-width: 1430px) {
-  .search-form .btn--expand-filters {
-    display: none;
   }
 }
 
@@ -3084,6 +3050,18 @@ button {
   top: 0;
   z-index: 100;
   background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.modal.is-visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
 }
 
 .modal__content {
