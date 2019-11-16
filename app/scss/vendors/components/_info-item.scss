@@ -18,4 +18,12 @@
       margin-top: 5px;
     }
   }
+  &--textures {
+    margin: 0 auto;
+    max-width: 800px;
+    padding-top: 20px;
+    .info-details__item {
+      cursor: pointer;
+    }
+  }
 }

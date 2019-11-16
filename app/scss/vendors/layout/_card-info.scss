@@ -1,4 +1,4 @@
-.add-texture {
+.card-info {
   flex: 1;
   &__header {
     background-color: $color-light-yellow;
@@ -29,10 +29,13 @@
     }
   }
   &__content {
+    padding: 20px 5px;
+    background-color: $color-white;
+    box-shadow: $box-shadow;
     .form-add {
-      padding: 20px 5px;
-      background-color: $color-white;
-      box-shadow: $box-shadow;
+      background: transparent;
+      padding: 0;
+      box-shadow: none;
       &__heading {
         color: $color-primary;
       }

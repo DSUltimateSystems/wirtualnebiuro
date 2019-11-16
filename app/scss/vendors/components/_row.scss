@@ -28,4 +28,12 @@
       }
     }
   }
+  &--table {
+    color: $color-white;
+    padding: 20px 10px;
+    background-color: rgb(153, 134, 117);
+    .btn {
+      margin-top: 20px;
+    }
+  }
 }

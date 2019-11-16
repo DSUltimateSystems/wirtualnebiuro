@@ -1,0 +1,615 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="./assets/images/favicon.ico"/>
+
+<!-- Primary Meta Tags -->
+<title>Lista użytkowników - karta klienta</title>
+<meta name="title" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+<meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+<meta name="keywords" content="Lorem, ipsum, dolor, sit, amet, consectetur, adipiscing, elit">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://test.ovh/">
+<meta property="og:title" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+<meta property="og:description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+<meta property="og:image" content="http://konferensbokning.bluepaprica.ovh/assets/images/slider/home-slider-1.jpg">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="http://test.ovh/">
+<meta property="twitter:title" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+<meta property="twitter:description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+<meta property="twitter:image" content="http://test.ovh/assets/images/slider/home-slider-1.jpg">
+
+<!-- FONTAWESOME -->
+<link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet">
+<!-- main.css -->
+<link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+<body class="card-page">
+<!-- HEADER -->
+<header class="header">
+   <div class="container">
+      <div class="header__content">
+         <div class="header__logo">
+            <img src="./assets/images/wirtualnebiuro.png" alt="Wirtualne Biuro">
+         </div>
+         <div class="user">
+            <div class="user__content">
+               <div class="user__photo" style="background-image: url('./assets/images/avatar.png')"></div>
+               <h3>
+                  <span>
+                     <a href="#" class="superadmin">
+                        <i class="fas fa-leaf"></i>
+                     </a>
+                     zalogowany jako</span>
+                  Garfield Bloomish
+                  <a href="/">
+                     <i class="fas fa-sign-out-alt"></i>
+                  </a>
+               </h3>
+            </div>
+         </div>
+      </div>
+   </div>
+</header>
+
+
+<!-- NAV -->
+<nav class="nav">
+    <div class="nav__items">
+        
+            <a href="/lista-firm.html" class="nav__item active">
+                <i class="far fa-user"></i>
+                użytkownicy i firmy
+            </a>
+        
+            <a href="/lista-korespondencji.html" class="nav__item ">
+                <i class="far fa-envelope"></i>
+                korespondencja
+            </a>
+        
+            <a href="/lista-faktur.html" class="nav__item ">
+                <i class="fas fa-file-signature"></i>
+                faktury
+            </a>
+        
+            <a href="/lista-umow.html" class="nav__item ">
+                <i class="far fa-file-alt"></i>
+                umowy
+            </a>
+        
+            <a href="/lista-raportow.html" class="nav__item ">
+                <i class="fas fa-chart-line"></i>
+                raporty
+            </a>
+        
+            <a href="/serwis.html" class="nav__item ">
+                <i class="fas fa-chart-pie"></i>
+                serwis
+            </a>
+        
+    </div>
+</nav>
+
+
+
+<!-- SUB-NAV -->
+<nav class="sub-nav">
+    <div class="sub-nav__items">
+        
+            <a href="/lista-firm.html" class="sub-nav__item ">
+                lista firm
+            </a>
+        
+            <a href="/lista-firm-n-a.html" class="sub-nav__item ">
+                lista firm n/a
+            </a>
+        
+            <a href="/lista-uzytkownikow.html" class="sub-nav__item active">
+                lista użytkowników
+            </a>
+        
+            <a href="/lista-uzytkownikow-n-a.html" class="sub-nav__item ">
+                lista użytkowników n/a
+            </a>
+        
+            <a href="/dodaj-nowego-uzytkownika-z-firma.html" class="sub-nav__item ">
+                dodaj nowego użytkownika z firmą
+            </a>
+        
+    </div>
+</nav>
+
+<!-- MAIN -->
+<main>
+    
+    <div class="column-wrapper">
+        <div class="container">
+            <div class="column-wrapper__content">
+                <!-- SEARCH-FORM -->
+                <div class="search-form">
+    <form class="search-form__filter">
+        <div class="search-form__item">
+            <h4 class="collapse-group">dane firmy
+                <i class="fas fa-chevron-down"></i>
+            </h4>
+            <div class="collapse-wrapper">
+                <div class="search-form__group">
+                    <label for="username">nazwisko</label>
+                    <input type="text" id="username">
+                </div>
+                <div class="search-form__group">
+                    <label for="company">nazwa firmy</label>
+                    <input type="text" id="company">
+                </div>
+                <div class="search-form__group">
+                    <label for="nip">nip</label>
+                    <input type="text" id="nip">
+                </div>
+                <div class="search-form__group">
+                    <label for="box-number">nr skrytki</label>
+                    <input type="text" id="box-number">
+                </div>
+            </div>
+        </div>
+        <div class="search-form__item">
+            <h4 class="collapse-group">data ostatniej wiadomości
+                <i class="fas fa-chevron-down"></i>
+            </h4>
+            <div class="collapse-wrapper">
+                <div class="search-form__group-date">
+                    <span>od <i class="far fa-calendar-alt"></i></span>
+                    <input type="date">
+                </div>
+                <div class="search-form__group-date">
+                    <span>do <i class="far fa-calendar-alt"></i></span>
+                    <input type="date">
+                </div>
+            </div>
+        </div>
+        <div class="search-form__actions">
+            <button class="btn btn--secondary">resetuj wyniki</button>
+        </div>
+    </form>
+</div>
+
+                <div class="card-user">
+    <div class="card-info">
+        <div class="card-info__header">
+            <h3>Małgorzata Wojtyńska</h3>
+        </div>
+        <div class="card-info__content">
+            <div class="columns">
+                <div class="columns__item">
+                    <div class="row">
+                        <div class="panel-edit">
+                            <div class="company-name">
+                                <input type="text" data-value="SONAR" value="SONAR" readonly>
+                            </div>
+                            <div class="address">
+                                <input type="text" data-value="ul. św. Filipa 23/4" value="ul. św. Filipa 23/4" readonly>
+                            </div>
+                            <div class="post-city">
+                                <input type="text" data-value="31-150 Kraków" value="31-150 Kraków" readonly>
+                            </div>
+                            <div class="nip">
+                                <input type="text" data-value="6783168396" value="6783168396" readonly>
+                            </div>
+                            <div class="username">
+                                <strong>Reprezentuje:</strong>
+                                <input type="text" data-value="Małgorzata Wojtyńska" value="Małgorzata Wojtyńska" readonly>
+                            </div>
+                            <div class="phone">
+                                <strong>Telefon:</strong>
+                                <input type="tel:" data-value="790829191" value="790829191" readonly>
+                            </div>
+                            <div class="email">
+                                <strong>E-mail:</strong>
+                                <input type="email" data-value="wojtynska@wp.pl" value="wojtynska@wp.pl" readonly>
+                            </div>
+                            <hr>
+                            <h4>Dane do faktury</h4>
+                            <div class="address">
+                                <input type="text" data-value="ul. św. Filipa 23/4" value="ul. św. Filipa 23/4" readonly>
+                            </div>
+                            <div class="post-city">
+                                <input type="text" data-value="31-150 Kraków" value="31-150 Kraków" readonly>
+                            </div>
+                            <div class="nip">
+                                <input type="text" data-value="6783168396" value="6783168396" readonly>
+                            </div>
+                            <hr>
+                            <div class="panel-edit__actions">
+                                <button class="btn btn--secondary btn--edit">edytuj dane</button>
+                                <a href="#" class="btn btn--secondary btn--hidden">pełna edycja</a>
+                                <button class="btn btn--secondary btn--save">zapisz dane</button>
+                                <button class="btn btn--secondary btn--cancel">anuluj</button>
+                            </div>
+                        </div>
+                    </div>
+                   <div class="row">
+                       <div class="form-group">
+                           <strong>Status skanu</strong>
+                           <select>
+                               <option value="Na żądanie">Na żądanie</option>
+                               <option value="dluznik2">Dłużnik 2</option>
+                               <option value="Do odwołania">Do odwołania</option>
+                               <option value="Zawsze">Zawsze</option>
+                           </select>
+                       </div>
+                   </div>
+                    <div class="row">
+                        <div class="panel-edit">
+                            <div class="special-info">
+                                <h4>Informacje specjalne:</h4>
+                                <textarea data-value="drugi numer do p. Marty Podkówki - można do niej śmiało dzwonić :)" readonly>drugi numer do p. Marty Podkówki - można do niej śmiało dzwonić :)</textarea>
+                            </div>
+                            <div class="panel-edit__actions">
+                                <button class="btn btn--secondary btn--edit">edytuj</button>
+                                <button class="btn btn--secondary btn--save">zapisz</button>
+                                <button class="btn btn--secondary btn--cancel">anuluj</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group">
+                            <strong>Firma potwierdziła NIP / REGON</strong>
+                            <select>
+                                <option value="Tak">Tak</option>
+                                <option value="Nie">Nie</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group">
+                            <strong>Pełnomocnictwo</strong>
+                            <select>
+                                <option value="pełne">Pełne</option>
+                                <option value="ograniczone">Ograniczone</option>
+                                <option value="brak">Brak</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns__item columns__item--grow">
+                    <div class="row">
+                        <div class="show-status">
+                            <p>
+                                <strong>Status</strong>
+                            </p>
+                            <button>Pokaż statusy</button>
+                        </div>
+                    </div>
+                    <div class="row row--table">
+                        <table class="rwd-table">
+                            <tbody>
+                            <tr>
+                                <th>Skrytka</th>
+                                <th>Kluczyk</th>
+                                <th>Kaucja</th>
+                            </tr>
+                            <tr>
+                                <td data-th="Skrytka: ">
+                                    61578
+                                </td>
+                                <td data-th="Kluczyk:">nieodebrany</td>
+                                <td data-th="Kaucja:">nierozliczona<br> 198.00zł 9.11.2015</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div class="add-deposit">
+                            <button class="btn btn--secondary">dodaj kaucję</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="textures">
+                            <p>Faktury <a href="#">przejdź do faktur firmy</a></p>
+                            <div class="form-group">
+                                <strong>zapłacone (liczba / suma)</strong>
+                                <input type="text" value="0 / 341,94" readonly>
+                            </div>
+                            <div class="form-group">
+                                <strong>niezapłacone (liczba / suma)</strong>
+                                <input type="text" value="0 / 341,94" readonly>
+                            </div>
+                            <div class="form-group">
+                                <strong>przeterminowane (liczba / suma)</strong>
+                                <input type="text" value="0 / 341,94" readonly>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="company-info">
+                            <p>Informacje o firmie <a href="#">Małgorzata Wojtyńska</a></p>
+                            <div class="form-group">
+                                <strong>status</strong>
+                                <input type="text" value="Klient" readonly>
+                            </div>
+                            <div class="form-group">
+                                <strong>sprawdź nierozliczone faktury</strong>
+                                <input type="text" value="nie" readonly>
+                            </div>
+                            <div class="form-group">
+                                <strong>wstrzymane fakturowanie</strong>
+                                <input type="text" value="nie" readonly>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="info-details">
+                            <div class="info-details__item">
+                                <div class="info-item__heading">
+                                    <h4>Matteo Agrati</h4>
+                                    <small>drugi numer do p. Marty Podkówki - można do niej śmiało dzwonić :)</small>
+                                </div>
+                            </div>
+                            <div class="info-details__item">
+                                <div class="info-details__heading">
+                                    <h4>Aneta Plis</h4>
+                                    <small>Yesimages do 30.06.2016 !!</small>
+                                </div>
+                                <div class="info-details__date">
+                                    <small>17.05.2016 16:13 ()</small>
+                                </div>
+                            </div>
+                            <div class="info-details__item">
+                                <div class="info-details__heading">
+                                    <h4>Aneta Plis</h4>
+                                    <small>Yesimages do 30.06.2016 !!</small>
+                                </div>
+                                <div class="info-details__date">
+                                    <small>17.05.2016 16:13 ()</small>
+                                </div>
+                            </div>
+                            <div class="info-details__item">
+                                <div class="info-details__heading">
+                                    <h4>Aneta Plis</h4>
+                                    <small>Yesimages do 30.06.2016 !!</small>
+                                </div>
+                                <div class="info-details__date">
+                                    <small>17.05.2016 16:13 ()</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <h3>Umowy</h3>
+                <table class="rwd-table">
+                    <tbody>
+                    <tr>
+                        <th></th>
+                        <th>Data utworzenia</th>
+                        <th>Numer</th>
+                        <th>Pakiet</th>
+                        <th>Od-do</th>
+                        <th>Miesięczna kwota</th>
+                    </tr>
+                    <tr>
+                        <td data-th="Umowa:">Umowa</td>
+                        <td data-th="Data utworzenia:">01.02.2016</td>
+                        <td data-th="Numer:">13/2016 - Andrzej Szufa</td>
+                        <td data-th="Pakiet:">Biznes Start ENG</td>
+                        <td data-th="Od-do:">29.01.2016-29.01.2016</td>
+                        <td data-th="Miesięczna kwota:">139 zł</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="row">
+                <h3>Faktury</h3>
+                <table class="rwd-table">
+                    <tbody>
+                    <tr>
+                        <th></th>
+                        <th>Numer</th>
+                        <th>Data utworzenia</th>
+                        <th>Kwota netto</th>
+                        <th>Kwota brutto</th>
+                        <th>Na kogo</th>
+                        <th>Umowa</th>
+                        <th>Wysłana</th>
+                        <th>Zapłacona</th>
+                        <th>Akcja</th>
+                    </tr>
+                    <tr id="6572">
+                        <td class="icon-square">
+                            <i class="far fa-plus-square"></i>
+                        </td>
+                        <td data-th="Numer:">ID: 6572</td>
+                        <td data-th="Data utworzenia:">01.02.2016</td>
+                        <td data-th="Kwota netto:">134zł</td>
+                        <td data-th="Kwota bruttoo:">134zł</td>
+                        <td data-th="Na kogo:">
+                            <p>EFFIGES Sp. Z o.o. ul. św. Filipa 23/4</p>
+                            <p>31-150 Kraków</p>
+                            <p>6762495718</p>
+                        </td>
+                        <td data-th="Umowa:">13/2016</td>
+                        <td data-th="Wysłana:">nie</td>
+                        <td data-th="Zapłacona:">nie</td>
+                        <td data-th="Akcja: ">
+                            <div class="dropdown">
+                                <button class="fas fa-chevron-down"></button>
+                                <ul>
+                                    <li>
+                                        <a href="#">dodaj notatkę</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">edytuj fakturę</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">usuń fakturę</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="show-texture" style="display: none">
+                        <td colspan="10">
+                            <div class="columns">
+                                <div class="columns__item">
+                                    <div class="columns__title">
+                                        <h4>Pozycje na fakturze</h4>
+                                    </div>
+                                    <table class="rwd-table">
+                                        <tbody>
+                                        <tr>
+                                            <th>Pozycja</th>
+                                            <th>Netto</th>
+                                            <th>Wrt.netto</th>
+                                            <th>VAT</th>
+                                            <th>wart. VAT</th>
+                                            <th>Brutto</th>
+                                        </tr>
+                                        <tr>
+                                            <td data-th="Pozycja">faktura do umowy: 43/2016</td>
+                                            <td data-th="Netto: ">43</td>
+                                            <td data-th="Wrt.netto:">322</td>
+                                            <td data-th="VAT:">43</td>
+                                            <td data-th="Wart. VAT:">9130</td>
+                                            <td data-th="Brutto:">341,74</td>
+                                        </tr>
+                                        </tbody>
+                                        <tfoot>
+                                        <tr>
+                                            <td></td>
+                                            <td>Łącznie</td>
+                                            <td data-th="Łącznie netto:">43</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td data-th="Łącznie brutto:">341,74</td>
+                                        </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                                <div class="columns__item">
+                                    <div class="columns__title">
+                                        <h4>Dane adresowe</h4>
+                                    </div>
+                                    <div class="address">
+                                        <div class="address__item">
+                                            <strong>Sprzedawca</strong>
+                                            <p>ARCHEION Aleksander Kulesza-Milewski</p>
+                                            <p>ul.Świetego Filipa 23/3</p>
+                                            <p>32-150 Kraków</p>
+                                            <p>NIP: 683-152-22-82</p>
+                                            <p>Nr konta:</p>
+                                            <p>66 1140 2017 0000 4502 1101 2210</p>
+                                        </div>
+                                        <div class="address__item">
+                                            <strong>Nabywca</strong>
+                                            <p>ARCHEION Aleksander Kulesza-Milewski</p>
+                                            <p>ul.Świetego Filipa 23/3</p>
+                                            <p>32-150 Kraków</p>
+                                            <p>NIP: 683-152-22-82</p>
+                                            <p>Nr konta:</p>
+                                            <p>66 1140 2017 0000 4502 1101 2210</p>
+                                        </div>
+                                        <div class="address__item">
+                                            <strong>Informacje</strong>
+                                            <p>Rodzaj faktury: <strong>Zwykła</strong></p>
+                                            <p>Status płatności: <strong>Nieopłacona</strong></p>
+                                            <p>Forma płatności: <strong>Przelew</strong></p>
+                                            <p>Zamknięta: <strong>Tak</strong></p>
+                                            <p>Wysłana: <strong>Tak</strong></p>
+                                            <p>Rodzaj faktury: <strong>Zwykła</strong></p>
+                                            <p>Data wystawienia: <strong>08.01.2019</strong></p>
+                                            <p>Data sprzedaży: <strong>08.01.2019</strong></p>
+                                            <p>Termin płatności: <strong>08.01.2019</strong></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="info-details info-details--textures">
+                    <div class="info-details__item" data-scroll="#6572">
+                        <div class="info-item__heading">
+                            <h4>Matteo Agrati</h4>
+                            <small>drugi numer do p. Marty Podkówki - można do niej śmiało dzwonić :)</small>
+                        </div>
+                        <div class="info-details__date">
+                            <small>17.05.2016 16:13 ()</small>
+                            <br>
+                            <small>ID: 6572</small>
+                        </div>
+                    </div>
+                    <div class="info-details__item">
+                        <div class="info-details__heading">
+                            <h4>Aneta Plis</h4>
+                            <small>Yesimages do 30.06.2016 !!</small>
+                        </div>
+                        <div class="info-details__date">
+                            <small>17.05.2016 16:13 ()</small>
+                            <br>
+                            <small>ID: 6572</small>
+                        </div>
+                    </div>
+                    <div class="info-details__item">
+                        <div class="info-details__heading">
+                            <h4>Aneta Plis</h4>
+                            <small>Yesimages do 30.06.2016 !!</small>
+                        </div>
+                        <div class="info-details__date">
+                            <small>17.05.2016 16:13 ()</small>
+                            <br>
+                            <small>ID: 6572</small>
+                        </div>
+                    </div>
+                    <div class="info-details__item">
+                        <div class="info-details__heading">
+                            <h4>Aneta Plis</h4>
+                            <small>Yesimages do 30.06.2016 !!</small>
+                        </div>
+                        <div class="info-details__date">
+                            <small>17.05.2016 16:13 ()</small>
+                            <br>
+                            <small>ID: 6572</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__content">
+            <div class="footer__logo">
+                <img src="./assets/images/logo.png" alt="Archeion Wirtualne Biuro">
+            </div>
+            <p>Copyright: Archeion 2016<br>ARCHEION  Ul. Św. Filipa 23/1, <span>31-150 Kraków</span></p>
+        </div>
+    </div>
+</footer>
+
+
+
+<!-- SCRIPTS -->
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1-rc.1/js/select2.min.js"></script>
+<script src="assets/js/script.min.js"></script>
+</body>
+</html>

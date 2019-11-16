@@ -77,19 +77,20 @@ const App = (() => {
       });
 
       // Panel-edit
-      $('.panel-edit .btn').click(function (e) {
+      $('.panel-edit .btn--edit, .panel-edit .btn--cancel, .panel-edit .btn--save').click(function (e) {
           e.preventDefault();
-          $(this).closest('.panel-edit').find('input').each(function () {
+          $(this).closest('.panel-edit').find('input, textarea').each(function () {
               $(this).prop('readonly', function(i, v) {
                   return !v;
               });
           });
-          $('.panel-edit').toggleClass('active');
+          $(this).closest('.panel-edit').toggleClass('active');
+          $(this).closest('.panel-edit').find('.btn--hidden').toggleClass('hidden');
       });
 
       $('.panel-edit .btn--cancel').click(function (e) {
           e.preventDefault();
-          $(this).closest('.panel-edit').find('input').each(function () {
+          $(this).closest('.panel-edit').find('input, textarea').each(function () {
               var that = $(this);
               that.val(that.data('value'));
           });
@@ -97,7 +98,7 @@ const App = (() => {
 
       $('.panel-edit .btn--save').click(function (e) {
           e.preventDefault();
-          $(this).closest('.panel-edit').find('input').each(function () {
+          $(this).closest('.panel-edit').find('input, textarea').each(function () {
               var that = $(this);
               that.data('value', that.val());
           });
@@ -112,6 +113,21 @@ const App = (() => {
       $('.show-modal').on('click', function(e) {
           e.preventDefault();
           $(this.hash).addClass('is-visible');
+      });
+
+      $('[data-scroll]').click(function (e) {
+          var that = $(this);
+          $(that.data('scroll')).next().fadeToggle(300);
+          $(that.data('scroll')).find('.fa-plus-square').toggleClass('active');
+          $([document.documentElement, document.body]).animate({
+              scrollTop: $(that.data('scroll')).offset().top
+          }, 1000);
+      });
+
+      $('.fa-plus-square').click(function (e) {
+          var that = $(this);
+          that.toggleClass('active');
+          that.closest('tr').next().fadeToggle(300);
       });
   };
 

@@ -26,7 +26,7 @@
   'layout/form',
   'layout/search-form',
   'layout/form-add',
-  'layout/add-texture',
+  'layout/card-info',
   'layout/footer';
 
 // 5. Components
@@ -50,7 +50,9 @@
   'components/address';
 
 // 6. Page-specific styles
-@import 'pages/texture-page';
+@import
+  'pages/texture-page',
+  'pages/card-user';
 
 // 7. Themes
 @import
