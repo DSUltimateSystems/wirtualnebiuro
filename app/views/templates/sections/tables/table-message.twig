@@ -1,4 +1,4 @@
-<div class="table">
+<div class="table table--correspondence">
     <h2>{{ tableTitle }}</h2>
     <table class="rwd-table">
         <tbody>
@@ -40,6 +40,7 @@
                     <button class="fas fa-chevron-down sort-name-desc"></button>
                 </div>
             </th>
+            <th></th>
         </tr>
         <tr>
             <td data-th="ID: ">
@@ -56,22 +57,120 @@
             </td>
             <td data-th="Data utworzenia: ">08.01.2018 00:00</td>
             <td data-th="Ostatnia wiadomość: ">10.01.2018 00:00</td>
-        </tr>
-        <tr>
-            <td data-th="ID: ">
-                61578
+            <td class="icon-rotate">
+                <i class="fas fa-chevron-down"></i>
             </td>
-            <td data-th="Nadawca:">
-                <a href="#">Kowalski Jan</a>
-            </td>
-            <td data-th="Odbiorca:">
-                <a href="#">Andrzej Nowak</a>
-            </td>
-            <td data-th="Temat:">
-                <a href="#">Dzisiejsza korespondencja</a>
-            </td>
-            <td data-th="Data utworzenia: ">12.01.2018 00:00</td>
-            <td data-th="Ostatnia wiadomość: ">01.01.2018 00:00</td>
+            <tr class="show-correspondence">
+                <td colspan="7">
+                    <div class="columns">
+                        <div class="columns__item">
+                            <div class="consumer">
+                                <p>Przypomnienie płatności</p>
+                                <div class="consumer__item">
+                                    <small>odbiorca nieprzypisany</small>
+                                    <select>
+                                        <option value="Agnieszka Cieślik">Agnieszka Cieślik</option>
+                                        <option value="Jan Kowalski">Jan Kowalski</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="user-date">
+                                <p>
+                                <strong>Nazwisko i imię:</strong>Jan Kowalski
+                                </p>
+                                <p>
+                                    <strong>E-mail:</strong>iiatpiot8@gmail.com
+                                </p>
+                               <p>
+                                   <strong>Telefon:</strong>535258755
+                               </p>
+                               <p>
+                                   <strong>Firma:</strong>Veronika Sehedavchuk
+                               </p>
+                               <p>
+                                   <strong>NIP:</strong>9452291734
+                               </p>
+                            </div>
+                            <div class="message-box">
+                                <div class="message-box__title">
+                                    <label for="title">Temat wiadomości</label>
+                                    <input type="text" id="title">
+                                </div>
+                                <div class="message-box__text">
+                                    <label for="text">Treść wiadomości</label>
+                                    <textarea name="text" id="text" cols="30" rows="20"></textarea>
+                                </div>
+                                <div class="message-box__actions">
+                                    <div class="message-box__attachments">
+                                        <button class="btn btn--secondary btn--gray">
+                                            dodaj załącznik
+                                        </button>
+                                        <input type="file" class="multi">
+                                    </div>
+                                    <div class="message-box__send">
+                                        <button type="submit" class="btn btn--secondary">Wyślij</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="columns__item">
+                           <div class="news">
+                                <div class="news__check">
+                                    <small>Ostatnie sprawdzenie nowych wiadomości nastąpiło mniej niż minutę temu</small>
+                                    <button class="btn btn--secondary">sprawdź teraz</button>
+                                </div>
+                               <div class="news__content">
+                                   <div class="news__system">
+                                       <div class="news__heading">
+                                           <p>Wiadomość systemowa</p>
+                                           <small>8.01.2018 00:00 (12 miesięcy temu)</small>
+                                       </div>
+                                       <div class="news__system__content">
+                                           <p>
+                                               Dzień dobry,<br><br>
+                                               Przypominamy że jutro upływa ostatni dzień płatności
+                                               za Twoją fakturę. Wszelkie szczegóły znajdziesz po zalogowaniu się
+                                               na swoje konto w aplikacji wb.krakow.pl.<br><br>
+                                               Prosimy o terminową spłatę.<br><br>
+                                               Z wyrazami szacunku
+                                           </p>
+                                           <div class="news__actions">
+                                               <button class="btn btn--secondary">odpowiedz</button>
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <div class="news__items">
+                                       <div class="news__item">
+                                           <div class="news__heading">
+                                               <p>Jan Kowalski</p>
+                                               <small>8.01.2018 00:00 (12 miesięcy temu)</small>
+                                           </div>
+                                           <div class="news__item__content">
+                                               <p>Dzien dobry, poprosze wyslac dwie faktury i teraz oni beda oplacony.Pozdrawiam 2018-01-08 0:30 GMT+01:00 Wirtualne Biuro <biuro@wirtualnebiuro.krakow.pl>:</p>
+                                               <div class="news__actions">
+                                                   <button class="btn btn--secondary">odpowiedz</button>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="news__item">
+                                           <div class="news__heading">
+                                               <p>Jan Kowalski</p>
+                                               <small>8.01.2018 00:00 (12 miesięcy temu)</small>
+                                           </div>
+                                           <div class="news__item__content">
+                                               <p>Dzien dobry, poprosze wyslac dwie faktury i teraz oni beda oplacony.Pozdrawiam 2018-01-08 0:30 GMT+01:00 Wirtualne Biuro <biuro@wirtualnebiuro.krakow.pl>:</p>
+                                               <div class="news__actions">
+                                                   <button class="btn btn--secondary">odpowiedz</button>
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
         </tr>
         </tbody>
     </table>

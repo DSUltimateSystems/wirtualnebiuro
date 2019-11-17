@@ -1,0 +1,60 @@
+{
+  "title":"Nowa korespondencji",
+  "class": "new-message",
+  "menu": [
+    {
+      "name": "użytkownicy i firmy",
+      "link": "/lista-firm.html",
+      "icon": "far fa-user",
+      "active": false
+    },
+    {
+      "name": "korespondencja",
+      "link": "/lista-korespondencji.html",
+      "icon": "far fa-envelope",
+      "active": true
+    },
+    {
+      "name": "faktury",
+      "link": "/lista-faktur.html",
+      "icon": "fas fa-file-signature",
+      "active": false
+    },
+    {
+      "name": "umowy",
+      "link": "/lista-umow.html",
+      "icon": "far fa-file-alt",
+      "active": false
+    },
+    {
+      "name": "raporty",
+      "link": "/lista-raportow.html",
+      "icon": "fas fa-chart-line",
+      "active": false
+    },
+    {
+      "name": "serwis",
+      "link": "/serwis.html",
+      "icon": "fas fa-chart-pie",
+      "active": false
+    }
+  ],
+  "subMenu": [
+    {
+      "name": "lista korespondencji",
+      "link": "/lista-korespondencji.html",
+      "active": false
+    },
+    {
+      "name": "nowa korespondencja",
+      "link": "/nowa-korespondencja.html",
+      "active": true
+    },
+    {
+      "name": "nowa korespondencja zbiorowa",
+      "link": "/nowa-korespondencja-zbiorowa.html",
+      "active": false
+    }
+  ],
+  "tableTitle": "Korespondencja - nowa korespondencja"
+}

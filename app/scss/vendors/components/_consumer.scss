@@ -1,0 +1,14 @@
+.consumer {
+  margin-bottom: 20px;
+  @include respond-to('small') {
+    display: flex;
+    align-items: flex-end;
+  }
+  p {
+    margin-right: 40px;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+  }
+}

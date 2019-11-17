@@ -27,6 +27,7 @@
   'layout/search-form',
   'layout/form-add',
   'layout/card-info',
+  'layout/new-correspondace',
   'layout/footer';
 
 // 5. Components
@@ -47,11 +48,16 @@
   'components/modal',
   'components/columns',
   'components/info-item',
-  'components/address';
+  'components/address',
+  'components/consumer',
+  'components/message-box',
+  'components/news',
+  'components/templates';
 
 // 6. Page-specific styles
 @import
   'pages/texture-page',
+  'pages/correspondence-page',
   'pages/card-user';
 
 // 7. Themes

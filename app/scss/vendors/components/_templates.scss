@@ -1,0 +1,18 @@
+.templates {
+  display: flex;
+  flex-direction: column;
+  h4 {
+    color: $color-primary;
+    margin-bottom: 40px;
+  }
+  a {
+    color: $text-color;
+    transition: $transition-base;
+    &:hover {
+      color: $color-primary;
+    }
+    & + a {
+      margin-top: 20px;
+    }
+  }
+}

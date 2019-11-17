@@ -1,0 +1,53 @@
+.new-correspondance {
+  width: 100%;
+  background-color: $color-light-yellow;
+  padding: 20px 5px;
+  @include respond-to('medium') {
+    padding: 20px;
+  }
+  .rwd-table {
+    padding: 0;
+  }
+  h4 {
+    margin-bottom: 40px;
+  }
+  &__content {
+    display: flex;
+    flex-flow: column;
+    @include respond-to('small') {
+      flex-direction: row;
+    }
+  }
+  &__item {
+    & + .new-correspondance__item {
+      margin-bottom: 20px;
+      order: -1;
+      @include respond-to('small') {
+        order: 0;
+        margin-left: 20px;
+        margin-bottom: 0;
+      }
+    }
+    @include respond-to('small') {
+      display: flex;
+      &:first-child {
+        flex: 1;
+      }
+    }
+  }
+  .card-info__header {
+    margin: 0;
+  }
+  .message-box {
+    width: 100%;
+    padding: 10px;
+    background-color: $color-white;
+    a {
+      color: $text-color;
+      transition: $transition-base;
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }
+}

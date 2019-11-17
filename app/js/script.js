@@ -124,7 +124,12 @@ const App = (() => {
           }, 1000);
       });
 
-      $('.fa-plus-square').click(function (e) {
+      $('.fa-plus-square').click(function () {
+          var that = $(this);
+          that.toggleClass('active');
+          that.closest('tr').next().fadeToggle(300);
+      });
+      $('.fa-chevron-down').click(function () {
           var that = $(this);
           that.toggleClass('active');
           that.closest('tr').next().fadeToggle(300);
