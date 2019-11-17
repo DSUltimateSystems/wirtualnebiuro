@@ -3199,40 +3199,64 @@ button {
   overflow-y: auto;
 }
 
+.modal__content--small {
+  max-width: 500px;
+}
+
+.modal__content h3 {
+  text-align: center;
+}
+
 .modal__border {
+  position: relative;
   background-color: white;
   border: 10px solid #998675;
-  padding: 5px;
+  padding: 20px;
 }
 
 .modal__actions {
+  margin-top: 20px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.modal__actions .times {
-  display: block;
+.modal__actions .btn {
+  margin: 10px 0;
 }
 
-.modal__actions .times i {
-  -webkit-transition: 0.3s ease-in-out;
-  -o-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-  cursor: pointer;
+@media (min-width: 576px) {
+  .modal__actions .btn {
+    margin: 0;
+  }
 }
 
-.modal__actions .times i:hover {
-  color: #e0420b;
+@media (min-width: 576px) {
+  .modal__actions {
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.modal textarea {
+  width: 100%;
+  margin-top: 20px;
 }
 
 @media (min-width: 576px) {
@@ -3654,6 +3678,142 @@ button {
   margin-top: 20px;
 }
 
+.show-correspondence {
+  display: none;
+}
+
+.show-correspondence .columns {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 990px) {
+  .show-correspondence .columns {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+.show-correspondence .columns__item {
+  width: 100%;
+  margin: 20px 0;
+}
+
+@media (min-width: 990px) {
+  .show-correspondence .columns__item {
+    margin: 20px;
+  }
+}
+
+.show-correspondence > td:before {
+  display: none;
+}
+
+.show-texture {
+  background-color: #d7d7d7 !important;
+  display: none;
+}
+
+.show-texture > td {
+  position: relative;
+}
+
+.show-texture table {
+  font-size: 12px;
+}
+
+.show-texture > td:before {
+  display: none;
+}
+
+.show-texture .columns {
+  min-width: 100%;
+}
+
+@media (min-width: 990px) {
+  .show-texture .columns {
+    margin-bottom: 0;
+  }
+}
+
+.show-texture .columns__title {
+  margin-top: 20px;
+}
+
+@media (min-width: 990px) {
+  .show-texture .address {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+.show-texture .address p {
+  font-size: 11px;
+  line-height: 15px;
+}
+
+@media (min-width: 990px) {
+  .show-texture .address__item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1430px) {
+  .show-texture .address__item {
+    width: 33.3%;
+  }
+}
+
+.close-content__actions {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.close-content__actions .times {
+  display: block;
+}
+
+.close-content__actions .times i {
+  font-size: 20px;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.close-content__actions .times i:hover {
+  color: #e0420b;
+}
+
 @media (min-width: 990px) {
   .texture-page .rwd-table {
     font-size: 11px;
@@ -3662,6 +3822,14 @@ button {
 
 .texture-page .rwd-table th, .texture-page .rwd-table td {
   padding: 5px !important;
+}
+
+.texture-page .table--textures tr:nth-child(odd):not(:first-child) {
+  background-color: transparent;
+}
+
+.texture-page .table--textures tr:hover:not(:first-child) {
+  background-color: transparent;
 }
 
 .table--correspondence .columns {
@@ -3680,66 +3848,17 @@ button {
   background-color: transparent;
 }
 
-.table--correspondence .show-correspondence {
-  display: none;
-}
-
-.table--correspondence .show-correspondence .columns {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-@media (min-width: 990px) {
-  .table--correspondence .show-correspondence .columns {
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: start;
-    -webkit-align-items: flex-start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-}
-
-.table--correspondence .show-correspondence .columns__item {
-  width: 100%;
-  margin: 20px 0;
-}
-
-@media (min-width: 990px) {
-  .table--correspondence .show-correspondence .columns__item {
-    margin: 20px;
-  }
-}
-
-.table--correspondence .show-correspondence > td:before {
-  display: none;
-}
-
-.table--correspondence .icon-rotate {
+.table--correspondence .expand-content {
   cursor: pointer;
 }
 
-.table--correspondence .icon-rotate i {
+.table--correspondence .expand-content i {
   -webkit-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
 
-.table--correspondence .icon-rotate i.active {
+.table--correspondence .expand-content i.active {
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -3943,67 +4062,11 @@ button {
           justify-content: flex-end;
 }
 
-.card-user .show-texture {
-  background-color: #d7d7d7 !important;
-}
-
-.card-user .show-texture table {
-  font-size: 12px;
-}
-
-.card-user .show-texture > td:before {
-  display: none;
-}
-
-@media (min-width: 990px) {
-  .card-user .show-texture .columns {
-    margin-bottom: 0;
-  }
-}
-
-.card-user .show-texture .columns__item {
-  margin-bottom: 20px;
-}
-
-@media (min-width: 990px) {
-  .card-user .show-texture .columns__item {
-    margin-bottom: 0;
-  }
-}
-
-@media (min-width: 990px) {
-  .card-user .show-texture .address {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: start;
-    -webkit-align-items: flex-start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-}
-
-.card-user .show-texture .address p {
-  font-size: 11px;
-  line-height: 15px;
-}
-
-@media (min-width: 990px) {
-  .card-user .show-texture .address__item {
-    width: 33%;
-  }
-}
-
-.card-user .icon-square {
+.card-user .expand-content {
   cursor: pointer;
 }
 
-.card-user .icon-square .active:before {
+.card-user .expand-content .active:before {
   content: '\f146';
 }
 

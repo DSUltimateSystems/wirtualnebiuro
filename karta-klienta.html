@@ -423,7 +423,7 @@
                     </tr>
                     <tr id="6572">
                         <td class="icon-square">
-                            <i class="far fa-plus-square"></i>
+                            <i class="expand-content far fa-plus-square"></i>
                         </td>
                         <td data-th="Numer:">ID: 6572</td>
                         <td data-th="Data utworzenia:">01.02.2016</td>
@@ -442,13 +442,13 @@
                                 <button class="fas fa-chevron-down"></button>
                                 <ul>
                                     <li>
-                                        <a href="#">dodaj notatkę</a>
+                                        <a href="#modal-3" class="show-modal">dodaj notatkę</a>
                                     </li>
                                     <li>
                                         <a href="#">edytuj fakturę</a>
                                     </li>
                                     <li>
-                                        <a href="#">usuń fakturę</a>
+                                        <a href="#modal-2" class="show-modal">usuń fakturę</a>
                                     </li>
                                 </ul>
                             </div>
@@ -456,41 +456,6 @@
                         <tr class="show-texture" style="display: none">
                             <td colspan="10">
                                 <div class="columns">
-                                    <div class="columns__item">
-                                        <div class="columns__title">
-                                            <h4>Pozycje na fakturze</h4>
-                                        </div>
-                                        <table class="rwd-table">
-                                            <tbody>
-                                            <tr>
-                                                <th>Pozycja</th>
-                                                <th>Netto</th>
-                                                <th>Wrt.netto</th>
-                                                <th>VAT</th>
-                                                <th>wart. VAT</th>
-                                                <th>Brutto</th>
-                                            </tr>
-                                            <tr>
-                                                <td data-th="Pozycja">faktura do umowy: 43/2016</td>
-                                                <td data-th="Netto: ">43</td>
-                                                <td data-th="Wrt.netto:">322</td>
-                                                <td data-th="VAT:">43</td>
-                                                <td data-th="Wart. VAT:">9130</td>
-                                                <td data-th="Brutto:">341,74</td>
-                                            </tr>
-                                            </tbody>
-                                            <tfoot>
-                                            <tr>
-                                                <td></td>
-                                                <td>Łącznie</td>
-                                                <td data-th="Łącznie netto:">43</td>
-                                                <td></td>
-                                                <td></td>
-                                                <td data-th="Łącznie brutto:">341,74</td>
-                                            </tr>
-                                            </tfoot>
-                                        </table>
-                                    </div>
                                     <div class="columns__item">
                                         <div class="columns__title">
                                             <h4>Dane adresowe</h4>
@@ -527,6 +492,41 @@
                                                 <p>Termin płatności: <strong>08.01.2019</strong></p>
                                             </div>
                                         </div>
+                                    </div>
+                                    <div class="columns__item">
+                                        <div class="columns__title">
+                                            <h4>Pozycje na fakturze</h4>
+                                        </div>
+                                        <table class="rwd-table">
+                                            <tbody>
+                                            <tr>
+                                                <th>Pozycja</th>
+                                                <th>Netto</th>
+                                                <th>Wrt.netto</th>
+                                                <th>VAT</th>
+                                                <th>wart. VAT</th>
+                                                <th>Brutto</th>
+                                            </tr>
+                                            <tr>
+                                                <td data-th="Pozycja">faktura do umowy: 43/2016</td>
+                                                <td data-th="Netto: ">43</td>
+                                                <td data-th="Wrt.netto:">322</td>
+                                                <td data-th="VAT:">43</td>
+                                                <td data-th="Wart. VAT:">9130</td>
+                                                <td data-th="Brutto:">341,74</td>
+                                            </tr>
+                                            </tbody>
+                                            <tfoot>
+                                            <tr>
+                                                <td></td>
+                                                <td>Łącznie</td>
+                                                <td data-th="Łącznie netto:">43</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td data-th="Łącznie brutto:">341,74</td>
+                                            </tr>
+                                            </tfoot>
+                                        </table>
                                     </div>
                                 </div>
                             </td>
@@ -589,6 +589,37 @@
     </div>
 
 </main>
+
+<!-- MODAL -->
+<div class="modal" id="modal-2">
+    <div class="modal__content modal__content--small">
+        <div class="modal__border">
+            <div class="modal__heading">
+                <h3>Jesteś pewien, że chcesz usunąć fakturę?</h3>
+            </div>
+            <div class="modal__actions">
+                <button class="btn btn--secondary">tak</button>
+                <a href="/karta-klienta.html" class="btn btn--secondary">nie</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="modal-3">
+    <div class="modal__content modal__content--small">
+        <div class="modal__border">
+            <h3>Notatka</h3>
+            <div class="close-content__actions">
+                <button class="times close-modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <textarea name="note" cols="30" rows="10"></textarea>
+            <div class="modal__actions">
+                <a href="/karta-klienta.html" class="btn btn--secondary">dodaj notatkę</a>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- FOOTER -->
 <footer class="footer">
