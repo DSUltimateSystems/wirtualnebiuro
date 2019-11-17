@@ -146,45 +146,7 @@
     display: flex;
     justify-content: flex-end;
   }
-  .show-texture {
-    background-color: $color-light-gray !important;
-    table {
-      font-size: 12px;
-    }
-    & > {
-      td:before {
-        display: none;
-      }
-    }
-    .columns {
-      @include respond-to('medium') {
-        margin-bottom: 0;
-      }
-      &__item {
-        margin-bottom: 20px;
-        @include respond-to('medium') {
-          margin-bottom: 0;
-        }
-      }
-    }
-    .address {
-      @include respond-to('medium') {
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-      }
-      p {
-        font-size: 11px;
-        line-height: 15px;
-      }
-      &__item {
-        @include respond-to('medium') {
-          width: 33%;
-        }
-      }
-    }
-  }
-  .icon-square {
+  .expand-content {
     cursor: pointer;
     .active {
       &:before {

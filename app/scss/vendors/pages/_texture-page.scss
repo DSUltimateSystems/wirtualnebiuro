@@ -7,4 +7,12 @@
       padding: 5px !important;
     }
   }
+  .table--textures {
+      tr:nth-child(odd):not(:first-child) {
+        background-color: transparent;
+      }
+      tr:hover:not(:first-child) {
+        background-color: transparent;
+      }
+  }
 }

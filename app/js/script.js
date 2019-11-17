@@ -124,15 +124,17 @@ const App = (() => {
           }, 1000);
       });
 
-      $('.fa-plus-square').click(function () {
+      $('.expand-content').click(function (e) {
+          e.preventDefault();
           var that = $(this);
           that.toggleClass('active');
           that.closest('tr').next().fadeToggle(300);
       });
-      $('.fa-chevron-down').click(function () {
-          var that = $(this);
-          that.toggleClass('active');
-          that.closest('tr').next().fadeToggle(300);
+
+      //Close-content
+      $('.times').on('click', function(e) {
+          e.preventDefault();
+          $(this).closest('tr').fadeToggle(300);
       });
   };
 

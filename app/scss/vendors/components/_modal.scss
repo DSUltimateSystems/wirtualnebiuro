@@ -24,25 +24,37 @@
     min-height: 300px;
     max-height: 95%;
     overflow-y: auto;
+    &--small {
+      max-width: 500px;
+    }
+    h3 {
+      text-align: center;
+    }
   }
   &__border {
+    position: relative;
     background-color: $color-white;
     border: 10px solid rgb(153, 134, 117);
-    padding: 5px;
+    padding: 20px;
   }
   &__actions {
+    margin-top: 20px;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    .times {
-      display: block;
-      i {
-        transition: $transition-base;
-        cursor: pointer;
-        &:hover {
-          color: $color-red;
-        }
+    flex-direction: column;
+    .btn {
+      margin: 10px 0;
+      @include respond-to('small') {
+        margin: 0;
       }
     }
+    @include respond-to('small') {
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: row;
+    }
+  }
+  textarea {
+    width: 100%;
+    margin-top: 20px;
   }
 }

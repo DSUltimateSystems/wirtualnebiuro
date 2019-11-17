@@ -1,0 +1,43 @@
+.show-texture {
+  background-color: $color-light-gray !important;
+  display: none;
+  & > td {
+    position: relative;
+  }
+  table {
+    font-size: 12px;
+  }
+  & > {
+    td:before {
+      display: none;
+    }
+  }
+  .columns {
+    min-width: 100%;
+    @include respond-to('medium') {
+      margin-bottom: 0;
+    }
+    &__title {
+      margin-top: 20px;
+    }
+  }
+  .address {
+    @include respond-to('medium') {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+    p {
+      font-size: 11px;
+      line-height: 15px;
+    }
+    &__item {
+      @include respond-to('medium') {
+        width: 50%;
+      }
+      @include respond-to('large') {
+        width: 33.3%;
+      }
+    }
+  }
+}

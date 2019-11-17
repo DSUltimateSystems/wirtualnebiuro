@@ -1,0 +1,18 @@
+.close-content {
+  &__actions {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    .times {
+      display: block;
+      i {
+        font-size: 20px;
+        transition: $transition-base;
+        cursor: pointer;
+        &:hover {
+          color: $color-red;
+        }
+      }
+    }
+  }
+}
