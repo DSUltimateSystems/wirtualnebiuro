@@ -8,7 +8,7 @@
 <link rel="shortcut icon" href="./assets/images/favicon.ico"/>
 
 <!-- Primary Meta Tags -->
-<title>Lista firm</title>
+<title>Nowa korespondencji</title>
 <meta name="title" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
 <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
 <meta name="keywords" content="Lorem, ipsum, dolor, sit, amet, consectetur, adipiscing, elit">
@@ -33,7 +33,7 @@
 <link rel="stylesheet" href="assets/css/main.css">
 
 </head>
-<body class="users-page">
+<body class="new-message">
 <!-- HEADER -->
 <header class="header">
    <div class="container">
@@ -66,12 +66,12 @@
 <nav class="nav">
     <div class="nav__items">
         
-            <a href="/lista-firm.html" class="nav__item active">
+            <a href="/lista-firm.html" class="nav__item ">
                 <i class="far fa-user"></i>
                 użytkownicy i firmy
             </a>
         
-            <a href="/lista-korespondencji.html" class="nav__item ">
+            <a href="/lista-korespondencji.html" class="nav__item active">
                 <i class="far fa-envelope"></i>
                 korespondencja
             </a>
@@ -105,24 +105,16 @@
 <nav class="sub-nav">
     <div class="sub-nav__items">
         
-            <a href="/lista-firm.html" class="sub-nav__item active">
-                lista firm
+            <a href="/lista-korespondencji.html" class="sub-nav__item ">
+                lista korespondencji
             </a>
         
-            <a href="/lista-firm-n-a.html" class="sub-nav__item ">
-                lista firm n/a
+            <a href="/nowa-korespondencja.html" class="sub-nav__item active">
+                nowa korespondencja
             </a>
         
-            <a href="/lista-uzytkownikow.html" class="sub-nav__item ">
-                lista użytkowników
-            </a>
-        
-            <a href="/lista-uzytkownikow-n-a.html" class="sub-nav__item ">
-                lista użytkowników n/a
-            </a>
-        
-            <a href="/dodaj-nowego-uzytkownika-z-firma.html" class="sub-nav__item ">
-                dodaj nowego użytkownika z firmą
+            <a href="/nowa-korespondencja-zbiorowa.html" class="sub-nav__item ">
+                nowa korespondencja zbiorowa
             </a>
         
     </div>
@@ -181,180 +173,74 @@
     </form>
 </div>
 
-                <div class="table">
-    <h2>Użytkownicy i firmy - lista firm</h2>
-    <table class="rwd-table">
-        <tbody>
-        <tr class="table__heading">
-            <th>ID
-                <div class="sort">
-                    <button class="fas fa-chevron-up sort-id-asc"></button>
-                    <button class="fas fa-chevron-down sort-id-desc"></button>
+                <div class="new-correspondance">
+    <div class="new-correspondance__heading">
+        <h4>Jan Kowalski</h4>
+        <div class="card-info__header">
+            <table class="rwd-table">
+                <tbody>
+                <tr>
+                    <th>ID</th>
+                    <th>Nazwisko i imię</th>
+                    <th>Nazwa firmy</th>
+                    <th>E-mail</th>
+                    <th>Akcja</th>
+                </tr>
+                <tr>
+                    <td data-th="ID: ">
+                        61578
+                    </td>
+                    <td data-th="Nazwisko i imię:">Jan Kowalski</td>
+                    <td data-th="Nazwa firmy:">SONAR</td>
+                    <td data-th="E-mail:">jkowalski@wp.pl</td>
+                    <td data-th="Akcja:">Historia korespondencji</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="new-correspondance__content">
+        <div class="new-correspondance__item">
+            <div class="message-box">
+                <div class="message-box__title">
+                    <label for="title">Temat wiadomości</label>
+                    <input type="text" id="title">
                 </div>
-            </th>
-            <th>Nazwa firmy
-                <div class="sort">
-                    <button class="fas fa-chevron-up sort-company-asc"></button>
-                    <button class="fas fa-chevron-down sort-company-desc"></button>
+                <div class="message-box__text">
+                    <label for="text">Treść wiadomości</label>
+                    <textarea name="text" id="text" cols="30" rows="20"></textarea>
                 </div>
-            </th>
-            <th>Właściciel</th>
-            <th>Potwierdzony NIP</th>
-            <th></th>
-            <th></th>
-        </tr>
-        <tr>
-            <td data-th="ID: ">
-                61578
-            </td>
-            <td data-th="Nazwa firmy: ">
-                <a href="#">SONAR</a>
-            </td>
-            <td data-th="Właściciel: ">
-                <a href="/karta-klienta.html">Wójtyńska Małgorzata</a>
-            </td>
-            <td data-th="Potwierdzony NIP: ">
-                tak
-            </td>
-            <td>
-                <a href="#">edytuj firmę</a>
-            </td>
-            <td>
-                <button class="btn--delete">usuń</button>
-            </td>
-        </tr>
-        <tr>
-            <td data-th="ID: ">
-                61578
-            </td>
-            <td data-th="Nazwa firmy: ">
-                <a href="#">SONAR</a>
-            </td>
-            <td data-th="Właściciel: ">
-                <a href="#">Wójtyńska Małgorzata</a>
-            </td>
-            <td data-th="Potwierdzony NIP: ">
-                tak
-            </td>
-            <td>
-                <a href="#">edytuj firmę</a>
-            </td>
-            <td>
-                <button class="btn--delete">usuń</button>
-            </td>
-        </tr>
-        <tr>
-            <td data-th="ID: ">
-                61578
-            </td>
-            <td data-th="Nazwa firmy: ">
-                <a href="#">SONAR</a>
-            </td>
-            <td data-th="Właściciel: ">
-                <a href="#">Wójtyńska Małgorzata</a>
-            </td>
-            <td data-th="Potwierdzony NIP: ">
-                tak
-            </td>
-            <td>
-                <a href="#">edytuj firmę</a>
-            </td>
-            <td>
-                <button class="btn--delete">usuń</button>
-            </td>
-        </tr>
-        <tr>
-            <td data-th="ID: ">
-                61578
-            </td>
-            <td data-th="Nazwa firmy: ">
-                <a href="#">SONAR</a>
-            </td>
-            <td data-th="Właściciel: ">
-                <a href="#">Wójtyńska Małgorzata</a>
-            </td>
-            <td data-th="Potwierdzony NIP: ">
-                tak
-            </td>
-            <td>
-                <a href="#">edytuj firmę</a>
-            </td>
-            <td>
-                <button class="btn--delete">usuń</button>
-            </td>
-        </tr>
-        <tr>
-            <td data-th="ID: ">
-                61578
-            </td>
-            <td data-th="Nazwa firmy: ">
-                <a href="#">SONAR</a>
-            </td>
-            <td data-th="Właściciel: ">
-                <a href="#">Wójtyńska Małgorzata</a>
-            </td>
-            <td data-th="Potwierdzony NIP: ">
-                tak
-            </td>
-            <td>
-                <a href="#">edytuj firmę</a>
-            </td>
-            <td>
-                <button class="btn--delete">usuń</button>
-            </td>
-        </tr>
-        <tr class="row--warning">
-            <td data-th="ID: ">
-                61578
-            </td>
-            <td data-th="Nazwa firmy: ">
-                <a href="#">SONAR</a>
-            </td>
-            <td data-th="Właściciel: ">
-                <a href="#">Wójtyńska Małgorzata</a>
-            </td>
-            <td data-th="Potwierdzony NIP: ">
-                tak
-            </td>
-            <td>
-                <a href="#">edytuj firmę</a>
-            </td>
-            <td>
-                <button class="btn--delete">usuń</button>
-            </td>
-        </tr>
-        <tr class="row--danger">
-            <td data-th="ID: ">
-                61578
-            </td>
-            <td data-th="Nazwa firmy: ">
-                <a href="#">SONAR</a>
-            </td>
-            <td data-th="Właściciel: ">
-                <a href="#">Wójtyńska Małgorzata</a>
-            </td>
-            <td data-th="Potwierdzony NIP: ">
-                tak
-            </td>
-            <td>
-                <a href="#">edytuj firmę</a>
-            </td>
-            <td>
-                <button class="btn--delete">usuń</button>
-            </td>
-        </tr>
-        </tbody>
-    </table>
-    <div class="pagination">
-        <a href="#">nowsze</a>
-        <a href="#">1</a>
-        <a href="#" class="active">2</a>
-        <a href="#">3</a>
-        <a href="#">starsze</a>
+                <div class="message-box__actions">
+                    <div class="message-box__attachments">
+                        <button class="btn btn--secondary btn--gray">
+                            dodaj załącznik
+                        </button>
+                        <input type="file" class="multi">
+                    </div>
+                    <div class="message-box__send">
+                        <button type="submit" class="btn btn--secondary">Wyślij</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="new-correspondance__item">
+            <div class="templates">
+                <h4>Szablony wiadomości</h4>
+                <a href="#">Dzisiejsza korespondencja</a>
+                <a href="#">Dzisiejszy scan</a>
+                <a href="#">Dzisiejsza korespondencja</a>
+                <a href="#">Dzisiejsza korespondencja</a>
+                <a href="#">Dzisiejsza korespondencja</a>
+                <a href="#">Dzisiejsza korespondencja</a>
+                <a href="#">Dzisiejsza korespondencja</a>
+                <a href="#">Dzisiejsza korespondencja</a>
+                <a href="#">Dzisiejsza korespondencja</a>
+                <a href="#">Dzisiejsza korespondencja</a>
+                <a href="#">Dzisiejsza korespondencja</a>
+            </div>
+        </div>
     </div>
 </div>
-
-
             </div>
         </div>
     </div>
