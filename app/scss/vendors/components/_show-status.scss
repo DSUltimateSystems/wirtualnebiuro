@@ -1,0 +1,63 @@
+.show-status {
+  width: 100%;
+  .toggle-status {
+    cursor: pointer;
+    transition: $transition-base;
+    &:hover {
+      color: $color-primary;
+    }
+  }
+  .statuses {
+    display: none;
+    ul {
+      list-style-type: none;
+    }
+    &.active {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    & > div {
+      width: 50%;
+      min-width: 50%;
+      max-width: 50%;
+      position: relative;
+    }
+    .fa-times, .fa-trash-alt, .fa-plus {
+      transition: $transition-base;
+      cursor: pointer;
+      padding: 0 3px;
+      &:hover {
+        color: $color-gray;
+      }
+    }
+    .fa-times {
+      color: $color-red;
+    }
+    .fa-trash-alt, .fa-plus {
+      color: $color-primary;
+    }
+  }
+
+  .status {
+    &_list {
+      li {
+        position: relative;
+        display: block;
+        cursor: move;
+        color: #222;
+        margin: 3px 3px 3px 0;
+        padding: 4px;
+        width: auto;
+        height: auto;
+        font-size: 11px;
+        text-align: left;
+        border: 1px solid $color-light-gray;
+        background-color: $color-light-yellow;
+      }
+    }
+  }
+  .add_status {
+    margin-top: 10px;
+  }
+}

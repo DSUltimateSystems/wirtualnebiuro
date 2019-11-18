@@ -103,6 +103,11 @@ const App = (() => {
               that.data('value', that.val());
           });
       });
+        //Panel-add
+      $('.panel-add .btn-add, .panel-add .btn--cancel').click(function (e) {
+          e.preventDefault();
+          $(this).closest('.panel-add').find('.panel-add__status').fadeToggle(300);
+      });
 
         //   Show/Hide modal
       $('.close-modal').on('click', function(e) {
@@ -135,6 +140,68 @@ const App = (() => {
       $('.times').on('click', function(e) {
           e.preventDefault();
           $(this).closest('tr').fadeToggle(300);
+      });
+      //  Show/Add Status in card-user
+      $('.show-status .toggle-status').click(function (e) {
+          e.preventDefault();
+          $(this).closest('.show-status').find('.statuses').toggleClass('active');
+      });
+      $('.toggle-status').on('click', function () {
+          $(this).text(function(i, v){
+              return v === 'Pokaż statusy' ? 'Ukryj statusy' : 'Pokaż statusy'
+          });
+      });
+
+      $("#status_list_active").sortable({
+          connectWith: "#status_list_avaible",
+          scroll: true,
+          scrollSensitivity: 30,
+          scrollSpeed: 10,
+          cursor: 'move',
+          tolerance: 'pointer',
+          axis: 'y',
+          opacity: 0.6,
+          //forcePlaceholderSize: true,
+          //placeholder: 'ui-placeholder',
+
+          receive: function (event, ui) {
+              sortable_receive($(this));
+              save_original_order(ui.item);
+          },
+          remove: function (event, ui) {
+              sortable_remove($(this));
+          },
+          'start': function (event, ui) {
+              ui.placeholder.height(ui.helper.outerHeight());
+          },
+          update: function () {
+              save_list_active($(this));
+          },
+
+      });
+      $("#status_list_avaible").sortable({
+          connectWith: "#status_list_active",
+          scroll: true,
+          scrollSensitivity: 30,
+          scrollSpeed: 10,
+          cursor: 'move',
+          tolerance: 'pointer',
+          axis: 'y',
+          opacity: 0.6,
+          //forcePlaceholderSize: true,
+          //placeholder: 'ui-placeholder'
+          receive: function (event, ui) {
+              sortable_receive($(this));
+          },
+          remove: function (event, ui) {
+              sortable_remove($(this));
+          },
+          'start': function (event, ui) {
+              ui.placeholder.height(ui.helper.outerHeight());
+          },
+          update: function () {
+
+          },
       });
   };
 

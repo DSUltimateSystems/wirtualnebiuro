@@ -1,5 +1,4 @@
 .show-texture {
-  background-color: $color-light-gray !important;
   display: none;
   & > td {
     position: relative;
@@ -12,31 +11,29 @@
       display: none;
     }
   }
+  h3 {
+    padding: 10px 0;
+    @include respond-to('medium') {
+      padding: 10px;
+    }
+  }
   .columns {
     min-width: 100%;
-    @include respond-to('medium') {
-      margin-bottom: 0;
-    }
     &__title {
       margin-top: 20px;
     }
   }
-  .address {
-    @include respond-to('medium') {
-      display: flex;
-      justify-content: flex-start;
-      align-items: flex-start;
-    }
-    p {
-      font-size: 11px;
-      line-height: 15px;
-    }
-    &__item {
-      @include respond-to('medium') {
-        width: 50%;
+  &--tr-border {
+    tr {
+      border-top: 3px solid $color-light-brown;
+      border-bottom: 3px solid $color-light-brown;
+      @include respond-to('small') {
+        border-top: none;
       }
-      @include respond-to('large') {
-        width: 33.3%;
+    }
+    tfoot {
+      tr {
+        border-bottom: none;
       }
     }
   }

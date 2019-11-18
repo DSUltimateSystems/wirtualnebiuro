@@ -8,15 +8,12 @@
       background-color: transparent;
     }
   }
-  h3 {
-    padding-bottom: 10px;
-    text-align: center;
-    font-weight: 600;
-    @include respond-to('small') {
-      text-align: left;
-    }
-  }
   .card-info {
+    &__content {
+      @include respond-to('small') {
+        padding: 30px;
+      }
+    }
     &__header {
       margin: 0 -10px -25px;
       h3 {
@@ -117,14 +114,17 @@
     }
     &__item {
       margin: 0;
-      &--grow {
+      &--small {
         flex: auto;
-        max-width: 866px;
+        max-width: 300px;
         width: 100%;
       }
       & + .columns__item {
         @include respond-to('small') {
-          margin-left: 20px;
+          margin-left: 25px;
+        }
+        @include respond-to('medium') {
+          margin-left: 125px;
         }
       }
     }
@@ -146,11 +146,20 @@
     display: flex;
     justify-content: flex-end;
   }
-  .expand-content {
+  .icon-square {
     cursor: pointer;
     .active {
       &:before {
         content: '\f146';
+      }
+    }
+  }
+  &__textures {
+    margin-top: 20px;
+    .columns {
+      margin: 10px 0;
+      @include respond-to('medium') {
+        margin: 20px 0;
       }
     }
   }

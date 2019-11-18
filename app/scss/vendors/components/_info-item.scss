@@ -2,9 +2,6 @@
   @include respond-to('small') {
     margin-top: 20px;
   }
-  @include respond-to('medium') {
-    margin-top: 120px;
-  }
   &__item {
     display: flex;
     flex-direction: column;
@@ -16,6 +13,9 @@
     }
     & + .info-details__item {
       margin-top: 5px;
+    }
+    &--light-brown {
+      background-color: $color-light-brown;
     }
   }
   &--textures {

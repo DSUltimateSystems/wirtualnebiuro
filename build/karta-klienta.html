@@ -188,7 +188,7 @@
         </div>
         <div class="card-info__content">
             <div class="columns">
-                <div class="columns__item">
+                <div class="columns__item columns__item--small">
                     <div class="row">
                         <div class="panel-edit">
                             <div class="company-name">
@@ -285,7 +285,49 @@
                             <p>
                                 <strong>Status</strong>
                             </p>
-                            <button>Pokaż statusy</button>
+                            <button class="toggle-status">Pokaż statusy</button>
+                            <div class="statuses">
+                                <div class="statuses_added">
+                                    <ul id="status_list_active" class="status_list selected ui-sortable">
+                                        <li id="us_id_5">
+                                            <a class="far fa-trash-alt" title="Usuń"></a>
+                                            <span>umowa do 30.06.16!!!</span>
+                                            <a href="#" title="Dodaj status na konto klienta" class="ui-icon fas fa-times"></a>
+                                        </li>
+                                        <li id="us_id_3">
+                                            <a href="#" title="Usuń" class="ui-icon far fa-trash-alt"></a>
+                                            <span>ta sama skrytka co SMART ART COM</span>
+                                            <a class="fas fa-times" title="Usuń status z bazy danych"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="statuses_avaible">
+                                    <ul id="status_list_avaible" class="status_list ui-sortable">
+                                        <li id="us_id_8">
+                                            <a href="#" title="Dodaj status na konto klienta" class="ui-icon fas fa-plus"></a>
+                                            <span>Pierwsze ponaglenie</span>
+                                            <a class="fas fa-times" title="Usuń status z bazy danych"></a>
+                                        </li>
+                                        <li id="us_id_5">
+                                            <a href="#" title="Dodaj status na konto klienta" class="ui-icon fas fa-plus"></a>
+                                            <span>umowa do 30.06.16!!!</span>
+                                            <a class="fas fa-times" title="Usuń status z bazy danych"></a>
+                                        </li>
+                                    </ul>
+                                    <div class="add_status">
+                                        <div class="panel-add">
+                                            <a href="#" class="btn-add">Dodaj status do listy</a>
+                                            <div class="panel-add__status">
+                                                <input type="text" placeholder="Nazwa statusu">
+                                                <div class="panel-add__actions">
+                                                    <button class="btn btn--secondary btn--save">zapisz</button>
+                                                    <button class="btn btn--secondary btn--cancel">anuluj</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="row row--table">
@@ -382,8 +424,8 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <h3>Umowy</h3>
+            <div class="card-user__contracts">
+                <h4>Umowy</h4>
                 <table class="rwd-table">
                     <tbody>
                     <tr>
@@ -405,8 +447,8 @@
                     </tbody>
                 </table>
             </div>
-            <div class="row">
-                <h3>Faktury</h3>
+            <div class="card-user__textures">
+                <h4>Faktury</h4>
                 <table class="rwd-table">
                     <tbody>
                     <tr>
@@ -453,51 +495,37 @@
                                 </ul>
                             </div>
                         </td>
-                        <tr class="show-texture" style="display: none">
+                        <tr class="show-texture">
                             <td colspan="10">
                                 <div class="columns">
                                     <div class="columns__item">
-                                        <div class="columns__title">
-                                            <h4>Dane adresowe</h4>
-                                        </div>
                                         <div class="address">
-                                            <div class="address__item">
-                                                <strong>Sprzedawca</strong>
-                                                <p>ARCHEION Aleksander Kulesza-Milewski</p>
-                                                <p>ul.Świetego Filipa 23/3</p>
-                                                <p>32-150 Kraków</p>
-                                                <p>NIP: 683-152-22-82</p>
-                                                <p>Nr konta:</p>
-                                                <p>66 1140 2017 0000 4502 1101 2210</p>
-                                            </div>
-                                            <div class="address__item">
-                                                <strong>Nabywca</strong>
-                                                <p>ARCHEION Aleksander Kulesza-Milewski</p>
-                                                <p>ul.Świetego Filipa 23/3</p>
-                                                <p>32-150 Kraków</p>
-                                                <p>NIP: 683-152-22-82</p>
-                                                <p>Nr konta:</p>
-                                                <p>66 1140 2017 0000 4502 1101 2210</p>
-                                            </div>
-                                            <div class="address__item">
-                                                <strong>Informacje</strong>
-                                                <p>Rodzaj faktury: <strong>Zwykła</strong></p>
-                                                <p>Status płatności: <strong>Nieopłacona</strong></p>
-                                                <p>Forma płatności: <strong>Przelew</strong></p>
-                                                <p>Zamknięta: <strong>Tak</strong></p>
-                                                <p>Wysłana: <strong>Tak</strong></p>
-                                                <p>Rodzaj faktury: <strong>Zwykła</strong></p>
-                                                <p>Data wystawienia: <strong>08.01.2019</strong></p>
-                                                <p>Data sprzedaży: <strong>08.01.2019</strong></p>
-                                                <p>Termin płatności: <strong>08.01.2019</strong></p>
+                                            <h3>Dane adresowe</h3>
+                                            <div class="address__items">
+                                                <div class="address__item">
+                                                    <strong>Sprzedawca</strong>
+                                                    <p>ARCHEION Aleksander Kulesza-Milewski</p>
+                                                    <p>ul.Świetego Filipa 23/3</p>
+                                                    <p>32-150 Kraków</p>
+                                                    <p>NIP: 683-152-22-82</p>
+                                                    <p>Nr konta:</p>
+                                                    <p>66 1140 2017 0000 4502 1101 2210</p>
+                                                </div>
+                                                <div class="address__item">
+                                                    <strong>Nabywca</strong>
+                                                    <p>ARCHEION Aleksander Kulesza-Milewski</p>
+                                                    <p>ul.Świetego Filipa 23/3</p>
+                                                    <p>32-150 Kraków</p>
+                                                    <p>NIP: 683-152-22-82</p>
+                                                    <p>Nr konta:</p>
+                                                    <p>66 1140 2017 0000 4502 1101 2210</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="columns__item">
-                                        <div class="columns__title">
-                                            <h4>Pozycje na fakturze</h4>
-                                        </div>
-                                        <table class="rwd-table">
+                                        <h3>Pozycje na fakturze</h3>
+                                        <table class="rwd-table show-texture--tr-border">
                                             <tbody>
                                             <tr>
                                                 <th>Pozycja</th>
@@ -535,7 +563,7 @@
                     </tbody>
                 </table>
                 <div class="info-details info-details--textures">
-                    <div class="info-details__item" data-scroll="#6572">
+                    <div class="info-details__item info-details__item--light-brown" data-scroll="#6572">
                         <div class="info-item__heading">
                             <h4>Matteo Agrati</h4>
                             <small>drugi numer do p. Marty Podkówki - można do niej śmiało dzwonić :)</small>
@@ -546,7 +574,7 @@
                             <small>ID: 6572</small>
                         </div>
                     </div>
-                    <div class="info-details__item">
+                    <div class="info-details__item info-details__item--light-brown">
                         <div class="info-details__heading">
                             <h4>Aneta Plis</h4>
                             <small>Yesimages do 30.06.2016 !!</small>
@@ -557,7 +585,7 @@
                             <small>ID: 6572</small>
                         </div>
                     </div>
-                    <div class="info-details__item">
+                    <div class="info-details__item info-details__item--light-brown">
                         <div class="info-details__heading">
                             <h4>Aneta Plis</h4>
                             <small>Yesimages do 30.06.2016 !!</small>
@@ -568,7 +596,7 @@
                             <small>ID: 6572</small>
                         </div>
                     </div>
-                    <div class="info-details__item">
+                    <div class="info-details__item info-details__item--light-brown">
                         <div class="info-details__heading">
                             <h4>Aneta Plis</h4>
                             <small>Yesimages do 30.06.2016 !!</small>
@@ -640,6 +668,7 @@
         src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
         crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1-rc.1/js/select2.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery-multifile@2.2.2/jquery.MultiFile.min.js" type="text/javascript" language="javascript"></script>
 <script src="assets/js/script.min.js"></script>
