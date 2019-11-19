@@ -9,6 +9,7 @@
 // 2. Vendors
 @import
   'vendors/select2',
+  'vendors/jquery_ui',
   'vendors/normalize';
 
 // 3. Base stuff
@@ -57,7 +58,8 @@
   'components/show-texture',
   'components/close-content',
   'components/show-status',
-  'components/panel-add';
+  'components/panel-add',
+  'components/_datepicker';
 
 // 6. Page-specific styles
 @import

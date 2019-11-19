@@ -108,6 +108,11 @@ const App = (() => {
           e.preventDefault();
           $(this).closest('.panel-add').find('.panel-add__status').fadeToggle(300);
       });
+        //Panel Add Deposit
+      $('.add-deposit .btn-add, .add-deposit .btn--cancel').click(function (e) {
+          e.preventDefault();
+          $(this).closest('.add-deposit').find('.panel-add__deposit__wrapper').fadeToggle(300);
+      });
 
         //   Show/Hide modal
       $('.close-modal').on('click', function(e) {
@@ -175,7 +180,7 @@ const App = (() => {
               ui.placeholder.height(ui.helper.outerHeight());
           },
           update: function () {
-              save_list_active($(this));
+              // save_list_active($(this));
           },
 
       });
@@ -202,6 +207,10 @@ const App = (() => {
           update: function () {
 
           },
+      });
+      //DATAPICKER
+      $('[data-toggle="datepicker"]').datepicker({
+          dateFormat: 'dd-mm-yy',
       });
   };
 

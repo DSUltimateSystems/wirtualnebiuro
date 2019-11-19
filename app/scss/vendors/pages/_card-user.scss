@@ -145,6 +145,11 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    flex-direction: column;
+    &__actions {
+      display: flex;
+      justify-content: flex-end;
+    }
   }
   .icon-square {
     cursor: pointer;

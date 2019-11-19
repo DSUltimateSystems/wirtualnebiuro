@@ -73,4 +73,55 @@
       }
     }
   }
+  &__deposit {
+    margin: 0;
+    &__wrapper {
+      display: none;
+      margin: 20px 0;
+    }
+    &__content {
+      @include respond-to('large') {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      & > input, select,  .datepicker {
+        margin-top: 10px;
+        @include respond-to('large') {
+          width: calc(100% / 3.3);
+          min-width: calc(100% / 3.3);
+          margin-top: 0;
+          margin-left: 5px;
+        }
+      }
+      input {
+        @include respond-to('large') {
+          margin-left: 0;
+        }
+      }
+      select {
+        width: 100%;
+        @include respond-to('large') {
+          width: calc(100% / 3.3);
+          min-width: calc(100% / 3.3);
+        }
+        padding: 10px 7px;
+      }
+    }
+    .panel-add__deposit__actions {
+      @include respond-to('medium') {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .btn {
+        & + .btn {
+          @include respond-to('medium') {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
 }

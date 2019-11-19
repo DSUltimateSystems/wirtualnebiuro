@@ -165,7 +165,28 @@
                             </tbody>
                         </table>
                         <div class="add-deposit">
-                            <button class="btn btn--secondary">dodaj kaucję</button>
+                            <div class="add-deposit__actions">
+                                <button class="btn btn--secondary btn-add">dodaj kaucję</button>
+                            </div>
+                            <div class="panel-add panel-add__deposit">
+                                <div class="panel-add__deposit__wrapper">
+                                    <div class="panel-add__deposit__content">
+                                        <input type="text" placeholder="Kwota kaucji">
+                                        <select>
+                                            <option value="Nierozliczona">Nierozliczona</option>
+                                            <option value="Rozliczona">Rozliczona</option>
+                                        </select>
+                                        <div class="datepicker">
+                                            <input type="text" placeholder="Data wpłacenia kaucji" data-toggle="datepicker">
+                                            <span class="far fa-calendar-alt"></span>
+                                        </div>
+                                    </div>
+                                    <div class="panel-add__deposit__actions">
+                                        <button class="btn btn--secondary btn--save">dodaj kaucję</button>
+                                        <button class="btn btn--secondary btn--cancel">anuluj</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="row">

@@ -66,12 +66,18 @@
                 <div class="form-group">
                     <label for="date-sales" class="form-add__heading">Data sprzedaży</label>
                     <small>Pozostaw puste, aby skopiować datę wystawienia faktury</small>
-                    <input type="date" id="date-sales">
+                    <div class="datepicker">
+                        <input type="text" name='datepicker' data-toggle="datepicker" id="date-sales">
+                        <span class="far fa-calendar-alt"></span>
+                    </div>
                 </div>
                 <div class="form-group">
                     <label for="date-issue" class="form-add__heading">Data wystawienia</label>
                     <small>Pozostaw puste, aby wstawić dzisiejszą datę</small>
-                    <input type="date" id="date-issue">
+                    <div class="datepicker">
+                        <input type="text" name='datepicker' data-toggle="datepicker" id="date-issue">
+                        <span class="far fa-calendar-alt"></span>
+                    </div>
                 </div>
             </div>
             <div class="row row--extended">
