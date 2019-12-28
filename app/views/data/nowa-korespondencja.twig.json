@@ -42,7 +42,7 @@
   "subMenu": [
     {
       "name": "lista korespondencji",
-      "link": "wirtualnebiuro/lista-korespondencji.html",
+      "link": "/wirtualnebiuro/lista-korespondencji.html",
       "active": false
     },
     {
@@ -52,7 +52,7 @@
     },
     {
       "name": "nowa korespondencja zbiorowa",
-      "link": "wirtualnebiuro/nowa-korespondencja-zbiorowa.html",
+      "link": "/wirtualnebiuro/nowa-korespondencja-zbiorowa.html",
       "active": false
     }
   ],
