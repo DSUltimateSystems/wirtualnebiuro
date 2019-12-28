@@ -1,45 +1,4 @@
 {% extends "layouts/login.twig" %}
 {% block content %}
-    <div class="container">
-        <ul class="index-list">
-            <li>
-                - <a href="/wirtualnebiuro/login.html">Login</a>
-            </li>
-            <li>
-                - <a href="/wirtualnebiuro/lista-firm.html">Lista firm</a>
-            </li>
-            <li>
-                - <a href="/wirtualnebiuro/lista-firm-n-a.html">Lista firm n/a</a>
-            </li>
-            <li>
-                - <a href="/wirtualnebiuro/lista-uzytkownikow.html">Lista uzytkownikow</a>
-            </li>
-            <li>
-                - <a href="/wirtualnebiuro/lista-uzytkownikow-n-a.html">Lista uzytkownikow n/a</a>
-            </li>
-            <li>
-                - <a href="/wirtualnebiuro/dodaj-nowego-uzytkownika-z-firma.html">Dodaj nowego użytkownika z firma</a>
-            </li>
-            <li>
-                - <a href="/wirtualnebiuro/lista-faktur.html">Lista faktur</a><br>
-                *(Akcja -> podgląd faktury(modal))<br>
-                *(Nr faktury -> rozwija się podgląd faktury)
-            </li>
-            <li>
-                - <a href="/wirtualnebiuro/dodaj-nowa-fakture.html">Dodaj fakture</a>
-            </li>
-            <li>
-                - <a href="/wirtualnebiuro/lista-korespondencji.html">Lista korespondencji</a><br>
-                *(Właściciel -> pierwsza pozycja Wojtyńska Małgorzata -> strzałka w dół na końcu tabeli)<br>
-            </li>
-            <li>
-                - <a href="/wirtualnebiuro/nowa-korespondencja.html">Nowa korespondencja</a>
-            </li>
-            <li>
-                - <a href="/wirtualnebiuro/karta-klienta.html">Karta klienta</a><br>
-                * (Akcja -> modal do - dodaj notatka oraz usun fakture)<br>
-                * (Plusik w kwadracie -> rozwinięcie podglądu faktury)<br>
-            </li>
-        </ul>
-    </div>
+    {% include 'sections/index/index-panel.twig'%}
 {% endblock %}

@@ -28,15 +28,22 @@
  }
 
 .index-list {
-  margin: 20px 0;
-  li{
+  color: $color-white;
+  padding: 20px;
+  margin: 20px 0 40px;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.5);
+  li {
     display: block;
     font-size: 20px;
+    padding: 5px 0;
   }
-  a{
-    color: $text-color;
+  a {
     &:hover {
-      color: $color-primary;
+      color: $color-gray;
     }
+  }
+  small {
+    color: $color-primary;
   }
 }

@@ -1278,19 +1278,25 @@ p {
 }
 
 .index-list {
-  margin: 20px 0;
+  color: white;
+  padding: 20px;
+  margin: 20px 0 40px;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.5);
 }
 
 .index-list li {
   display: block;
   font-size: 20px;
-}
-
-.index-list a {
-  color: black;
+  padding: 5px 0;
 }
 
 .index-list a:hover {
+  color: #acacac;
+}
+
+.index-list small {
   color: #e7c612;
 }
 
