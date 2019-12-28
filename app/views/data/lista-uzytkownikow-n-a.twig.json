@@ -4,37 +4,37 @@
   "menu": [
     {
       "name": "użytkownicy i firmy",
-      "link": "/wirtualne/lista-firm.html",
+      "link": "/wirtualnebiuro/lista-firm.html",
       "icon": "far fa-user",
       "active": true
     },
     {
       "name": "korespondencja",
-      "link": "/wirtualne/lista-korespondencji.html",
+      "link": "/wirtualnebiuro/lista-korespondencji.html",
       "icon": "far fa-envelope",
       "active": false
     },
     {
       "name": "faktury",
-      "link": "/wirtualne/lista-faktur.html",
+      "link": "/wirtualnebiuro/lista-faktur.html",
       "icon": "fas fa-file-signature",
       "active": false
     },
     {
       "name": "umowy",
-      "link": "/wirtualne/lista-umow.html",
+      "link": "/wirtualnebiuro/lista-umow.html",
       "icon": "far fa-file-alt",
       "active": false
     },
     {
       "name": "raporty",
-      "link": "/wirtualne/lista-raportow.html",
+      "link": "/wirtualnebiuro/lista-raportow.html",
       "icon": "fas fa-chart-line",
       "active": false
     },
     {
       "name": "serwis",
-      "link": "/wirtualne/serwis.html",
+      "link": "/wirtualnebiuro/serwis.html",
       "icon": "fas fa-chart-pie",
       "active": false
     }
@@ -42,27 +42,27 @@
   "subMenu": [
     {
       "name": "lista firm",
-      "link": "/wirtualne/lista-firm.html",
+      "link": "/wirtualnebiuro/lista-firm.html",
       "active": false
     },
     {
       "name": "lista firm n/a",
-      "link": "/wirtualne/lista-firm-n-a.html",
+      "link": "/wirtualnebiuro/lista-firm-n-a.html",
       "active": false
     },
     {
       "name": "lista użytkowników",
-      "link": "/wirtualne/lista-uzytkownikow.html",
+      "link": "/wirtualnebiuro/lista-uzytkownikow.html",
       "active": false
     },
     {
       "name": "lista użytkowników n/a",
-      "link": "/wirtualne/lista-uzytkownikow-n-a.html",
+      "link": "/wirtualnebiuro/lista-uzytkownikow-n-a.html",
       "active": true
     },
     {
       "name": "dodaj nowego użytkownika z firmą",
-      "link": "/wirtualne/dodaj-nowego-uzytkownika-z-firma.html",
+      "link": "/wirtualnebiuro/dodaj-nowego-uzytkownika-z-firma.html",
       "active": false
     }
   ],
