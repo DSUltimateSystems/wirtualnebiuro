@@ -1,0 +1,50 @@
+{
+    "title": "Magazyn plików",
+    "class": "files-storage",
+    "menu": [
+        {
+            "name": "użytkownicy i firmy",
+            "link": "/wirtualnebiuro/lista-firm.html",
+            "icon": "far fa-user",
+            "active": false
+        },
+        {
+            "name": "korespondencja",
+            "link": "/wirtualnebiuro/lista-korespondencji.html",
+            "icon": "far fa-envelope",
+            "active": false
+        },
+        {
+            "name": "faktury",
+            "link": "/wirtualnebiuro/lista-faktur.html",
+            "icon": "fas fa-file-signature",
+            "active": false
+        },
+        {
+            "name": "umowy",
+            "link": "/wirtualnebiuro/lista-umow.html",
+            "icon": "far fa-file-alt",
+            "active": false
+        },
+        {
+            "name": "raporty",
+            "link": "/wirtualnebiuro/lista-raportow.html",
+            "icon": "fas fa-chart-line",
+            "active": false
+        },
+        {
+            "name": "serwis",
+            "link": "/wirtualnebiuro/magazyn-plikow.html",
+            "icon": "fas fa-chart-pie",
+            "active": true
+        }
+    ],
+    "subMenu": [
+        {
+            "name": "magazyn plikow",
+            "link": "/wirtualnebiuro/magazyn-plikow.html",
+            "active": true
+        }
+    ],
+    "tableTitle": "Magazyn plików"
+}

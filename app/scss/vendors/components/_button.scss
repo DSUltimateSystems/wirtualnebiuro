@@ -11,8 +11,6 @@ button{
   color: $color-white;
   background-color: $color-primary;
   border: 3px solid $color-primary;
-  box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, .5);
-  padding: 9px 10px;
   min-width: 100%;
   cursor: pointer;
   border-radius: 2px;
@@ -22,12 +20,22 @@ button{
   @include respond-to('small') {
     min-width: 188px;
   }
-  @include respond-to('large') {
-    padding: 14px 10px;
-  }
   @include on-event() {
     background-color: $color-white;
     color: $color-primary;
+  }
+  &--primary {
+    box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.5);
+    padding: 9px 10px;
+    @include respond-to('large') {
+      padding: 14px 10px;
+    }
+  }
+  &--secondary {
+    padding: 7px 10px;
+    @include respond-to('small') {
+      max-width: 120px;
+    }
   }
   &--delete {
     color: $color-red;
@@ -37,18 +45,25 @@ button{
       opacity: .7;
     }
   }
-  &--secondary {
-    @include respond-to('small') {
-      max-width: 120px;
-    }
-    padding: 7px 10px;
-  }
   &--gray {
     background-color: $color-gray;
     border-color: transparent;
     @include on-event() {
       background-color: $color-light-gray;
       color: $text-color;
+    }
+  }
+  &--small {
+    width: 100%;
+    @include respond-to('small') {
+      min-width: 96px;
+    }
+  }
+  &--pink {
+    background-color: $color-light-pink;
+    border-color: $color-light-pink;
+    &:hover {
+      color: $color-light-pink;
     }
   }
 }

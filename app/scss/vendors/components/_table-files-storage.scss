@@ -1,0 +1,44 @@
+.table-files-storage {
+    margin-bottom: 40px;
+    tr {
+        background-color: transparent !important;
+        border: none;
+        &:first-child {
+            border-bottom: 2px solid $color-gray;
+        }
+        th {
+            padding: 10px 0 !important;
+        }
+        td {
+            padding: 10px 0 0 !important;
+        }
+        
+    }
+    .checkbox {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        input[type=checkbox] + label:before {
+            width: 25px;
+            height: 25px;
+        }
+    }
+    &__actions {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column;
+        @include respond-to('small') {
+            flex-direction: row;
+        }
+        .btn {
+            & + .btn {
+                margin-top: 10px;
+                @include respond-to('small') {
+                    margin-left: 50px;
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}
