@@ -2037,6 +2037,94 @@ p {
   }
 }
 
+.configuration-services__items {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.configuration-services__items .checkbox label {
+  width: 100%;
+  display: -webkit-inline-box !important;
+  display: -webkit-inline-flex !important;
+  display: -ms-inline-flexbox !important;
+  display: inline-flex !important;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.configuration-services__items p, .configuration-services__items label {
+  font-size: 14px;
+}
+
+@media (min-width: 990px) {
+  .configuration-services__items p, .configuration-services__items label {
+    font-size: 18px;
+  }
+}
+
+.configuration-services__item {
+  font-weight: 600;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+@media (min-width: 576px) {
+  .configuration-services__item {
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+.configuration-services__item > *:not(.btn) {
+  width: 100%;
+  padding: 5px;
+}
+
+@media (min-width: 576px) {
+  .configuration-services__item > *:not(.btn) {
+    width: 33%;
+  }
+}
+
+@media (min-width: 990px) {
+  .configuration-services__item > *:not(.btn) {
+    min-width: 300px;
+    width: 200px;
+  }
+}
+
+.configuration-services__actions {
+  margin-top: 60px;
+}
+
+.configuration-services hr {
+  height: 1px;
+  margin: 40px 0;
+  background-color: #acacac;
+}
+
 .nav .icon-test {
   display: block;
   width: 40px;
@@ -2283,13 +2371,8 @@ button {
 }
 
 .btn--small {
-  width: 100%;
-}
-
-@media (min-width: 576px) {
-  .btn--small {
-    min-width: 96px;
-  }
+  min-width: 96px;
+  width: 96px;
 }
 
 .btn--pink {
