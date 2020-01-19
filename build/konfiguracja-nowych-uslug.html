@@ -8,7 +8,7 @@
 <link rel="shortcut icon" href="./assets/images/favicon.ico"/>
 
 <!-- Primary Meta Tags -->
-<title>Magazyn plików</title>
+<title>Konfiguracja nowych usług</title>
 <meta name="title" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
 <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
 <meta name="keywords" content="Lorem, ipsum, dolor, sit, amet, consectetur, adipiscing, elit">
@@ -34,7 +34,7 @@
 <link rel="stylesheet" href="assets/css/main.css">
 
 </head>
-<body class="files-storage">
+<body class="configuration">
 <!-- HEADER -->
 <header class="header">
    <div class="container">
@@ -106,11 +106,11 @@
 <nav class="sub-nav">
     <div class="sub-nav__items">
         
-            <a href="/wirtualnebiuro/magazyn-plikow.html" class="sub-nav__item active">
+            <a href="/wirtualnebiuro/magazyn-plikow.html" class="sub-nav__item ">
                 magazyn plikow
             </a>
         
-            <a href="/wirtualnebiuro/konfiguracja-nowych-uslug.html" class="sub-nav__item ">
+            <a href="/wirtualnebiuro/konfiguracja-nowych-uslug.html" class="sub-nav__item active">
                 konfiguracja nowych usług
             </a>
         
@@ -171,54 +171,54 @@
 </div>
 
                 <div class="card-shadow">
-    <h2>Magazyn plików</h2>
-    <table class="rwd-table table-files-storage">
-    <h3>scan</h3>
-        <tbody>
-            <tr>
-                <th></th>
-                <th>nazwa</th>
-                <th>data wysłania</th>
-                <th>format</th>
-                <th></th>
-            </tr>
-            <tr>
-                <td data-th="zaznacz:">
-                    <div class="checkbox">
-                        <input type="checkbox" id="check-1">
-                        <label for="check-1"></label>
-                    </div>
-                </td>
-                <td data-th="nazwa:">lorem ipsum</td>
-                <td data-th="data wysłania:">01.02.2016</td>
-                <td data-th="format:">PDF</td>
-                <td>
-                    <div class="table-files-storage__actions">
-                        <button class="btn btn--secondary btn--small btn--pink">podgląd</button>
-                        <button class="btn btn--secondary btn--small">pobierz</button>
-                    </div>   
-                </td>
-            </tr>
-            <tr>
-                <td data-th="zaznacz:">
-                    <div class="checkbox">
-                        <input type="checkbox" id="check-2">
-                        <label for="check-2"></label>
-                    </div>
-                </td>
-                <td data-th="nazwa:">lorem ipsum</td>
-                <td data-th="data wysłania:">01.02.2016</td>
-                <td data-th="format:">PDF</td>
-                <td>
-                    <div class="table-files-storage__actions">
-                        <button class="btn btn--secondary btn--small btn--pink">podgląd</button>
-                        <button class="btn btn--secondary btn--small">pobierz</button>
-                    </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <button class="btn btn--secondary">synchronizuj dane</button>
+    <h2>Konfiguracja nowych usług</h2>
+    <div class="configuration-services">
+        <h3>usługi które posiadasz:</h3>
+        <ul class="configuration-services__items">
+            <li class="configuration-services__item">
+                <p>lorem ipsum</p>
+                <p>3,50 zł szt</p>
+                <button class="btn btn--small btn--secondary">usuń</button>
+            </li>
+            <li class="configuration-services__item">
+                <p>lorem ipsum</p>
+                <p>3,50 zł szt</p>
+                <button class="btn btn--small btn--secondary">usuń</button>
+            </li>
+            <li class="configuration-services__item">
+                <p>lorem ipsum</p>
+                <p>3,50 zł szt</p>
+                <button class="btn btn--small btn--secondary">usuń</button>
+            </li>
+        </ul>
+        <div class="configuration-services__actions">
+            <button class="btn btn--secondary">dodaj usługę</button>
+        </div>
+        <hr>
+        <ul class="configuration-services__items">
+            <li class="configuration-services__item">
+                <div class="checkbox">
+                    <input type="checkbox" id="check-1">
+                    <label for="check-1">lorem ipsum</label>
+                </div>
+                <p>3,50 zł szt</p>
+            </li>
+            <li class="configuration-services__item">
+                <div class="checkbox">
+                    <input type="checkbox" id="check-2">
+                    <label for="check-2">lorem ipsum</label>
+                </div>
+                <p>3,50 zł szt</p>
+            </li>
+            <li class="configuration-services__item">
+                <div class="checkbox">
+                    <input type="checkbox" id="check-3">
+                    <label for="check-3">lorem ipsum</label>
+                </div>
+                <p>3,50 zł szt</p>
+            </li>
+        </ul>
+    </div>
 </div>
             </div>
         </div>

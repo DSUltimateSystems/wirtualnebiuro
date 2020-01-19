@@ -28,7 +28,9 @@
   'layout/form-add',
   'layout/card-info',
   'layout/new-correspondace',
-  'layout/footer';
+  'layout/footer',
+  'layout/configuration';
+
 
 // 5. Components
 @import
@@ -37,7 +39,7 @@
   'components/button',
   'components/user',
   'components/dropdown',
-  'components/tags-filter',
+  'components/tags-filter', 
   'components/rwd-table',
   'components/table',
   'components/checkbox',

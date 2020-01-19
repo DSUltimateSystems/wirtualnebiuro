@@ -1,6 +1,6 @@
 {
-    "title": "Magazyn plików",
-    "class": "files-storage",
+    "title": "Konfiguracja nowych usług",
+    "class": "configuration",
     "menu": [
         {
             "name": "użytkownicy i firmy",
@@ -43,13 +43,13 @@
         {
             "name": "magazyn plikow",
             "link": "/wirtualnebiuro/magazyn-plikow.html",
-            "active": true
+            "active": false
         },
         {
             "name": "konfiguracja nowych usług",
             "link": "/wirtualnebiuro/konfiguracja-nowych-uslug.html",
-            "active": false
+            "active": true
         }
     ],
-    "tableTitle": "Magazyn plików"
+    "tableTitle": "Konfiguracja nowych usług"
 }

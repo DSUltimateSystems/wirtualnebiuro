@@ -1,0 +1,53 @@
+.configuration-services {
+    &__items {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        .checkbox {
+            label {
+                width: 100%;
+                display: inline-flex !important;
+                align-items: center; 
+            }
+        }
+        p, label{
+            font-size: 14px;
+            @include respond-to('medium') {
+                font-size: 18px;
+            }
+        }
+    }
+    &__item {
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 20px 0;
+        @include respond-to('small') {
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+        }
+        & > *{
+            &:not(.btn) {
+                width: 100%;
+                padding: 5px;
+                @include respond-to('small') {
+                    width: 33%;
+                }
+                @include respond-to('medium') {
+                    min-width: 300px;
+                    width: 200px;
+                }
+            }
+        }
+    }
+    &__actions {
+        margin-top: 60px;
+    }
+    hr {
+        height: 1px;
+        margin: 40px 0;
+        background-color: $color-gray;
+    }
+}
