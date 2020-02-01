@@ -190,6 +190,10 @@ const App = (() => {
 
           },
       });
+      //Add information in questionnaire
+      $('#add-info').on('change', function (e) {
+          $('.select-contact__add-info').toggleClass('is-visible');
+      });
 
       $( ".datepicker-here" ).datepicker({
           dateFormat: ('dd/mm/yy')

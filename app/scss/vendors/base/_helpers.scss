@@ -47,3 +47,6 @@
     color: $color-primary;
   }
 }
+.no-touch {
+  pointer-events: none;
+}

@@ -49,6 +49,11 @@
             "name": "konfiguracja nowych usług",
             "link": "/wirtualnebiuro/konfiguracja-nowych-uslug.html",
             "active": true
+        },
+        {
+            "name": "ankieta",
+            "link": "/wirtualnebiuro/ankieta.html",
+            "active": false
         }
     ],
     "tableTitle": "Konfiguracja nowych usług"

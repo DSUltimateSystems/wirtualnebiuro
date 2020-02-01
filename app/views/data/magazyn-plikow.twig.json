@@ -49,6 +49,11 @@
             "name": "konfiguracja nowych usług",
             "link": "/wirtualnebiuro/konfiguracja-nowych-uslug.html",
             "active": false
+        },
+        {
+            "name": "ankieta",
+            "link": "/wirtualnebiuro/ankieta.html",
+            "active": false
         }
     ],
     "tableTitle": "Magazyn plików"

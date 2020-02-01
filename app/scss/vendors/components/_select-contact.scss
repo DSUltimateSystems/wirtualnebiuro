@@ -1,0 +1,98 @@
+.select-contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  &__items, p {
+    width: 100%;
+    @include respond-to('small') {
+      width: 50%;
+    }
+  }
+  &__items {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    @include respond-to('small') {
+      justify-content: flex-end;
+    }
+  }
+  &__item {
+    & + .select-contact__item {
+      margin-left: 5px;
+      @include respond-to('small') {
+        margin-left: 20px;
+      }
+    }
+  }
+  input {
+    &[type=checkbox] {
+      display:none;
+      &:checked + label {
+        background-color: $color-light-yellow;
+        color: $color-red;
+      }
+    }
+  }
+  label {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    display: block;
+    border-radius: 50%;
+    background: $color-light-gray;
+    color: #333;
+    transition: $transition-base;
+    cursor: pointer;
+    @include respond-to('small') {
+      width: 50px;
+      height: 50px;
+    }
+    @include respond-to('medium') {
+      width: 80px;
+      height: 80px;
+    }
+    &:hover {
+      background-color: $color-light-yellow;
+      color: $color-red;
+    }
+    &:before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 16px;
+      font-weight: 600;
+      @include respond-to('small') {
+        font-size: 30px;
+      }
+      @include respond-to('medium') {
+        font-size: 40px;
+      }
+    }
+  }
+  &__add-info {
+    padding: 10px 0;
+    display: none;
+    &.is-visible {
+      display: flex;
+      width: 100%;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      @include respond-to('small') {
+        justify-content: flex-end;
+        align-items: flex-end;
+      }
+    }
+    input {
+      padding: 5px;
+      outline: none;
+      border: 1px solid $color-gray;
+      border-radius: 2px;
+    }
+    .btn {
+      margin-top: 5px;
+    }
+  }
+}
