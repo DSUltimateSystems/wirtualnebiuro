@@ -198,6 +198,11 @@ const App = (() => {
       $( ".datepicker-here" ).datepicker({
           dateFormat: ('dd/mm/yy')
       });
+
+      // Show timer content
+      $('.timer__item h4').on('click', function () {
+          $(this).closest('.timer__item').find('.timer__item__wrapper').slideToggle(200);
+      });
   };
 
   return {

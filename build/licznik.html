@@ -8,7 +8,7 @@
 <link rel="shortcut icon" href="./assets/images/favicon.ico"/>
 
 <!-- Primary Meta Tags -->
-<title>Konfiguracja nowych usług</title>
+<title>Licznik czasu</title>
 <meta name="title" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
 <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
 <meta name="keywords" content="Lorem, ipsum, dolor, sit, amet, consectetur, adipiscing, elit">
@@ -34,7 +34,7 @@
 <link rel="stylesheet" href="assets/css/main.css">
 
 </head>
-<body class="configuration">
+<body class="timer-page">
 <!-- HEADER -->
 <header class="header">
    <div class="container">
@@ -110,7 +110,7 @@
                 magazyn plikow
             </a>
         
-            <a href="/wirtualnebiuro/konfiguracja-nowych-uslug.html" class="sub-nav__item active">
+            <a href="/wirtualnebiuro/konfiguracja-nowych-uslug.html" class="sub-nav__item ">
                 konfiguracja nowych usług
             </a>
         
@@ -118,7 +118,7 @@
                 ankieta
             </a>
         
-            <a href="/wirtualnebiuro/licznik.html" class="sub-nav__item ">
+            <a href="/wirtualnebiuro/licznik.html" class="sub-nav__item active">
                 licznik
             </a>
         
@@ -179,53 +179,90 @@
 </div>
 
                 <div class="card-shadow">
-    <h2>Konfiguracja nowych usług</h2>
-    <div class="configuration-services">
-        <h3>usługi które posiadasz:</h3>
-        <ul class="configuration-services__items">
-            <li class="configuration-services__item">
-                <p>lorem ipsum</p>
-                <p>3,50 zł szt</p>
-                <button class="btn btn--small btn--secondary">usuń</button>
-            </li>
-            <li class="configuration-services__item">
-                <p>lorem ipsum</p>
-                <p>3,50 zł szt</p>
-                <button class="btn btn--small btn--secondary">usuń</button>
-            </li>
-            <li class="configuration-services__item">
-                <p>lorem ipsum</p>
-                <p>3,50 zł szt</p>
-                <button class="btn btn--small btn--secondary">usuń</button>
-            </li>
-        </ul>
-        <div class="configuration-services__actions">
-            <button class="btn btn--secondary">dodaj usługę</button>
+    <h2>Licznik czasu pracy</h2>
+    <div class="timer">
+        <div class="timer__content">
+            <div class="timer__items">
+                <div class="timer__item">
+                    <h4>Rodzik Joanna</h4>
+                    <div class="timer__item__wrapper">
+                        <div class="timer__item__info">
+                            <ul>
+                                <li>
+                                    <em>20.09.2020</em>
+                                </li>
+                                <li>
+                                    <p>rozpoczęcie pracy:</p>
+                                    <span>13:30</span>
+                                </li>
+                                <li>
+                                    <p>czas pracy:</p>
+                                    <span>3 h 45 min</span>
+                                </li>
+                                <li>
+                                    <p>przerwy:</p>
+                                    <span>13:30</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="timer__item__line__desktop">
+                            <span data-start="13:30"  data-end="13:35" style="width: 10%" class="start"></span>
+                            <span data-end="14:00" style="width: 10%;" class="break"></span>
+                            <span data-end="15:17" style="width: 40%;" class="start"></span>
+                            <span data-end="15:30" style="width: 5%;" class="break"></span>
+                            <span data-end="16:45" style="width: 35%;" class="start"></span>
+                        </div>
+                        <div class="timer__item__line__mobile">
+                            <span data-start="13:30" data-end="13:35" style="height: 10%" class="start"></span>
+                            <span data-end="14:00" style="height: 10%" class="break"></span>
+                            <span data-end="15:17" style="height: 40%" class="start"></span>
+                            <span data-end="15:30" style="height: 5%" class="break"></span>
+                            <span data-end="16:45" style="height: 35%" class="start"></span>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+                <div class="timer__item">
+                    <h4>Kowalska Anna</h4>
+                    <div class="timer__item__wrapper">
+                        <div class="timer__item__info">
+                            <ul>
+                                <li>
+                                    <em>20.09.2020</em>
+                                </li>
+                                <li>
+                                    <p>rozpoczęcie pracy:</p>
+                                    <span>13:30</span>
+                                </li>
+                                <li>
+                                    <p>czas pracy:</p>
+                                    <span>3 h 45 min</span>
+                                </li>
+                                <li>
+                                    <p>przerwy:</p>
+                                    <span>13:30</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="timer__item__line__desktop">
+                            <span data-start="13:30"  data-end="13:35" style="width: 10%" class="start"></span>
+                            <span data-end="14:00" style="width: 10%;" class="break"></span>
+                            <span data-end="15:17" style="width: 40%;" class="start"></span>
+                            <span data-end="15:30" style="width: 5%;" class="break"></span>
+                            <span data-end="16:45" style="width: 35%;" class="start"></span>
+                        </div>
+                        <div class="timer__item__line__mobile">
+                            <span data-start="13:30" data-end="13:35" style="height: 10%" class="start"></span>
+                            <span data-end="14:00" style="height: 10%" class="break"></span>
+                            <span data-end="15:17" style="height: 40%" class="start"></span>
+                            <span data-end="15:30" style="height: 5%" class="break"></span>
+                            <span data-end="16:45" style="height: 35%" class="start"></span>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
         </div>
-        <hr>
-        <ul class="configuration-services__items">
-            <li class="configuration-services__item">
-                <div class="checkbox">
-                    <input type="checkbox" id="check-1">
-                    <label for="check-1">lorem ipsum</label>
-                </div>
-                <p>3,50 zł szt</p>
-            </li>
-            <li class="configuration-services__item">
-                <div class="checkbox">
-                    <input type="checkbox" id="check-2">
-                    <label for="check-2">lorem ipsum</label>
-                </div>
-                <p>3,50 zł szt</p>
-            </li>
-            <li class="configuration-services__item">
-                <div class="checkbox">
-                    <input type="checkbox" id="check-3">
-                    <label for="check-3">lorem ipsum</label>
-                </div>
-                <p>3,50 zł szt</p>
-            </li>
-        </ul>
     </div>
 </div>
             </div>

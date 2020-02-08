@@ -1,0 +1,154 @@
+.timer {
+  @include respond-to('medium') {
+    padding: 0 20px;
+  }
+  hr {
+    height: 1px;
+    margin: 20px 0;
+    background: $color-gray;
+  }
+  &__item {
+    h4 {
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+    &__wrapper {
+      display: none;
+    }
+    &__info {
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        p, span, em {
+          font-size: 14px;
+          @include respond-to('small') {
+            font-size: 16px;
+          }
+          @include respond-to('medium') {
+            font-size: 18px;
+          }
+          @include respond-to('large') {
+            font-size: 20px;
+          }
+        }
+        li {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          @include respond-to('small') {
+            justify-content: flex-start;
+            padding-left: 20px;
+          }
+          @include respond-to('medium') {
+            padding-left: 30px;
+          }
+          & + li {
+            margin-top: 10px;
+          }
+          span {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+          }
+          p {
+            min-width: 140px;
+            @include respond-to('small') {
+              max-width: 200px;
+              width: 200px;
+            }
+          }
+        }
+      }
+    }
+    &__line {
+      &__desktop {
+        display: none;
+        width: 100%;
+        height: 20px;
+        margin: 40px 0;
+        @include respond-to('small') {
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+        }
+        .start {
+          background-color: rgb(209,237,248)
+        }
+        .break {
+          background-color: rgb(247,175,208)
+        }
+        span {
+          display: block;
+          background-color: $color-light-yellow;
+          position: relative;
+          color: $color-gray;
+          height: 20px;
+          font-size: 10px;
+          @include respond-to('medium') {
+            font-size: 16px;
+          }
+          &::before, &::after {
+            position: absolute;
+            top: 20px;
+          }
+          &::before {
+            content: attr(data-start);
+            left: 0;
+            transform: translateX(-50%);
+          }
+          &::after {
+            content: attr(data-end);
+            right: 0;
+            transform: translateX(50%);
+          }
+        }
+      }
+      &__mobile {
+        margin: 40px 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 500px;
+        flex-direction: column;
+        @include respond-to('small') {
+          display: none;
+        }
+        .start {
+          background-color: rgb(209,237,248)
+        }
+        .break {
+          background-color: rgb(247,175,208)
+        }
+        span {
+          display: block;
+          background-color: $color-light-yellow;
+          position: relative;
+          color: $color-gray;
+          width: 100%;
+          &::before, &::after {
+            position: absolute;
+            z-index: 1;
+          }
+          &::before {
+            content: attr(data-start);
+            left: 50%;
+            top: 0;
+            transform: translate(-50%, -50%);
+          }
+          &::after {
+            content: attr(data-end);
+            right: 50%;
+            bottom: 0;
+            transform: translate(50%, 50%);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
-  "title": "Ankieta",
-  "class": "questionnaire-page",
+  "title": "Licznik czasu",
+  "class": "timer-page",
   "menu": [
     {
       "name": "użytkownicy i firmy",
@@ -53,13 +53,13 @@
     {
       "name": "ankieta",
       "link": "/wirtualnebiuro/ankieta.html",
-      "active": true
+      "active": false
     },
     {
       "name": "licznik",
       "link": "/wirtualnebiuro/licznik.html",
-      "active": false
+      "active": true
     }
   ],
-  "tableTitle": "Ankieta"
+  "tableTitle": "Licznik czasu pracy"
 }

@@ -54,6 +54,11 @@
             "name": "ankieta",
             "link": "/wirtualnebiuro/ankieta.html",
             "active": false
+        },
+        {
+            "name": "licznik",
+            "link": "/wirtualnebiuro/licznik.html",
+            "active": false
         }
     ],
     "tableTitle": "Magazyn plików"
